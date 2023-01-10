@@ -5,16 +5,10 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:EVerse.Navisworks.Plugin"
              mc:Ignorable="d" 
-             d:DesignHeight="178" d:DesignWidth="367">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="178*" />
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="367*" />
-        </Grid.ColumnDefinitions>
-
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="21,48,0,94" Height="20" Width="329"/>
-        <Button Content="Ok" HorizontalAlignment="Left" Margin="244,103,0,0" VerticalAlignment="Top" Width="106" Height="28" Click="okButton_Click"/>
+             MinHeight="200" MinWidth="400"
+             MaxHeight="250" MaxWidth="450">
+    <Grid Background="WhiteSmoke">
+        <TextBox x:Name="textBox" HorizontalAlignment="Center" Margin="0,42,0,114" Height="28" Width="328" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" MinWidth="300" MinHeight="25"/>
+        <Button Content="Ok" HorizontalAlignment="Left" Margin="258,109,0,0" VerticalAlignment="Top" Width="106" Height="28" Click="okButton_Click"/>
     </Grid>
 </Window>
