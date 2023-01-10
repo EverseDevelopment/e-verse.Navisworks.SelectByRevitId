@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EVerse.Navisworks.Plugin.20
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EVerse.Navisworks.Plugin.2020", "EVerse.Navisworks.Plugin.2020\EVerse.Navisworks.Plugin.2020.csproj", "{F8DB5022-D40F-496F-814A-C843BDB56206}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EVerse.Navisworks.Plugin.2021", "EVerse.Navisworks.Plugin.2021\EVerse.Navisworks.Plugin.2021.csproj", "{9A8A805C-8E9B-49C3-8B24-2235E7036BF9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{F8DB5022-D40F-496F-814A-C843BDB56206}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8DB5022-D40F-496F-814A-C843BDB56206}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8DB5022-D40F-496F-814A-C843BDB56206}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A8A805C-8E9B-49C3-8B24-2235E7036BF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A8A805C-8E9B-49C3-8B24-2235E7036BF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A8A805C-8E9B-49C3-8B24-2235E7036BF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A8A805C-8E9B-49C3-8B24-2235E7036BF9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
