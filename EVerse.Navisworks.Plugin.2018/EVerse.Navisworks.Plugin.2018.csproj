@@ -7,8 +7,8 @@
     <ProjectGuid>{60FD800D-A7BB-4494-9064-1478FCA6B26D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EVerse.Navisworks.Plugin._2018</RootNamespace>
-    <AssemblyName>EVerse.Navisworks.Plugin.2018</AssemblyName>
+    <RootNamespace>EVerse.Navisworks.Plugin</RootNamespace>
+    <AssemblyName>EVerse.Navisworks.Plugin</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -31,6 +31,56 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AdWindows, Version=2016.11.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Navisworks-2018-x64-API.1.0.3\lib\net46\AdWindows.dll</HintPath>
+    </Reference>
+    <Reference Include="Autodesk.Navisworks.Api, Version=15.0.1314.36, Culture=neutral, PublicKeyToken=d85e58fa5af9b484, processorArchitecture=AMD64">
+      <HintPath>..\packages\Navisworks-2018-x64-API.1.0.3\lib\net46\Autodesk.Navisworks.Api.dll</HintPath>
+    </Reference>
+    <Reference Include="Autodesk.Navisworks.Automation, Version=15.0.1314.36, Culture=neutral, PublicKeyToken=d85e58fa5af9b484, processorArchitecture=AMD64">
+      <HintPath>..\packages\Navisworks-2018-x64-API.1.0.3\lib\net46\Autodesk.Navisworks.Automation.dll</HintPath>
+    </Reference>
+    <Reference Include="Autodesk.Navisworks.Clash, Version=15.0.1314.36, Culture=neutral, PublicKeyToken=d85e58fa5af9b484, processorArchitecture=AMD64">
+      <HintPath>..\packages\Navisworks-2018-x64-API.1.0.3\lib\net46\Autodesk.Navisworks.Clash.dll</HintPath>
+    </Reference>
+    <Reference Include="Autodesk.Navisworks.ComApi, Version=15.0.1314.36, Culture=neutral, PublicKeyToken=d85e58fa5af9b484, processorArchitecture=AMD64">
+      <HintPath>..\packages\Navisworks-2018-x64-API.1.0.3\lib\net46\Autodesk.Navisworks.ComApi.dll</HintPath>
+    </Reference>
+    <Reference Include="Autodesk.Navisworks.Controls, Version=15.0.1314.36, Culture=neutral, PublicKeyToken=d85e58fa5af9b484, processorArchitecture=AMD64">
+      <HintPath>..\packages\Navisworks-2018-x64-API.1.0.3\lib\net46\Autodesk.Navisworks.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Autodesk.Navisworks.Interop.ComApi, Version=15.0.1314.36, Culture=neutral, PublicKeyToken=d85e58fa5af9b484, processorArchitecture=AMD64">
+      <HintPath>..\packages\Navisworks-2018-x64-API.1.0.3\lib\net46\Autodesk.Navisworks.Interop.ComApi.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Autodesk.Navisworks.Interop.Timeliner, Version=15.0.1314.36, Culture=neutral, PublicKeyToken=d85e58fa5af9b484, processorArchitecture=AMD64">
+      <HintPath>..\packages\Navisworks-2018-x64-API.1.0.3\lib\net46\Autodesk.Navisworks.Interop.Timeliner.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Autodesk.Navisworks.Resolver, Version=15.0.1314.36, Culture=neutral, PublicKeyToken=d85e58fa5af9b484, processorArchitecture=AMD64">
+      <HintPath>..\packages\Navisworks-2018-x64-API.1.0.3\lib\net46\Autodesk.Navisworks.Resolver.dll</HintPath>
+    </Reference>
+    <Reference Include="Autodesk.Navisworks.Takeoff, Version=15.0.1314.36, Culture=neutral, PublicKeyToken=d85e58fa5af9b484, processorArchitecture=AMD64">
+      <HintPath>..\packages\Navisworks-2018-x64-API.1.0.3\lib\net46\Autodesk.Navisworks.Takeoff.dll</HintPath>
+    </Reference>
+    <Reference Include="Autodesk.Navisworks.Timeliner, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d85e58fa5af9b484, processorArchitecture=AMD64">
+      <HintPath>..\packages\Navisworks-2018-x64-API.1.0.3\lib\net46\Autodesk.Navisworks.Timeliner.dll</HintPath>
+    </Reference>
+    <Reference Include="navisworks.gui.common, Version=15.0.1314.36, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>..\packages\Navisworks-2018-x64-API.1.0.3\lib\net46\navisworks.gui.common.dll</HintPath>
+    </Reference>
+    <Reference Include="navisworks.gui.generic, Version=15.0.1314.36, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>..\packages\Navisworks-2018-x64-API.1.0.3\lib\net46\navisworks.gui.generic.dll</HintPath>
+    </Reference>
+    <Reference Include="navisworks.gui.interface, Version=15.0.1314.36, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>..\packages\Navisworks-2018-x64-API.1.0.3\lib\net46\navisworks.gui.interface.dll</HintPath>
+    </Reference>
+    <Reference Include="navisworks.gui.roamer, Version=15.0.1314.36, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>..\packages\Navisworks-2018-x64-API.1.0.3\lib\net46\navisworks.gui.roamer.dll</HintPath>
+    </Reference>
+    <Reference Include="navisworks.roamer.plugin, Version=15.0.1314.36, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>..\packages\Navisworks-2018-x64-API.1.0.3\lib\net46\navisworks.roamer.plugin.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -43,5 +93,19 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>mkdir "$(SolutionDir)\$(SolutionName).bundle\Contents\dlls\2018\en-US"
+mkdir "$(SolutionDir)\$(SolutionName).bundle\Contents\dlls\2018\Images"
+
+copy "$(TargetDir)\*.dll" "$(SolutionDir)$(SolutionName).bundle\Contents\dlls\2018"
+copy "$(SolutionDir)\EVerse.Navisworks.Plugin.Common\Images\*.png" "$(SolutionDir)$(SolutionName).bundle\Contents\dlls\2018\Images"
+copy "$(SolutionDir)\EVerse.Navisworks.Plugin.Common\en-US\PluginRibbon.xaml" "$(SolutionDir)$(SolutionName).bundle\Contents\dlls\2018\en-US"</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>if EXIST "$(SolutionDir)\$(SolutionName).bundle" rmdir /s /q "$(SolutionDir)\$(SolutionName).bundle"</PreBuildEvent>
+  </PropertyGroup>
 </Project>
