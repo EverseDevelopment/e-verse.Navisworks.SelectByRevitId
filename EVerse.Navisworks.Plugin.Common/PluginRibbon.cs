@@ -1,6 +1,7 @@
 ﻿using Autodesk.Navisworks.Api.Plugins;
 using EVerse.Navisworks.Plugin.Common.Application;
 using EVerse.Navisworks.Plugin.Common.Utils;
+using EVerse.Navisworks.Plugin.RevitId;
 using System;
 using System.IO;
 using System.Reflection;
@@ -8,10 +9,10 @@ using System.Windows;
 
 namespace EVerse.Navisworks.Plugin.Common
 {
-    [Plugin("SelectByRevitIdRibbon", "EVS", DisplayName ="Select by revit ID")]
+    [Plugin("SelectByRevitIdRibbon", IdentityInformation.DeveloperID, DisplayName = "Select by revit ID")]
     [RibbonLayout("PluginRibbon.xaml")]
     [RibbonTab("SelectByRevitId")]
-    [Command("ID_Button_1", LargeIcon ="", ToolTip="Select by revit ID", DisplayName ="Select by revit ID")]
+    [Command("ID_Button_1", LargeIcon = "", ToolTip = "Select by revit ID", DisplayName = "Select by revit ID")]
     class PluginRibbon : CommonCommandHandlerPlugin
     {
         public override int ExecuteCommand(string name, params string[] parameters)
@@ -29,7 +30,8 @@ namespace EVerse.Navisworks.Plugin.Common
                             PluginBuilder pluginBuilder = new PluginBuilder("SelectByRevitId");
                             if (pluginBuilder.pluginRecord is CustomPluginRecord && pluginBuilder.pluginRecord.IsEnabled)
                             {
-                                
+                                SelectByIdPlugin selectByIdPlugin = (SelectByIdPlugin)(pluginBuilder.pluginRecord.LoadedPlugin ?? pluginBuilder.pluginRecord.LoadPlugin());
+                                selectByIdPlugin.Execute();
                             }
                         }
                     }

@@ -120,6 +120,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="..\EVerse.Navisworks.Plugin.Common\EVerse.Navisworks.Plugin.Common.projitems" Label="Shared" />
+  <Import Project="..\EVerse.Navisworks.Plugin.RevitId\EVerse.Navisworks.Plugin.RevitId.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>mkdir "$(SolutionDir)\$(SolutionName).bundle\Contents\dlls\2019\en-US"
