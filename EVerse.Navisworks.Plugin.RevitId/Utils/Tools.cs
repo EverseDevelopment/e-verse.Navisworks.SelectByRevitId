@@ -1,6 +1,6 @@
 ﻿using Autodesk.Navisworks.Api;
-using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace EVerse.Navisworks.Plugin.RevitId.Utils
@@ -8,7 +8,7 @@ namespace EVerse.Navisworks.Plugin.RevitId.Utils
     public class Tools
     {
         public static string SelectedIds;
-
+        private static StringBuilder strBuilder;
         public static Document Doc { get; set; }
         public static ModelItemCollection CurrentSelection { get; set; }
 
@@ -20,18 +20,11 @@ namespace EVerse.Navisworks.Plugin.RevitId.Utils
         public static List<string> splitString(string s)
         {
             char delimit = ',';
-            List<string> output = new List<string>();
-
-            foreach (var item in s.Split(delimit))
-            {
-                output.Add(item);
-            }
-            return output;
+            return s.Split(delimit).ToList();
         }
 
         internal static void GetIds(ModelItemCollection modelItemCollection)
         {
-
             foreach (var ModelItem in modelItemCollection)
             {
                 if (ModelItem.HasGeometry | ModelItem.IsInsert)
@@ -51,23 +44,15 @@ namespace EVerse.Navisworks.Plugin.RevitId.Utils
                 }
                 else
                 {
-
                     var id = ModelItem.PropertyCategories.FindPropertyByName("LcRevitId", "LcOaNat64AttributeValue").Value.ToDisplayString();
-
-                    SelectedIds = SelectedIds + id + ",";
-
-
+                    strBuilder = new StringBuilder();
+                    strBuilder.Append(SelectedIds);
+                    strBuilder.Append(id);
+                    strBuilder.Append(",");
+                    SelectedIds = strBuilder.ToString();
                 }
             }
         }
-
-
-
-
-
-
-
-
 
         /// <summary>
         /// Get selection from int Revit ID
@@ -76,7 +61,6 @@ namespace EVerse.Navisworks.Plugin.RevitId.Utils
         /// <returns></returns>
         public static ModelItemCollection getElements(List<string> li)
         {
-
             Search search = new Search();
 
             search.Selection.SelectAll();
@@ -93,7 +77,6 @@ namespace EVerse.Navisworks.Plugin.RevitId.Utils
             Application.ActiveDocument.CurrentSelection.
 
                 CopyFrom(items);
-
 
             return items;
         }
