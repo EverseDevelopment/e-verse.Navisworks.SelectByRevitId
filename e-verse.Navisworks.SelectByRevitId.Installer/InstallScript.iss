@@ -8,22 +8,22 @@
 AppId={{C119AAE0-E17C-414E-8311-62DF3645C836}
 AppName=SelectByRevitId  
 AppVersion=1.0.0
-AppPublisher=E-Verse
+AppPublisher=e-verse
 AppPublisherURL=-
 AppSupportURL=-
 AppUpdatesURL=-
-DefaultDirName={commonpf64}\E-Verse\NavisworksTools\
+DefaultDirName={commonpf64}\e-verse\NavisworksTools\
 DisableDirPage=yes
-DefaultGroupName=E-Verse
+DefaultGroupName=e-verse
 DisableProgramGroupPage=yes
-OutputBaseFilename=E-Verse Navisworks
+OutputBaseFilename=e-verse Navisworks
 OutputDir="Installer"
 Compression=lzma
 SolidCompression=yes
 OutputManifestFile=Setup-Manifest.txt
-#define projectName "EVerse.Navisworks.Plugin"
-#define bundleName "EVerse.Navisworks.Plugin.bundle"
-#define bundlePath "{userappdata}\Autodesk\ApplicationPlugins\EVerse.Navisworks.Plugin.bundle\"
+#define projectName "e-verse.Navisworks.SelectByRevitId"
+#define bundleName "e-verse.Navisworks.SelectByRevitId.bundle"
+#define bundlePath "{userappdata}\Autodesk\ApplicationPlugins\EVerse.Navisworks.SelectByRevitId.bundle\"
 
 [Languages]
 Name: "english"; MessagesFile: "compiler:Default.isl";
@@ -32,10 +32,10 @@ Name: "english"; MessagesFile: "compiler:Default.isl";
 SetupWindowTitle =  Setup {#SetupSetting("AppName")} Version: {#SetupSetting("AppVersion")}
 
 [Dirs]
-Name: "{commonpf64}\E-Verse\NavisworksTools\"
+Name: "{commonpf64}\e-verse\NavisworksTools\"
 
 [InstallDelete]
-Type: filesandordirs; Name: "{commonpf64}\E-Verse\NavisworksTools\"
+Type: filesandordirs; Name: "{commonpf64}\e-verse\NavisworksTools\"
 
 [Files]
 Source: "..\{#bundleName}\*"; DestDir: "{#bundlePath}"; Flags: ignoreversion recursesubdirs createallsubdirs

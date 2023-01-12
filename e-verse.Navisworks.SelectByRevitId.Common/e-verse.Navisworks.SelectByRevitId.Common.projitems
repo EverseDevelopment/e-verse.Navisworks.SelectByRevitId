@@ -6,7 +6,7 @@
     <SharedGUID>fe40b4f6-4656-42af-bcf2-b168567610cd</SharedGUID>
   </PropertyGroup>
   <PropertyGroup Label="Configuration">
-    <Import_RootNamespace>EVerse.Navisworks.Plugin.Common</Import_RootNamespace>
+    <Import_RootNamespace>EVerse.Navisworks.SelectByRevitId.Common</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Application\CommonCommandHandlerPlugin.cs" />

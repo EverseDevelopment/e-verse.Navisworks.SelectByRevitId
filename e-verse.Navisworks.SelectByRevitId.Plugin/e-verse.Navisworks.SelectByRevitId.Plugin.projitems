@@ -6,7 +6,7 @@
     <SharedGUID>8ab5f161-d9cb-495a-b162-48f52b42ea4a</SharedGUID>
   </PropertyGroup>
   <PropertyGroup Label="Configuration">
-    <Import_RootNamespace>EVerse.Navisworks.Plugin.RevitId</Import_RootNamespace>
+    <Import_RootNamespace>EVerse.Navisworks.SelectByRevitId.Plugin</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)SelectByIdPlugin.cs" />
