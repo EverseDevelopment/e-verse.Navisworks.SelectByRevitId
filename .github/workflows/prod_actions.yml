@@ -9,6 +9,7 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: windows-latest
+    permissions: write-all
     env:
       Solution_Name: e-verse.Navisworks.SelectByRevitId.sln
     outputs:
