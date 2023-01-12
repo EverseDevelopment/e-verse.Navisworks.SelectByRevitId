@@ -127,7 +127,7 @@
 mkdir "$(SolutionDir)\$(SolutionName).bundle\Contents\dlls\2018\Images"
 
 copy "$(TargetDir)\*.dll" "$(SolutionDir)$(SolutionName).bundle\Contents\dlls\2018"
-copy "$(SolutionDir)\EVerse.Navisworks.Plugin.Common\Images\*.png" "$(SolutionDir)$(SolutionName).bundle\Contents\dlls\2018\Images"
+copy "$(SolutionDir)\EVerse.Navisworks.Plugin.Common\Images\*.jpg" "$(SolutionDir)$(SolutionName).bundle\Contents\dlls\2018\Images"
 copy "$(SolutionDir)\EVerse.Navisworks.Plugin.Common\en-US\PluginRibbon.xaml" "$(SolutionDir)$(SolutionName).bundle\Contents\dlls\2018\en-US"</PostBuildEvent>
   </PropertyGroup>
   <PropertyGroup>

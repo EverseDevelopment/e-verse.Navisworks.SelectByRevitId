@@ -21,9 +21,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Images\RID_32.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)PackageContents.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="$(MSBuildThisFileDirectory)Images\" />
   </ItemGroup>
 </Project>

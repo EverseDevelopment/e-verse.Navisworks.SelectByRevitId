@@ -12,7 +12,7 @@ namespace EVerse.Navisworks.Plugin.Common
     [Plugin("SelectByRevitIdRibbon", IdentityInformation.DeveloperID, DisplayName = "Select by revit ID")]
     [RibbonLayout("PluginRibbon.xaml")]
     [RibbonTab("SelectByRevitId")]
-    [Command("ID_Button_1", LargeIcon = "", ToolTip = "Select by revit ID", DisplayName = "Select by revit ID")]
+    [Command("SelectByRevitId", LargeIcon = "RID_32.jpg", ToolTip = "Select by revit ID", DisplayName = "Select by revit ID")]
     class PluginRibbon : CommonCommandHandlerPlugin
     {
         public override int ExecuteCommand(string name, params string[] parameters)
@@ -22,7 +22,7 @@ namespace EVerse.Navisworks.Plugin.Common
             Autodesk.Navisworks.Api.Application.Plugins.AddPluginAssembly(pluginFileName);
             switch (name)
             {
-                case "ID_Button_1":
+                case "SelectByRevitId":
                     try
                     {
                         if (!Autodesk.Navisworks.Api.Application.IsAutomated)
