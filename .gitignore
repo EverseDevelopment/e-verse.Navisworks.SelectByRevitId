@@ -362,3 +362,4 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 /EVerse.Navisworks.Plugin.bundle/Contents/dlls
+/e-verse.Navisworks.SelectByRevitId.bundle

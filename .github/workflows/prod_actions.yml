@@ -3,7 +3,7 @@ name: Deploy to Production
 on:
   push:
     # this will cause the action to run on pushes to main
-    branches: ["master"]
+    branches: ["main"]
 
 jobs:
   build:
