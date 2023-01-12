@@ -8,8 +8,8 @@
     <ProjectGuid>{591B5590-E83F-4D48-861D-FBD534F4CA53}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EVerse.Navisworks.Plugin.Installer</RootNamespace>
-    <AssemblyName>EVerse.Navisworks.Plugin.Installer</AssemblyName>
+    <RootNamespace>EVerse.Navisworks.SelectByRevitId.Installer</RootNamespace>
+    <AssemblyName>e-verse.Navisworks.SelectByRevitId.Installer</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
