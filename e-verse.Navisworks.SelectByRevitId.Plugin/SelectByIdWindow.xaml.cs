@@ -25,15 +25,7 @@ namespace EVerse.Navisworks.Plugin
         {
             InitializeComponent();
         }
-        //protected override bool ProcessDialogKey(KeyInter keyData)
-        //{
-        //    if (Form.ModifierKeys == Keys.None && keyData == Keys.Escape)
-        //    {
-        //        this.Close();
-        //        return true;
-        //    }
-        //    return base.ProcessDialogKey(keyData);
-        //}
+
         private void okButton_Click(object sender, EventArgs e)
         {
             var s = Tools.splitString(textBox.Text);
