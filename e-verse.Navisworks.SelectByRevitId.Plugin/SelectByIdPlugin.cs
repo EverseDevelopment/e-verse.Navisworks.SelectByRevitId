@@ -1,9 +1,9 @@
 ﻿using Autodesk.Navisworks.Api;
 using Autodesk.Navisworks.Api.Plugins;
-using EVerse.Navisworks.Plugin.Common.Application;
-using EVerse.Navisworks.Plugin.RevitId.Utils;
+using EVerse.Navisworks.SelectByRevitId.Common.Application;
+using EVerse.Navisworks.SelectByRevitId.Plugin.Utils;
 
-namespace EVerse.Navisworks.Plugin.RevitId
+namespace EVerse.Navisworks.SelectByRevitId.Plugin
 {
     [Plugin("SelectByRevitId", IdentityInformation.DeveloperID, ToolTip = "Select by ID", DisplayName = "Select by ID")]
     public class SelectByIdPlugin : CustomPlugin

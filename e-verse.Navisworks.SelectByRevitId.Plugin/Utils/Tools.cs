@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace EVerse.Navisworks.Plugin.RevitId.Utils
+namespace EVerse.Navisworks.SelectByRevitId.Plugin.Utils
 {
     public class Tools
     {

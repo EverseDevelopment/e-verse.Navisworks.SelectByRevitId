@@ -1,4 +1,4 @@
-﻿using EVerse.Navisworks.Plugin.RevitId.Utils;
+﻿using EVerse.Navisworks.SelectByRevitId.Plugin.Utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace EVerse.Navisworks.Plugin
+namespace EVerse.Navisworks.SelectByRevitId.Plugin
 {
     /// <summary>
     /// Interaction logic for SelectByIdWindow.xaml

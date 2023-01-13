@@ -1,7 +1,7 @@
 ﻿using Autodesk.Navisworks.Api.Plugins;
-using EVerse.Navisworks.Plugin.Common.Application;
-using EVerse.Navisworks.Plugin.Common.Utils;
-using EVerse.Navisworks.Plugin.RevitId;
+using EVerse.Navisworks.SelectByRevitId.Common.Application;
+using EVerse.Navisworks.SelectByRevitId.Common.Utils;
+using EVerse.Navisworks.SelectByRevitId.Plugin;
 using System;
 using System.IO;
 using System.Reflection;

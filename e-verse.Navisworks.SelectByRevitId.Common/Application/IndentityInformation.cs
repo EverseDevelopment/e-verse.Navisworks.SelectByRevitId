@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace EVerse.Navisworks.Plugin.Common.Application
+namespace EVerse.Navisworks.SelectByRevitId.Common.Application
 {
     public static class IdentityInformation
     {

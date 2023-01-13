@@ -1,7 +1,7 @@
 ﻿using Autodesk.Navisworks.Api.Plugins;
-using EVerse.Navisworks.Plugin.Common.Application;
+using EVerse.Navisworks.SelectByRevitId.Common.Application;
 
-namespace EVerse.Navisworks.Plugin.Common.Utils
+namespace EVerse.Navisworks.SelectByRevitId.Common.Utils
 {
     class PluginBuilder
     {

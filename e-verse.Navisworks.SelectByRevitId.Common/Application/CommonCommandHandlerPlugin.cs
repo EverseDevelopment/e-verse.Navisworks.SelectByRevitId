@@ -1,6 +1,6 @@
 ﻿using Autodesk.Navisworks.Api.Plugins;
 
-namespace EVerse.Navisworks.Plugin.Common.Application
+namespace EVerse.Navisworks.SelectByRevitId.Common.Application
 {
     class CommonCommandHandlerPlugin : CommandHandlerPlugin
     {
