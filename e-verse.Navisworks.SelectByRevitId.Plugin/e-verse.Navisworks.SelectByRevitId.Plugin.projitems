@@ -10,13 +10,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)SelectByIdPlugin.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)SelectByIdWindow.xaml.cs">
-      <DependentUpon>SelectByIdWindow.xaml</DependentUpon>
-    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Utils\Tools.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Windows\Resources.xaml.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Windows\SelectByIdWindow.xaml.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="$(MSBuildThisFileDirectory)SelectByIdWindow.xaml">
+    <Page Include="$(MSBuildThisFileDirectory)Windows\Resources.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Windows\SelectByIdWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
