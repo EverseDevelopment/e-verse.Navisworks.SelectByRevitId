@@ -32,5 +32,13 @@ namespace EVerse.Navisworks.SelectByRevitId.Plugin
             Tools.getElements(s);
             this.DialogResult = true;
         }
+        private void Close_Button(object sender, RoutedEventArgs e)
+        {
+            this.DialogResult = false;
+        }
+        private void Border_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            this.DragMove();
+        }
     }
 }
