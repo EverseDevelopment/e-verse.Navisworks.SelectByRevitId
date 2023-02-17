@@ -47,13 +47,12 @@
                 <Label Style="{DynamicResource TitleLabels}" Content="Select by Revit ID" HorizontalAlignment="Left" Margin="95,10,0,0" VerticalAlignment="Top" Width="164" FontSize="18" FontWeight="Regular"/>
                 <Image Name="SlideUp_Image" 
                 Visibility="Visible" 
-                Source="C:\Users\silic\Documents\GitHub\e-verse.Navisworks.SelectByRevitId\e-verse.Navisworks.SelectByRevitId.Common\Images\RID_32.jpg"
                 HorizontalAlignment="Left"
-                Width="77" 
+                Width="62" 
                 SnapsToDevicePixels="True" 
                 RenderOptions.BitmapScalingMode="HighQuality" 
                 RenderOptions.EdgeMode="Aliased" 
-                Margin="17,12,0,0" Height="58" VerticalAlignment="Top"/>
+                Margin="17,12,0,0" Height="47" VerticalAlignment="Top"/>
                 <Button Style="{DynamicResource CloseButtonStyle}" Content="X" HorizontalAlignment="Left" Margin="313,12,0,0" VerticalAlignment="Top" Width="28" Click="Close_Button" Height="28" RenderTransformOrigin="0.929,0.929"/>
             </Grid>
             <TextBox Style="{DynamicResource MainTextBox}" x:Name="textBox" HorizontalAlignment="Center" Height="28" Width="328" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" MinWidth="300" MinHeight="25" VerticalAlignment="Top" Margin="0,86,0,0"/>
