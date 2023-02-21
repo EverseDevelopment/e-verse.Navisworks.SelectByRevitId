@@ -27,16 +27,16 @@ namespace EVerse.Navisworks.SelectByRevitId.Plugin
         public SelectByIdWindow()
         {
             InitializeComponent();
-            LoadAddinImage();
+            //LoadAddinImage();
         }
 
-        private void LoadAddinImage()
-        {
-            string commonProjectDirectory = System.IO.Path.GetDirectoryName(typeof(PluginRibbon).Assembly.Location);
-            string fullPath = System.IO.Path.Combine(commonProjectDirectory, IMAGE_PATH);
-            Uri uri = new Uri(fullPath);
-            SlideUp_Image.Source = new BitmapImage(uri);
-        }
+        //private void LoadAddinImage()
+        //{
+        //    string commonProjectDirectory = System.IO.Path.GetDirectoryName(typeof(PluginRibbon).Assembly.Location);
+        //    string fullPath = System.IO.Path.Combine(commonProjectDirectory, IMAGE_PATH);
+        //    Uri uri = new Uri(fullPath);
+        //    SlideUp_Image.Source = new BitmapImage(uri);
+        //}
 
         private void okButton_Click(object sender, EventArgs e)
         {
