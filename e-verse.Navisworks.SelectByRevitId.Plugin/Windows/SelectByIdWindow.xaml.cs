@@ -25,26 +25,42 @@ namespace EVerse.Navisworks.SelectByRevitId.Plugin
     public partial class SelectByIdWindow : Window
     {
         //private const string IMAGE_PATH = "Images\\RID_32.jpg";
+        private const string HEART_IMAGE_PATH = "Images\\Heart.jpg";
         private const string NO_REVIT_MODEL_MESSAGE = "No revit model available";
         private const string INSERT_ELEMENT_ID_MESSAGE = "Insert element revit ID";
 
         public SelectByIdWindow()
         {
             InitializeComponent();
-
-            //LoadAddinImage();
+            InitializeValues();
+        }
+        private void InitializeValues()
+        {
             if (!Tools.IsRevitModelLoaded())
                 OffOn(false, NO_REVIT_MODEL_MESSAGE, Colors.Red);
             else OffOn(true, INSERT_ELEMENT_ID_MESSAGE, Colors.LightGray);
+
+        }
+        private void FinDisclaimerButtonChildImage(object sender, RoutedEventArgs e)
+        {
+            Button disclaimerButton = sender as Button;
+            if (disclaimerButton != null)
+            {
+                Image heartImage = disclaimerButton.Template.FindName("heartImage", disclaimerButton) as Image;
+                if (heartImage != null)
+                {
+                    LoadImage(heartImage, HEART_IMAGE_PATH);
+                }
+            }
+        }
+        private void LoadImage(Image image, string imagePath)
+        {
+            string commonProjectDirectory = System.IO.Path.GetDirectoryName(typeof(PluginRibbon).Assembly.Location);
+            string fullPath = System.IO.Path.Combine(commonProjectDirectory, imagePath);
+            Uri uri = new Uri(fullPath);
+            image.Source = new BitmapImage(uri);
         }
 
-        //private void LoadAddinImage()
-        //{
-        //    string commonProjectDirectory = System.IO.Path.GetDirectoryName(typeof(PluginRibbon).Assembly.Location);
-        //    string fullPath = System.IO.Path.Combine(commonProjectDirectory, IMAGE_PATH);
-        //    Uri uri = new Uri(fullPath);
-        //    SlideUp_Image.Source = new BitmapImage(uri);
-        //}
         private void OffOn(bool toggle, string message, System.Windows.Media.Color? color)
         {
             applyButton.Foreground = new SolidColorBrush(Colors.White);
@@ -59,6 +75,7 @@ namespace EVerse.Navisworks.SelectByRevitId.Plugin
             Tools.getElements(s);
             this.DialogResult = true;
         }
+
         private void Close_Button(object sender, RoutedEventArgs e)
         {
             this.DialogResult = false;
@@ -71,6 +88,11 @@ namespace EVerse.Navisworks.SelectByRevitId.Plugin
         private void onMouseEnter(object sender, MouseButtonEventArgs e)
         {
             textBox.Text = string.Empty;
+        }
+
+        private void Title_Link(object sender, RoutedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://e-verse.com/");
         }
     }
 }
