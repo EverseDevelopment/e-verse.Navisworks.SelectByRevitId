@@ -37,8 +37,8 @@ namespace EVerse.Navisworks.SelectByRevitId.Plugin
         private void InitializeValues()
         {
             if (!Tools.IsRevitModelLoaded())
-                OffOn(false, NO_REVIT_MODEL_MESSAGE, Colors.Red);
-            else OffOn(true, INSERT_ELEMENT_ID_MESSAGE, Colors.LightGray);
+                OffOn(false, NO_REVIT_MODEL_MESSAGE);
+            else OffOn(true, INSERT_ELEMENT_ID_MESSAGE);
 
         }
         private void FinDisclaimerButtonChildImage(object sender, RoutedEventArgs e)
@@ -61,9 +61,8 @@ namespace EVerse.Navisworks.SelectByRevitId.Plugin
             image.Source = new BitmapImage(uri);
         }
 
-        private void OffOn(bool toggle, string message, System.Windows.Media.Color? color)
+        private void OffOn(bool toggle, string message)
         {
-            applyButton.Foreground = new SolidColorBrush(Colors.White);
             applyButton.IsEnabled = toggle;
             textBox.IsHitTestVisible = toggle;
             textBox.IsEnabled = toggle;
