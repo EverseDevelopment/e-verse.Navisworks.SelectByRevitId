@@ -57,12 +57,6 @@
             </Grid>
             <TextBox Style="{DynamicResource MainTextBox}" x:Name="textBox" Text="No revit model available" IsEnabled="False" HorizontalAlignment="Center" Height="28" Width="328" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" MinWidth="300" MinHeight="25" VerticalAlignment="Top" Margin="0,68,0,0" PreviewMouseUp="onMouseEnter" />
             <Button Style="{DynamicResource MainButtonStyle}" x:Name="applyButton" Content="Select" IsEnabled="False" HorizontalAlignment="Center" Margin="0,120,0,0" Width="328" Height="28" Click="okButton_Click" VerticalAlignment="Top"/>
-            <Label      
-                Style="{DynamicResource SecondaryLabel}"
-                HorizontalAlignment="Left" 
-                Margin="15,166,0,0" 
-                Content="Made with 💓 by e-verse" 
-                Width="145" FontWeight="Bold" Height="24" VerticalAlignment="Top"/>
             <Button
                     Style="{DynamicResource CloseButtonStyle}"
                     Margin="185,170,15,0"
