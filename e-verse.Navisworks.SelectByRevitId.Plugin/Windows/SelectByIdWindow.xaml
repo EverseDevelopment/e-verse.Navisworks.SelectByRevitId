@@ -44,7 +44,7 @@
 
         <Grid Background="WhiteSmoke">
             <Grid>
-                <Label Style="{DynamicResource TitleLabels}" Content="Select by Revit ID" HorizontalAlignment="Left" Margin="95,10,0,0" VerticalAlignment="Top" Width="164" FontSize="18" FontWeight="Regular"/>
+                <Label Style="{DynamicResource TitleLabels}" Content="Select by Revit ID" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="164" FontSize="18" FontWeight="Regular"/>
                 <!--<Image Name="SlideUp_Image" 
                 Visibility="Visible" 
                 HorizontalAlignment="Left"
