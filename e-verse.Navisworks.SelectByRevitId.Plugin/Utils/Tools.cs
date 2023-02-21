@@ -80,5 +80,10 @@ namespace EVerse.Navisworks.SelectByRevitId.Plugin.Utils
 
             return items;
         }
+        public static bool IsRevitModelLoaded()
+        {
+            var activeDoc = Autodesk.Navisworks.Api.Application.ActiveDocument;
+            return activeDoc.ActiveSheet != null;
+        }
     }
 }
