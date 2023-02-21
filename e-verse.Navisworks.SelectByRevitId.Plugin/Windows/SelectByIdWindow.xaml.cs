@@ -24,7 +24,7 @@ namespace EVerse.Navisworks.SelectByRevitId.Plugin
     /// </summary>
     public partial class SelectByIdWindow : Window
     {
-        //private const string IMAGE_PATH = "Images\\RID_32.jpg";
+        //private const string ADDIN_IMAGE_PATH = "Images\\RID_32.jpg";
         private const string HEART_IMAGE_PATH = "Images\\Heart.jpg";
         private const string NO_REVIT_MODEL_MESSAGE = "No revit model available";
         private const string INSERT_ELEMENT_ID_MESSAGE = "Insert element revit ID";
