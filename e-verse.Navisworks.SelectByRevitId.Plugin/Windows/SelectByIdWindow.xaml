@@ -10,7 +10,7 @@
              Background="{x:Null}"
              mc:Ignorable="d"
              Width="380"
-             Height="280"
+             Height="310"
              Title="Viewpoint by level"
              ResizeMode="NoResize"
              Topmost="True"
@@ -43,24 +43,54 @@
         </Border.Effect>
 
         <Grid Background="Transparent" RenderOptions.BitmapScalingMode="HighQuality">
-            <Grid>
-                <Label Style="{DynamicResource TitleLabels}" Content="Cleo" HorizontalAlignment="Left" Margin="37,8,0,0" VerticalAlignment="Top" Width="235" FontSize="45" FontWeight="Bold" Height="44"/>
+            <Grid Margin="0,0,10,0">
 
-                <!--<Image Name="SlideUp_Image" 
-                Visibility="Visible" 
+                <Image x:Name="SlideUp_Image"
+                Visibility="Visible"
                 HorizontalAlignment="Left"
-                Width="62" 
-                SnapsToDevicePixels="True" 
-                RenderOptions.BitmapScalingMode="HighQuality" 
-                RenderOptions.EdgeMode="Aliased" 
-                Margin="17,12,0,0" Height="47" VerticalAlignment="Top"/>-->
-                <Button Style="{DynamicResource CloseButtonStyle}" Content="X" HorizontalAlignment="Left" Margin="313,12,0,0" VerticalAlignment="Top" Width="28" Click="Close_Button" Height="28" RenderTransformOrigin="0.929,0.929"/>
+                Width="54"
+                SnapsToDevicePixels="True"
+                Source="C:\Users\silic\Documents\GitHub\e-verse.Navisworks.ViewpointByLevel\e-verse.Navisworks.ViewpointByLevel.Common\Images\VL_Head.png"
+                RenderOptions.BitmapScalingMode="HighQuality"
+                RenderOptions.EdgeMode="Aliased"
+                Margin="10,11,0,0" Height="46" VerticalAlignment="Top" />
+                <Label
+                Style="{DynamicResource SecondaryLabel}"
+                HorizontalAlignment="Right"
+                Margin="0,23,39,0"
+                Content="v.1.0.5"
+                VerticalAlignment="Top"
+                Width="42" Height="20" FontSize="15" />
+                <Button
+                   Style="{DynamicResource TabCloseButtonStyle}"
+                   Name="CloseButton"
+                   Click="Close_Button"
+                   VerticalAlignment="Top"
+                   Margin="318,18,10,0"></Button>
             </Grid>
-            <TextBox Style="{DynamicResource MainTextBox}" x:Name="textBox" Text="No revit model available" IsEnabled="False" HorizontalAlignment="Center" Height="28" Width="328" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" MinWidth="300" MinHeight="25" VerticalAlignment="Top" Margin="0,88,0,0" PreviewMouseUp="onMouseEnter" />
-            <Button Style="{DynamicResource MainButtonStyle}" x:Name="applyButton" Content="Select" IsEnabled="False" HorizontalAlignment="Center" Margin="0,140,0,0" Width="328" Height="28" Click="okButton_Click" VerticalAlignment="Top"/>
+            <Line Stroke="{DynamicResource MainGray}"
+                  X2="1000"
+                  Opacity="0.5"
+                  StrokeThickness="4"
+                  VerticalAlignment="Top"
+                  Margin="0,59,0,0" RenderTransformOrigin="0.5,0.5" Height="2">
+                <Line.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="1" />
+                        <SkewTransform />
+                        <RotateTransform />
+                        <TranslateTransform />
+                    </TransformGroup>
+                </Line.RenderTransform>
+            </Line>
+            <Label Style="{DynamicResource PrimaryTitleLabel}" Content="Select by ID" HorizontalAlignment="Center" Margin="0,70,0,0" VerticalAlignment="Top" Width="88" FontWeight="Bold" />
+            <Label Style="{DynamicResource TitleLabels}" Content="Enter Revit ID" HorizontalAlignment="Right" Margin="0,106,213,0" Width="122" Height="23" VerticalAlignment="Top" />
+
+            <TextBox Style="{DynamicResource MainTextBox}" x:Name="textBox" Text="No revit model available" IsEnabled="False" Height="34" Width="223" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" MinWidth="300" MinHeight="25" VerticalAlignment="Top" Margin="0,132,78,0" PreviewMouseUp="onMouseEnter" HorizontalAlignment="Right" />
+            <Button Style="{DynamicResource MainButtonStyle}" x:Name="applyButton" Content="Select" IsEnabled="False" HorizontalAlignment="Center" Margin="0,190,0,0" Width="122" Height="22" Click="okButton_Click" VerticalAlignment="Top"/>
             <Button
                     Style="{DynamicResource CloseButtonStyle}"
-                    Margin="185,190,15,0"
+                    Margin="185,235,15,0"
                     Background="Transparent"
                     Click="Title_Link"
                     FontWeight="Light"
@@ -113,21 +143,7 @@
                 </Button.Template>
 
             </Button>
-            <Line Stroke="{DynamicResource MainGray}"
-                X2="1000"
-                Opacity="0.5"
-                StrokeThickness="4"
-                VerticalAlignment="Top"
-                Margin="-9,59,2,0" RenderTransformOrigin="0.5,0.5" Height="2">
-                <Line.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform ScaleY="1"/>
-                        <SkewTransform/>
-                        <RotateTransform/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Line.RenderTransform>
-            </Line>
+
 
 
         </Grid>
