@@ -26,7 +26,7 @@ namespace EVerse.Navisworks.SelectByRevitId.Plugin
         }
         private void InitializeValues()
         {
-            versionLabel.Content = "v.1.0.6";
+            versionLabel.Content = "v.1.0.7";
             LoadImage(ComponentImage, ADDIN_IMAGE_PATH);
             if (!Tools.IsRevitModelLoaded())
                 OffOn(false, NO_REVIT_MODEL_MESSAGE, Colors.Red);
