@@ -45,20 +45,20 @@
         <Grid Background="Transparent" RenderOptions.BitmapScalingMode="HighQuality">
             <Grid Margin="0,0,10,0">
 
-                <Image x:Name="SlideUp_Image"
+                <Image x:Name="ComponentImage"
                 Visibility="Visible"
                 HorizontalAlignment="Left"
                 Width="54"
                 SnapsToDevicePixels="True"
-                Source="C:\Users\silic\Documents\GitHub\e-verse.Navisworks.ViewpointByLevel\e-verse.Navisworks.ViewpointByLevel.Common\Images\VL_Head.png"
                 RenderOptions.BitmapScalingMode="HighQuality"
                 RenderOptions.EdgeMode="Aliased"
                 Margin="10,11,0,0" Height="46" VerticalAlignment="Top" />
                 <Label
+                x:Name="versionLabel"
                 Style="{DynamicResource SecondaryLabel}"
                 HorizontalAlignment="Right"
                 Margin="0,23,39,0"
-                Content="v.1.0.5"
+                Content="v.1.0.0"
                 VerticalAlignment="Top"
                 Width="42" Height="20" FontSize="15" />
                 <Button
