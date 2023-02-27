@@ -131,7 +131,7 @@
 mkdir "$(SolutionDir)\$(SolutionName).bundle\Contents\dlls\2023\Images"
 
 copy "$(TargetDir)\*.dll" "$(SolutionDir)$(SolutionName).bundle\Contents\dlls\2023"
-copy "$(SolutionDir)\e-verse.Navisworks.SelectByRevitId.Common\Images\*.jpg" "$(SolutionDir)$(SolutionName).bundle\Contents\dlls\2023\Images"
+copy "$(SolutionDir)\e-verse.Navisworks.SelectByRevitId.Common\Images\*" "$(SolutionDir)$(SolutionName).bundle\Contents\dlls\2023\Images"
 copy "$(SolutionDir)\e-verse.Navisworks.SelectByRevitId.Common\en-US\PluginRibbon.xaml" "$(SolutionDir)$(SolutionName).bundle\Contents\dlls\2023\en-US"
 
 copy "$(SolutionDir)\e-verse.Navisworks.SelectByRevitId.Common\PackageContents.xml" "$(SolutionDir)$(SolutionName).bundle"
