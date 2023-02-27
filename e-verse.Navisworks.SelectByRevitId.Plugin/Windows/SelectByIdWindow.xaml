@@ -10,7 +10,7 @@
              Background="{x:Null}"
              mc:Ignorable="d"
              Width="380"
-             Height="320"
+             Height="350"
              Title="Viewpoint by level"
              ResizeMode="NoResize"
              Topmost="True"
@@ -44,6 +44,7 @@
 
         <Grid Background="Transparent" RenderOptions.BitmapScalingMode="HighQuality">
             <Grid Margin="0,0,10,0">
+                <Label Style="{DynamicResource PrimaryTitleLabel}" Content="Select by ID" HorizontalAlignment="Center" Margin="0,67,0,0" VerticalAlignment="Top" Width="84" FontWeight="Bold" />
 
                 <Image x:Name="ComponentImage"
                 Visibility="Visible"
@@ -84,10 +85,10 @@
                     </TransformGroup>
                 </Line.RenderTransform>
             </Line>
-            <Label Style="{DynamicResource TitleLabels}" Content="Enter Revit ID" HorizontalAlignment="Center" Margin="0,86,0,0" Width="94" Height="23" VerticalAlignment="Top" />
+            <Label Style="{DynamicResource TitleLabels}" Content="Enter Revit ID" HorizontalAlignment="Left" Margin="127,107,0,0" Width="94" Height="23" VerticalAlignment="Top" />
 
-            <TextBox Style="{DynamicResource MainTextBox}" x:Name="textBox" Text="No revit model available" IsEnabled="False" Height="34" Width="297" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" MinWidth="300" MinHeight="25" VerticalAlignment="Top" Margin="0,130,0,0" PreviewMouseUp="onMouseEnter" HorizontalAlignment="Center" />
-            <Button Style="{DynamicResource ApplyButtonStyle}" x:Name="applyButton" Content="Select" IsEnabled="False" HorizontalAlignment="Center" Margin="0,188,0,0" Width="122" Height="22" Click="okButton_Click" VerticalAlignment="Top"/>
+            <TextBox Style="{DynamicResource MainTextBox}" x:Name="textBox" Text="No revit model available" IsEnabled="False" Height="34" Width="297" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" MinWidth="300" MinHeight="25" VerticalAlignment="Top" Margin="0,150,0,0" PreviewMouseUp="onMouseEnter" HorizontalAlignment="Center" />
+            <Button Style="{DynamicResource ApplyButtonStyle}" x:Name="applyButton" Content="Select" IsEnabled="False" HorizontalAlignment="Left" Margin="113,208,0,0" Width="122" Height="22" Click="okButton_Click" VerticalAlignment="Top"/>
             <Button
                  Loaded="FinDisclaimerButtonChildImage"
                 Click="Title_Link"
@@ -96,7 +97,7 @@
                 Background="Transparent"
                 Foreground="{DynamicResource MainGray}"
         HorizontalContentAlignment="Stretch"
-        VerticalContentAlignment="Stretch" Margin="163,229,0,0" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Width="169">
+        VerticalContentAlignment="Stretch" Margin="163,249,0,0" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Width="169">
                 <DockPanel LastChildFill="True">
                     <Label FontWeight="Bold" HorizontalContentAlignment="Center" DockPanel.Dock="Left">Made with</Label>
                     <Image x:Name="heartImage" Source="C:\Users\silic\Documents\GitHub\e-verse.Navisworks.ViewpointByLevel\e-verse.Navisworks.ViewpointByLevel.Common\Images\Heart.jpg" Width="24" />
