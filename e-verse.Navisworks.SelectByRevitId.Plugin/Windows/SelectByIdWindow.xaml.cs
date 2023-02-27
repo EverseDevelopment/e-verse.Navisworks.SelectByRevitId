@@ -1,21 +1,11 @@
-﻿using Autodesk.Navisworks.Api;
-using EVerse.Navisworks.Plugin.Common;
+﻿using EVerse.Navisworks.Plugin.Common;
 using EVerse.Navisworks.SelectByRevitId.Plugin.Utils;
 using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace EVerse.Navisworks.SelectByRevitId.Plugin
 {
@@ -24,7 +14,7 @@ namespace EVerse.Navisworks.SelectByRevitId.Plugin
     /// </summary>
     public partial class SelectByIdWindow : Window
     {
-        //private const string ADDIN_IMAGE_PATH = "Images\\RID_32.jpg";
+        private const string ADDIN_IMAGE_PATH = "Images\\RID_Head.png";
         private const string HEART_IMAGE_PATH = "Images\\Heart.jpg";
         private const string NO_REVIT_MODEL_MESSAGE = "No revit model available";
         private const string INSERT_ELEMENT_ID_MESSAGE = "Insert element revit ID";
@@ -36,6 +26,8 @@ namespace EVerse.Navisworks.SelectByRevitId.Plugin
         }
         private void InitializeValues()
         {
+            versionLabel.Content = "v.1.0.6";
+            LoadImage(ComponentImage, ADDIN_IMAGE_PATH);
             if (!Tools.IsRevitModelLoaded())
                 OffOn(false, NO_REVIT_MODEL_MESSAGE, Colors.Red);
             else OffOn(true, INSERT_ELEMENT_ID_MESSAGE, Colors.Gray);

@@ -131,7 +131,7 @@
 mkdir "$(SolutionDir)\$(SolutionName).bundle\Contents\dlls\2022\Images"
 
 copy "$(TargetDir)\*.dll" "$(SolutionDir)$(SolutionName).bundle\Contents\dlls\2022"
-copy "$(SolutionDir)\e-verse.Navisworks.SelectByRevitId.Common\Images\*.jpg" "$(SolutionDir)$(SolutionName).bundle\Contents\dlls\2022\Images"
+copy "$(SolutionDir)\e-verse.Navisworks.SelectByRevitId.Common\Images\*" "$(SolutionDir)$(SolutionName).bundle\Contents\dlls\2022\Images"
 copy "$(SolutionDir)\e-verse.Navisworks.SelectByRevitId.Common\en-US\PluginRibbon.xaml" "$(SolutionDir)$(SolutionName).bundle\Contents\dlls\2022\en-US"</PostBuildEvent>
   </PropertyGroup>
 </Project>
