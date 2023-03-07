@@ -26,6 +26,9 @@
     <Content Include="Images\RID_Head.png" />
     <Content Include="PackageContents.xml" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="e-verse.Navisworks.SelectByRevitId.addin" />
+  </ItemGroup>
   <Import Project="EVerse.Navisworks.Plugin.Common.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\CodeSharing\Microsoft.CodeSharing.CSharp.targets" />
 </Project>
