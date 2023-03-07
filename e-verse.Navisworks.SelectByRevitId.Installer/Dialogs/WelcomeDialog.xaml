@@ -37,7 +37,7 @@
                             <Grid>
                                 <Image Name="SlideUp_Image" 
                                        Visibility="Visible" 
-                                       Source="/e-verse.Navisworks.ViewpointByLevel;component/Resources/ViewpointByLevel.png"
+                                       Source="/e-verse.Navisworks.SelectByRevitId;component/Resources/SelectByRevitId.png"
                                        HorizontalAlignment="Left"
                                        Width="115" 
                                        SnapsToDevicePixels="True" 
@@ -118,7 +118,7 @@
 
                                 <Image Name="heartImage" 
                                        Visibility="Visible" 
-                                       Source="/e-verse.Navisworks.ViewpointByLevel;component/Resources/Heart.png"
+                                       Source="/e-verse.Navisworks.SelectByRevitId;component/Resources/Heart.png"
                                        HorizontalAlignment="Left"
                                        Width="17" 
                                        SnapsToDevicePixels="True" 

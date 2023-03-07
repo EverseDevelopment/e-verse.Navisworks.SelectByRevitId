@@ -8,35 +8,35 @@ namespace EVerse.Navisworks.SelectByRevitId.Installer
     {
         private static void Main()
         {
-            var project = new ManagedProject("e-verse.Navisworks.ViewpointByLevel",
+            var project = new ManagedProject("e-verse.Navisworks.SelectByRevitId",
                               new Dir(@"%AppData%\Autodesk\ApplicationPlugins\",
                                   new Dir(@"2018",
-                                    new File(@"..\e-verse.Navisworks.ViewpointByLevel.Common\e-verse.Navisworks.ViewpointByLevel.addin"),
-                                    new Dir(@"e-verse.Navisworks.ViewpointByLevel",
-                                        new Files(@"..\e-verse.Navisworks.ViewpointByLevel.2018\bin\Release\*.*"))),
+                                    new File(@"..\e-verse.Navisworks.SelectByRevitId.Common\e-verse.Navisworks.SelectByRevitId.addin"),
+                                    new Dir(@"e-verse.Navisworks.SelectByRevitId",
+                                        new Files(@"..\e-verse.Navisworks.SelectByRevitId.2018\bin\Release\*.*"))),
                                   new Dir(@"2019",
-                                    new File(@"..\e-verse.Navisworks.ViewpointByLevel.Common\e-verse.Navisworks.ViewpointByLevel.addin"),
-                                    new Dir(@"e-verse.Navisworks.ViewpointByLevel",
-                                        new Files(@"..\e-verse.Navisworks.ViewpointByLevel.2019\bin\Release\*.*"))),
+                                    new File(@"..\e-verse.Navisworks.SelectByRevitId.Common\e-verse.Navisworks.SelectByRevitId.addin"),
+                                    new Dir(@"e-verse.Navisworks.SelectByRevitId",
+                                        new Files(@"..\e-verse.Navisworks.SelectByRevitId.2019\bin\Release\*.*"))),
                                   new Dir(@"2020",
-                                    new File(@"..\e-verse.Navisworks.ViewpointByLevel.Common\e-verse.Navisworks.ViewpointByLevel.addin"),
-                                    new Dir(@"e-verse.Navisworks.ViewpointByLevel",
-                                        new Files(@"..\e-verse.Navisworks.ViewpointByLevel.2020\bin\Release\*.*"))),
+                                    new File(@"..\e-verse.Navisworks.SelectByRevitId.Common\e-verse.Navisworks.SelectByRevitId.addin"),
+                                    new Dir(@"e-verse.Navisworks.SelectByRevitId",
+                                        new Files(@"..\e-verse.Navisworks.SelectByRevitId.2020\bin\Release\*.*"))),
                                   new Dir(@"2021",
-                                    new File(@"..\e-verse.Navisworks.ViewpointByLevel.Common\e-verse.Navisworks.ViewpointByLevel.addin"),
-                                    new Dir(@"e-verse.Navisworks.ViewpointByLevel",
-                                        new Files(@"..\e-verse.Navisworks.ViewpointByLevel.2021\bin\Release\*.*"))),
+                                    new File(@"..\e-verse.Navisworks.SelectByRevitId.Common\e-verse.Navisworks.SelectByRevitId.addin"),
+                                    new Dir(@"e-verse.Navisworks.SelectByRevitId",
+                                        new Files(@"..\e-verse.Navisworks.SelectByRevitId.2021\bin\Release\*.*"))),
                                   new Dir(@"2022",
-                                    new File(@"..\e-verse.Navisworks.ViewpointByLevel.Common\e-verse.Navisworks.ViewpointByLevel.addin"),
-                                    new Dir(@"e-verse.Navisworks.ViewpointByLevel",
-                                        new Files(@"..\e-verse.Navisworks.ViewpointByLevel.2022\bin\Release\*.*"))),
+                                    new File(@"..\e-verse.Navisworks.SelectByRevitId.Common\e-verse.Navisworks.SelectByRevitId.addin"),
+                                    new Dir(@"e-verse.Navisworks.SelectByRevitId",
+                                        new Files(@"..\e-verse.Navisworks.SelectByRevitId.2022\bin\Release\*.*"))),
                                   new Dir(@"2023",
-                                    new File(@"..\e-verse.Navisworks.ViewpointByLevel.Common\e-verse.Navisworks.ViewpointByLevel.addin"),
-                                    new Dir(@"e-verse.Navisworks.ViewpointByLevel",
-                                        new Files(@"..\e-verse.Navisworks.ViewpointByLevel.2023\bin\Release\*.*"))))
+                                    new File(@"..\e-verse.Navisworks.SelectByRevitId.Common\e-verse.Navisworks.SelectByRevitId.addin"),
+                                    new Dir(@"e-verse.Navisworks.SelectByRevitId",
+                                        new Files(@"..\e-verse.Navisworks.SelectByRevitId.2023\bin\Release\*.*"))))
                               );
 
-            project.GUID = new Guid("CA920446-C503-493F-8B3D-714340249796");
+            project.GUID = new Guid("97F50AF1-8856-4A5A-BD4B-7B62A451A6F0");
 
             // project.ManagedUI = ManagedUI.DefaultWpf; // all stock UI dialogs
 
@@ -62,7 +62,7 @@ namespace EVerse.Navisworks.SelectByRevitId.Installer
             {
                 Primary = { FileName = msiFile },
 
-                OutputFile = "e-verse.Navisworks.ViewpointByLevel.exe",
+                OutputFile = "e-verse.Navisworks.SelectByRevitId.exe",
                 IconFile = "Resources\\logo.ico",
 
                 VersionInfo = new VersionInformation("1.0.0.0")
