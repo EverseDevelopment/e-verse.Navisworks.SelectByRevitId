@@ -6,186 +6,197 @@
 </auto-generated>
 -->
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-  <Product Id="97f50af1-8856-4a5a-bd4b-7b62b451a6f1" Name="e-verse.Navisworks.SelectByRevitId" Language="1033" Codepage="Windows-1252" Version="1.0.0.0" UpgradeCode="97f50af1-8856-4a5a-bd4b-7b62a451a6f0" Manufacturer="silic">
+  <Product Id="be438d17-fc91-40d4-822a-9e959666a1fe" Name="e-verse.Navisworks.SelectByRevitId" Language="1033" Codepage="Windows-1252" Version="1.0.0.0" UpgradeCode="be438d17-fc91-40d4-822a-9e958666a1fd" Manufacturer="silic">
     <Package InstallerVersion="200" Compressed="yes" SummaryCodepage="Windows-1252" Languages="1033" />
     <Media Id="1" Cabinet="_...rse.Navisworks.SelectByRevitId.cab" EmbedCab="yes" />
 
     <Directory Id="TARGETDIR" Name="SourceDir">
-      <Directory Id="AppDataFolder" Name="AppDataFolder">
-        <Directory Id="AppDataFolder.Autodesk" Name="Autodesk">
-          <Directory Id="INSTALLDIR" Name="ApplicationPlugins">
-            <Directory Id="INSTALLDIR.2018" Name="2018">
+      <Directory Id="TARGETDIR1" Name="ABSOLUTEPATH">
+        <Directory Id="INSTALLDIR" Name="e-verse.Navisworks.SelectByRevitId.bundle">
 
-              <Component Id="Component.e2dverse.Navisworks.SelectByRevitId.addin_947178717" Guid="97f50af1-8856-4a5a-bd4b-7b6216e79b03">
-                <File Id="e2dverse.Navisworks.SelectByRevitId.addin_947178717" Source="..\e-verse.Navisworks.SelectByRevitId.Common\e-verse.Navisworks.SelectByRevitId.addin" />
-                <RemoveFolder Id="INSTALLDIR.2018" On="uninstall" />
+          <Component Id="Component.PackageContents.xml_3068001685" Guid="be438d17-fc91-40d4-822a-9e95b9f9a3f4">
+            <File Id="PackageContents.xml_3068001685" Source="..\e-verse.Navisworks.SelectByRevitId.bundle\PackageContents.xml" />
+          </Component>
 
-                <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
-                  <RegistryValue Value="0" Type="string" KeyPath="yes" />
-                </RegistryKey>
-              </Component>
+          <Directory Id="INSTALLDIR.Contents" Name="Contents">
+            <Directory Id="INSTALLDIR.Contents.dlls" Name="dlls">
+              <Directory Id="INSTALLDIR.Contents.dlls.2018" Name="2018">
 
-              <Directory Id="INSTALLDIR.2018.e2dverse.Navisworks.SelectByRevitId" Name="e-verse.Navisworks.SelectByRevitId">
-
-                <Component Id="Component.INSTALLDIR.2018.e2dverse.Navisworks.SelectByRevitId.EmptyDirectory" Guid="97f50af1-8856-4a5a-bd4b-7b627673ec11">
-                  <CreateFolder />
-                  <RemoveFolder Id="INSTALLDIR.2018.e2dverse.Navisworks.SelectByRevitId" On="uninstall" />
-
-                  <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
-                    <RegistryValue Value="0" Type="string" KeyPath="yes" />
-                  </RegistryKey>
+                <Component Id="Component.e2dverse.Navisworks.SelectByRevitId.dll_3046487566" Guid="be438d17-fc91-40d4-822a-9e95ce8fcd88">
+                  <File Id="e2dverse.Navisworks.SelectByRevitId.dll_3046487566" Source="..\e-verse.Navisworks.SelectByRevitId.bundle\Contents\dlls\2018\e-verse.Navisworks.SelectByRevitId.dll" />
                 </Component>
 
+                <Directory Id="INSTALLDIR.Contents.dlls.2018.en2dUS" Name="en-US">
+
+                  <Component Id="Component.INSTALLDIR.Contents.dlls.2018.en2dUS.EmptyDirectory" Guid="be438d17-fc91-40d4-822a-9e9504c00b07" KeyPath="yes">
+                    <CreateFolder />
+                    <RemoveFolder Id="INSTALLDIR.Contents.dlls.2018.en2dUS" On="uninstall" />
+                  </Component>
+
+                </Directory>
+
+                <Directory Id="INSTALLDIR.Contents.dlls.2018.Images" Name="Images">
+
+                  <Component Id="Component.INSTALLDIR.Contents.dlls.2018.Images.EmptyDirectory" Guid="be438d17-fc91-40d4-822a-9e95ee8295fd" KeyPath="yes">
+                    <CreateFolder />
+                    <RemoveFolder Id="INSTALLDIR.Contents.dlls.2018.Images" On="uninstall" />
+                  </Component>
+
+                </Directory>
               </Directory>
-            </Directory>
 
-            <Directory Id="INSTALLDIR.2019" Name="2019">
+              <Directory Id="INSTALLDIR.Contents.dlls.2019" Name="2019">
 
-              <Component Id="Component.e2dverse.Navisworks.SelectByRevitId.addin_2101417966" Guid="97f50af1-8856-4a5a-bd4b-7b62251d6a71">
-                <File Id="e2dverse.Navisworks.SelectByRevitId.addin_2101417966" Source="..\e-verse.Navisworks.SelectByRevitId.Common\e-verse.Navisworks.SelectByRevitId.addin" />
-                <RemoveFolder Id="INSTALLDIR.2019" On="uninstall" />
-
-                <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
-                  <RegistryValue Value="0" Type="string" KeyPath="yes" />
-                </RegistryKey>
-              </Component>
-
-              <Directory Id="INSTALLDIR.2019.e2dverse.Navisworks.SelectByRevitId" Name="e-verse.Navisworks.SelectByRevitId">
-
-                <Component Id="Component.INSTALLDIR.2019.e2dverse.Navisworks.SelectByRevitId.EmptyDirectory" Guid="97f50af1-8856-4a5a-bd4b-7b624ac4353c">
-                  <CreateFolder />
-                  <RemoveFolder Id="INSTALLDIR.2019.e2dverse.Navisworks.SelectByRevitId" On="uninstall" />
-
-                  <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
-                    <RegistryValue Value="0" Type="string" KeyPath="yes" />
-                  </RegistryKey>
+                <Component Id="Component.e2dverse.Navisworks.SelectByRevitId.dll_1900323605" Guid="be438d17-fc91-40d4-822a-9e9578fcd3e8">
+                  <File Id="e2dverse.Navisworks.SelectByRevitId.dll_1900323605" Source="..\e-verse.Navisworks.SelectByRevitId.bundle\Contents\dlls\2019\e-verse.Navisworks.SelectByRevitId.dll" />
                 </Component>
 
+                <Directory Id="INSTALLDIR.Contents.dlls.2019.en2dUS" Name="en-US">
+
+                  <Component Id="Component.INSTALLDIR.Contents.dlls.2019.en2dUS.EmptyDirectory" Guid="be438d17-fc91-40d4-822a-9e953a515e10" KeyPath="yes">
+                    <CreateFolder />
+                    <RemoveFolder Id="INSTALLDIR.Contents.dlls.2019.en2dUS" On="uninstall" />
+                  </Component>
+
+                </Directory>
+
+                <Directory Id="INSTALLDIR.Contents.dlls.2019.Images" Name="Images">
+
+                  <Component Id="Component.INSTALLDIR.Contents.dlls.2019.Images.EmptyDirectory" Guid="be438d17-fc91-40d4-822a-9e952f311440" KeyPath="yes">
+                    <CreateFolder />
+                    <RemoveFolder Id="INSTALLDIR.Contents.dlls.2019.Images" On="uninstall" />
+                  </Component>
+
+                </Directory>
               </Directory>
-            </Directory>
 
-            <Directory Id="INSTALLDIR.2020" Name="2020">
+              <Directory Id="INSTALLDIR.Contents.dlls.2020" Name="2020">
 
-              <Component Id="Component.e2dverse.Navisworks.SelectByRevitId.addin_3212547915" Guid="97f50af1-8856-4a5a-bd4b-7b62fc4d7f0f">
-                <File Id="e2dverse.Navisworks.SelectByRevitId.addin_3212547915" Source="..\e-verse.Navisworks.SelectByRevitId.Common\e-verse.Navisworks.SelectByRevitId.addin" />
-                <RemoveFolder Id="INSTALLDIR.2020" On="uninstall" />
-
-                <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
-                  <RegistryValue Value="0" Type="string" KeyPath="yes" />
-                </RegistryKey>
-              </Component>
-
-              <Directory Id="INSTALLDIR.2020.e2dverse.Navisworks.SelectByRevitId" Name="e-verse.Navisworks.SelectByRevitId">
-
-                <Component Id="Component.INSTALLDIR.2020.e2dverse.Navisworks.SelectByRevitId.EmptyDirectory" Guid="97f50af1-8856-4a5a-bd4b-7b628aba29ad">
-                  <CreateFolder />
-                  <RemoveFolder Id="INSTALLDIR.2020.e2dverse.Navisworks.SelectByRevitId" On="uninstall" />
-
-                  <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
-                    <RegistryValue Value="0" Type="string" KeyPath="yes" />
-                  </RegistryKey>
+                <Component Id="Component.e2dverse.Navisworks.SelectByRevitId.dll_890888900" Guid="be438d17-fc91-40d4-822a-9e95fc870774">
+                  <File Id="e2dverse.Navisworks.SelectByRevitId.dll_890888900" Source="..\e-verse.Navisworks.SelectByRevitId.bundle\Contents\dlls\2020\e-verse.Navisworks.SelectByRevitId.dll" />
                 </Component>
 
+                <Directory Id="INSTALLDIR.Contents.dlls.2020.en2dUS" Name="en-US">
+
+                  <Component Id="Component.INSTALLDIR.Contents.dlls.2020.en2dUS.EmptyDirectory" Guid="be438d17-fc91-40d4-822a-9e95917aa527" KeyPath="yes">
+                    <CreateFolder />
+                    <RemoveFolder Id="INSTALLDIR.Contents.dlls.2020.en2dUS" On="uninstall" />
+                  </Component>
+
+                </Directory>
+
+                <Directory Id="INSTALLDIR.Contents.dlls.2020.Images" Name="Images">
+
+                  <Component Id="Component.INSTALLDIR.Contents.dlls.2020.Images.EmptyDirectory" Guid="be438d17-fc91-40d4-822a-9e9513e8183b" KeyPath="yes">
+                    <CreateFolder />
+                    <RemoveFolder Id="INSTALLDIR.Contents.dlls.2020.Images" On="uninstall" />
+                  </Component>
+
+                </Directory>
               </Directory>
-            </Directory>
 
-            <Directory Id="INSTALLDIR.2021" Name="2021">
+              <Directory Id="INSTALLDIR.Contents.dlls.2021" Name="2021">
 
-              <Component Id="Component.e2dverse.Navisworks.SelectByRevitId.addin_294561891" Guid="97f50af1-8856-4a5a-bd4b-7b6278e4ba5b">
-                <File Id="e2dverse.Navisworks.SelectByRevitId.addin_294561891" Source="..\e-verse.Navisworks.SelectByRevitId.Common\e-verse.Navisworks.SelectByRevitId.addin" />
-                <RemoveFolder Id="INSTALLDIR.2021" On="uninstall" />
-
-                <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
-                  <RegistryValue Value="0" Type="string" KeyPath="yes" />
-                </RegistryKey>
-              </Component>
-
-              <Directory Id="INSTALLDIR.2021.e2dverse.Navisworks.SelectByRevitId" Name="e-verse.Navisworks.SelectByRevitId">
-
-                <Component Id="Component.INSTALLDIR.2021.e2dverse.Navisworks.SelectByRevitId.EmptyDirectory" Guid="97f50af1-8856-4a5a-bd4b-7b62d97d48b7">
-                  <CreateFolder />
-                  <RemoveFolder Id="INSTALLDIR.2021.e2dverse.Navisworks.SelectByRevitId" On="uninstall" />
-
-                  <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
-                    <RegistryValue Value="0" Type="string" KeyPath="yes" />
-                  </RegistryKey>
+                <Component Id="Component.e2dverse.Navisworks.SelectByRevitId.dll_1879022035" Guid="be438d17-fc91-40d4-822a-9e9586fd9f00">
+                  <File Id="e2dverse.Navisworks.SelectByRevitId.dll_1879022035" Source="..\e-verse.Navisworks.SelectByRevitId.bundle\Contents\dlls\2021\e-verse.Navisworks.SelectByRevitId.dll" />
                 </Component>
 
+                <Directory Id="INSTALLDIR.Contents.dlls.2021.en2dUS" Name="en-US">
+
+                  <Component Id="Component.INSTALLDIR.Contents.dlls.2021.en2dUS.EmptyDirectory" Guid="be438d17-fc91-40d4-822a-9e951bd8c150" KeyPath="yes">
+                    <CreateFolder />
+                    <RemoveFolder Id="INSTALLDIR.Contents.dlls.2021.en2dUS" On="uninstall" />
+                  </Component>
+
+                </Directory>
+
+                <Directory Id="INSTALLDIR.Contents.dlls.2021.Images" Name="Images">
+
+                  <Component Id="Component.INSTALLDIR.Contents.dlls.2021.Images.EmptyDirectory" Guid="be438d17-fc91-40d4-822a-9e95694e57de" KeyPath="yes">
+                    <CreateFolder />
+                    <RemoveFolder Id="INSTALLDIR.Contents.dlls.2021.Images" On="uninstall" />
+                  </Component>
+
+                </Directory>
               </Directory>
-            </Directory>
 
-            <Directory Id="INSTALLDIR.2022" Name="2022">
+              <Directory Id="INSTALLDIR.Contents.dlls.2022" Name="2022">
 
-              <Component Id="Component.e2dverse.Navisworks.SelectByRevitId.addin_2649767630" Guid="97f50af1-8856-4a5a-bd4b-7b62b56de5a3">
-                <File Id="e2dverse.Navisworks.SelectByRevitId.addin_2649767630" Source="..\e-verse.Navisworks.SelectByRevitId.Common\e-verse.Navisworks.SelectByRevitId.addin" />
-                <RemoveFolder Id="INSTALLDIR.2022" On="uninstall" />
-
-                <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
-                  <RegistryValue Value="0" Type="string" KeyPath="yes" />
-                </RegistryKey>
-              </Component>
-
-              <Directory Id="INSTALLDIR.2022.e2dverse.Navisworks.SelectByRevitId" Name="e-verse.Navisworks.SelectByRevitId">
-
-                <Component Id="Component.INSTALLDIR.2022.e2dverse.Navisworks.SelectByRevitId.EmptyDirectory" Guid="97f50af1-8856-4a5a-bd4b-7b62642b577c">
-                  <CreateFolder />
-                  <RemoveFolder Id="INSTALLDIR.2022.e2dverse.Navisworks.SelectByRevitId" On="uninstall" />
-
-                  <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
-                    <RegistryValue Value="0" Type="string" KeyPath="yes" />
-                  </RegistryKey>
+                <Component Id="Component.e2dverse.Navisworks.SelectByRevitId.dll_1925296488" Guid="be438d17-fc91-40d4-822a-9e95295aa7b4">
+                  <File Id="e2dverse.Navisworks.SelectByRevitId.dll_1925296488" Source="..\e-verse.Navisworks.SelectByRevitId.bundle\Contents\dlls\2022\e-verse.Navisworks.SelectByRevitId.dll" />
                 </Component>
 
+                <Directory Id="INSTALLDIR.Contents.dlls.2022.en2dUS" Name="en-US">
+
+                  <Component Id="Component.INSTALLDIR.Contents.dlls.2022.en2dUS.EmptyDirectory" Guid="be438d17-fc91-40d4-822a-9e95757614f1" KeyPath="yes">
+                    <CreateFolder />
+                    <RemoveFolder Id="INSTALLDIR.Contents.dlls.2022.en2dUS" On="uninstall" />
+                  </Component>
+
+                </Directory>
+
+                <Directory Id="INSTALLDIR.Contents.dlls.2022.Images" Name="Images">
+
+                  <Component Id="Component.INSTALLDIR.Contents.dlls.2022.Images.EmptyDirectory" Guid="be438d17-fc91-40d4-822a-9e95bd53cc7e" KeyPath="yes">
+                    <CreateFolder />
+                    <RemoveFolder Id="INSTALLDIR.Contents.dlls.2022.Images" On="uninstall" />
+                  </Component>
+
+                </Directory>
               </Directory>
-            </Directory>
 
-            <Directory Id="INSTALLDIR.2023" Name="2023">
+              <Directory Id="INSTALLDIR.Contents.dlls.2023" Name="2023">
 
-              <Component Id="Component.e2dverse.Navisworks.SelectByRevitId.addin_3393343124" Guid="97f50af1-8856-4a5a-bd4b-7b629417b2ea">
-                <File Id="e2dverse.Navisworks.SelectByRevitId.addin_3393343124" Source="..\e-verse.Navisworks.SelectByRevitId.Common\e-verse.Navisworks.SelectByRevitId.addin" />
-                <RemoveFolder Id="INSTALLDIR.2023" On="uninstall" />
-
-                <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
-                  <RegistryValue Value="0" Type="string" KeyPath="yes" />
-                </RegistryKey>
-              </Component>
-
-              <Directory Id="INSTALLDIR.2023.e2dverse.Navisworks.SelectByRevitId" Name="e-verse.Navisworks.SelectByRevitId">
-
-                <Component Id="Component.INSTALLDIR.2023.e2dverse.Navisworks.SelectByRevitId.EmptyDirectory" Guid="97f50af1-8856-4a5a-bd4b-7b62e05fed0c">
-                  <CreateFolder />
-                  <RemoveFolder Id="INSTALLDIR.2023.e2dverse.Navisworks.SelectByRevitId" On="uninstall" />
-
-                  <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
-                    <RegistryValue Value="0" Type="string" KeyPath="yes" />
-                  </RegistryKey>
+                <Component Id="Component.e2dverse.Navisworks.SelectByRevitId.dll_4204644365" Guid="be438d17-fc91-40d4-822a-9e95c575c53e">
+                  <File Id="e2dverse.Navisworks.SelectByRevitId.dll_4204644365" Source="..\e-verse.Navisworks.SelectByRevitId.bundle\Contents\dlls\2023\e-verse.Navisworks.SelectByRevitId.dll" />
                 </Component>
 
+                <Directory Id="INSTALLDIR.Contents.dlls.2023.en2dUS" Name="en-US">
+
+                  <Component Id="Component.INSTALLDIR.Contents.dlls.2023.en2dUS.EmptyDirectory" Guid="be438d17-fc91-40d4-822a-9e956496226a" KeyPath="yes">
+                    <CreateFolder />
+                    <RemoveFolder Id="INSTALLDIR.Contents.dlls.2023.en2dUS" On="uninstall" />
+                  </Component>
+
+                </Directory>
+
+                <Directory Id="INSTALLDIR.Contents.dlls.2023.Images" Name="Images">
+
+                  <Component Id="Component.INSTALLDIR.Contents.dlls.2023.Images.EmptyDirectory" Guid="be438d17-fc91-40d4-822a-9e95c269dd39" KeyPath="yes">
+                    <CreateFolder />
+                    <RemoveFolder Id="INSTALLDIR.Contents.dlls.2023.Images" On="uninstall" />
+                  </Component>
+
+                </Directory>
               </Directory>
+
+              <Component Id="INSTALLDIR.Contents.dlls" Guid="be438d17-fc91-40d4-822a-9e951efd2dcc" KeyPath="yes">
+                <CreateFolder />
+                <RemoveFolder Id="INSTALLDIR.Contents.dlls" On="uninstall" />
+              </Component>
+
             </Directory>
 
-            <Component Id="INSTALLDIR" Guid="97f50af1-8856-4a5a-bd4b-7b624f6e0bc8">
+            <Component Id="INSTALLDIR.Contents" Guid="be438d17-fc91-40d4-822a-9e957a9a6cd6" KeyPath="yes">
               <CreateFolder />
-              <RemoveFolder Id="INSTALLDIR" On="uninstall" />
-
-              <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
-                <RegistryValue Value="0" Type="string" KeyPath="yes" />
-              </RegistryKey>
+              <RemoveFolder Id="INSTALLDIR.Contents" On="uninstall" />
             </Component>
 
           </Directory>
-
-          <Component Id="AppDataFolder.Autodesk" Guid="97f50af1-8856-4a5a-bd4b-7b6247af34af">
-            <CreateFolder />
-            <RemoveFolder Id="AppDataFolder.Autodesk" On="uninstall" />
-
-            <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
-              <RegistryValue Value="0" Type="string" KeyPath="yes" />
-            </RegistryKey>
-          </Component>
-
         </Directory>
+
+        <Component Id="TARGETDIR1" Guid="be438d17-fc91-40d4-822a-9e95f9451170" KeyPath="yes">
+          <CreateFolder />
+          <RemoveFolder Id="TARGETDIR1" On="uninstall" />
+        </Component>
+
       </Directory>
+
+      <Component Id="TARGETDIR" Guid="be438d17-fc91-40d4-822a-9e95f9361170" KeyPath="yes">
+        <CreateFolder />
+        <RemoveFolder Id="TARGETDIR" On="uninstall" />
+      </Component>
+
     </Directory>
 
     <UI />
@@ -197,6 +208,7 @@
     <CustomAction Id="WixSharp_InitRuntime_Action" BinaryKey="WixSharp_InitRuntime_Action_File" DllEntry="WixSharp_InitRuntime_Action" Return="check" Execute="immediate" />
     <CustomAction Id="Set_CancelRequestHandler_Props" Property="CancelRequestHandler" Value="UpgradeCode=[UpgradeCode];INSTALLDIR=[INSTALLDIR];UILevel=[UILevel];ProductCode=[ProductCode];ADDLOCAL=[ADDLOCAL];ADDFEATURES=[ADDFEATURES]" />
     <CustomAction Id="CancelRequestHandler" BinaryKey="WixSharp_InitRuntime_Action_File" DllEntry="CancelRequestHandler" Return="check" Impersonate="no" Execute="deferred" />
+    <CustomAction Id="Set_DirAbsolutePath" Property="TARGETDIR1" Value="C:\Users\silic\AppData\Roaming\Autodesk\ApplicationPlugins" />
 
     <Binary Id="WixSharp_InitRuntime_Action_File" SourceFile="WixSharp.CA.dll" />
     <Binary Id="WixSharp_UIText" SourceFile="e-verse.Navisworks.SelectByRevitId.wxl" />
@@ -211,29 +223,44 @@
     <Property Id="UAC_WARNING" Value="Please wait for UAC prompt to appear.&#xD;&#xA;&#xD;&#xA;If it appears minimized then activate it from the taskbar." />
     <Property Id="WixSharp_InstallDialogs" Value="e-verse.Navisworks.SelectByRevitId.Installer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|EVerse.Navisworks.SelectByRevitId.Installer.WelcomeDialog&#xA;e-verse.Navisworks.SelectByRevitId.Installer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|EVerse.Navisworks.SelectByRevitId.Installer.LicenceDialog&#xA;e-verse.Navisworks.SelectByRevitId.Installer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|EVerse.Navisworks.SelectByRevitId.Installer.ProgressDialog&#xA;e-verse.Navisworks.SelectByRevitId.Installer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|EVerse.Navisworks.SelectByRevitId.Installer.ExitDialog" />
     <Property Id="WixSharp_ModifyDialogs" Value="e-verse.Navisworks.SelectByRevitId.Installer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|EVerse.Navisworks.SelectByRevitId.Installer.MaintenanceTypeDialog&#xA;e-verse.Navisworks.SelectByRevitId.Installer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|EVerse.Navisworks.SelectByRevitId.Installer.FeaturesDialog&#xA;e-verse.Navisworks.SelectByRevitId.Installer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|EVerse.Navisworks.SelectByRevitId.Installer.ProgressDialog&#xA;e-verse.Navisworks.SelectByRevitId.Installer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|EVerse.Navisworks.SelectByRevitId.Installer.ExitDialog" />
+    <Property Id="INSTALLDIR_ABSOLUTEPATH" Value="C:\Users\silic\AppData\Roaming\Autodesk\ApplicationPlugins" />
 
     <Feature Id="Complete" Title="Complete" Absent="allow" Level="1">
-      <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.addin_947178717" />
-      <ComponentRef Id="Component.INSTALLDIR.2018.e2dverse.Navisworks.SelectByRevitId.EmptyDirectory" />
-      <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.addin_2101417966" />
-      <ComponentRef Id="Component.INSTALLDIR.2019.e2dverse.Navisworks.SelectByRevitId.EmptyDirectory" />
-      <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.addin_3212547915" />
-      <ComponentRef Id="Component.INSTALLDIR.2020.e2dverse.Navisworks.SelectByRevitId.EmptyDirectory" />
-      <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.addin_294561891" />
-      <ComponentRef Id="Component.INSTALLDIR.2021.e2dverse.Navisworks.SelectByRevitId.EmptyDirectory" />
-      <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.addin_2649767630" />
-      <ComponentRef Id="Component.INSTALLDIR.2022.e2dverse.Navisworks.SelectByRevitId.EmptyDirectory" />
-      <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.addin_3393343124" />
-      <ComponentRef Id="Component.INSTALLDIR.2023.e2dverse.Navisworks.SelectByRevitId.EmptyDirectory" />
-      <ComponentRef Id="INSTALLDIR" />
-      <ComponentRef Id="AppDataFolder.Autodesk" />
+      <ComponentRef Id="Component.PackageContents.xml_3068001685" />
+      <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.dll_3046487566" />
+      <ComponentRef Id="Component.INSTALLDIR.Contents.dlls.2018.en2dUS.EmptyDirectory" />
+      <ComponentRef Id="Component.INSTALLDIR.Contents.dlls.2018.Images.EmptyDirectory" />
+      <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.dll_1900323605" />
+      <ComponentRef Id="Component.INSTALLDIR.Contents.dlls.2019.en2dUS.EmptyDirectory" />
+      <ComponentRef Id="Component.INSTALLDIR.Contents.dlls.2019.Images.EmptyDirectory" />
+      <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.dll_890888900" />
+      <ComponentRef Id="Component.INSTALLDIR.Contents.dlls.2020.en2dUS.EmptyDirectory" />
+      <ComponentRef Id="Component.INSTALLDIR.Contents.dlls.2020.Images.EmptyDirectory" />
+      <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.dll_1879022035" />
+      <ComponentRef Id="Component.INSTALLDIR.Contents.dlls.2021.en2dUS.EmptyDirectory" />
+      <ComponentRef Id="Component.INSTALLDIR.Contents.dlls.2021.Images.EmptyDirectory" />
+      <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.dll_1925296488" />
+      <ComponentRef Id="Component.INSTALLDIR.Contents.dlls.2022.en2dUS.EmptyDirectory" />
+      <ComponentRef Id="Component.INSTALLDIR.Contents.dlls.2022.Images.EmptyDirectory" />
+      <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.dll_4204644365" />
+      <ComponentRef Id="Component.INSTALLDIR.Contents.dlls.2023.en2dUS.EmptyDirectory" />
+      <ComponentRef Id="Component.INSTALLDIR.Contents.dlls.2023.Images.EmptyDirectory" />
+      <ComponentRef Id="INSTALLDIR.Contents.dlls" />
+      <ComponentRef Id="INSTALLDIR.Contents" />
+      <ComponentRef Id="TARGETDIR1" />
+      <ComponentRef Id="TARGETDIR" />
     </Feature>
 
     <InstallExecuteSequence>
       <Custom Action="WixSharp_InitRuntime_Action" Before="AppSearch"> (1) </Custom>
       <Custom Action="Set_CancelRequestHandler_Props" Before="InstallFinalize" />
       <Custom Action="CancelRequestHandler" After="Set_CancelRequestHandler_Props"> (NOT (REMOVE="ALL")) </Custom>
+      <Custom Action="Set_DirAbsolutePath" Before="AppSearch">(NOT Installed) AND (UILevel &lt; 5) AND (TARGETDIR1 = ABSOLUTEPATH)</Custom>
     </InstallExecuteSequence>
+
+    <InstallUISequence>
+      <Custom Action="Set_DirAbsolutePath" Before="AppSearch">(NOT Installed) AND (UILevel = 5) AND (TARGETDIR1 = ABSOLUTEPATH)</Custom>
+    </InstallUISequence>
 
   </Product>
 </Wix>

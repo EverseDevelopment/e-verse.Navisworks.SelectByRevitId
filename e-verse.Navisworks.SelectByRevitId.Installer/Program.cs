@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
 using WixSharp;
 using WixSharp.Nsis;
 
@@ -8,23 +10,21 @@ namespace EVerse.Navisworks.SelectByRevitId.Installer
     {
         private static void Main()
         {
-            string bundleDirectory = @"%AppData%\Autodesk\ApplicationPlugins\e-verse.Navisworks.SelectByRevitId.bundle";
-            var sourceDirectory = @"..\e-verse.Navisworks.SelectByRevitId.bundle\";
-            //var project = new ManagedProject("e -verse.Navisworks.SelectByRevitId",
-            //                  new Dir(@"%AppData%\Autodesk\ApplicationPlugins\",
-            //                      new Dir(@"2018",new File(@"..\e-verse.Navisworks.SelectByRevitId.Common\e-verse.Navisworks.SelectByRevitId.addin"),new Dir(@"e-verse.Navisworks.SelectByRevitId",new Files(@"..\e-verse.Navisworks.SelectByRevitId.2018\bin\Release\*.*"))),
-            //                      new Dir(@"2019",new File(@"..\e-verse.Navisworks.SelectByRevitId.Common\e-verse.Navisworks.SelectByRevitId.addin"),new Dir(@"e-verse.Navisworks.SelectByRevitId",new Files(@"..\e-verse.Navisworks.SelectByRevitId.2019\bin\Release\*.*"))),
-            //                      new Dir(@"2020",new File(@"..\e-verse.Navisworks.SelectByRevitId.Common\e-verse.Navisworks.SelectByRevitId.addin"),new Dir(@"e-verse.Navisworks.SelectByRevitId",new Files(@"..\e-verse.Navisworks.SelectByRevitId.2020\bin\Release\*.*"))),
-            //                      new Dir(@"2021",new File(@"..\e-verse.Navisworks.SelectByRevitId.Common\e-verse.Navisworks.SelectByRevitId.addin"),new Dir(@"e-verse.Navisworks.SelectByRevitId",new Files(@"..\e-verse.Navisworks.SelectByRevitId.2021\bin\Release\*.*"))),
-            //                      new Dir(@"2022",new File(@"..\e-verse.Navisworks.SelectByRevitId.Common\e-verse.Navisworks.SelectByRevitId.addin"),new Dir(@"e-verse.Navisworks.SelectByRevitId",new Files(@"..\e-verse.Navisworks.SelectByRevitId.2022\bin\Release\*.*"))),
-            //                      new Dir(@"2023",new File(@"..\e-verse.Navisworks.SelectByRevitId.Common\e-verse.Navisworks.SelectByRevitId.addin"),new Dir(@"e-verse.Navisworks.SelectByRevitId",new Files(@"..\e-verse.Navisworks.SelectByRevitId.2023\bin\Release\*.*")))
-            //                      ));
-            var project = new ManagedProject("e-verse.Navisworks.SelectByRevitId", new Dir(bundleDirectory, new Files(sourceDirectory))
-            {
-                AttributesDefinition = "Component:SharedDllRefCount=yes", // set the shared DLL ref count attribute
-                                                                          // add any additional files or subdirectories to be included in the installation directory
-            });
-            project.GUID = new Guid("97F50AF1-8856-4A5A-BD4B-7B62A451A6F0");
+            // Get the directory path of the solution
+            // Get the directory path of the current executable
+            var exeDirectory = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
+
+            // Get the solution directory path by finding the first .sln file in the parent directories
+            var solutionDirectory = Directory.GetParent(exeDirectory).Parent.Parent.FullName;
+
+            // Get the folder path by combining the solution directory path with the folder name
+            var sourceFolder = Path.Combine(solutionDirectory, "e-verse.Navisworks.SelectByRevitId.bundle");
+            var files = Files.FromBuildDir(sourceFolder);
+            var destinationDirectory = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Autodesk", "ApplicationPlugins");
+
+            // Create the project
+            var project = new ManagedProject("e-verse.Navisworks.SelectByRevitId", new Dir(@destinationDirectory, new Dir(@"e-verse.Navisworks.SelectByRevitId.bundle", files)));
+
 
             // project.ManagedUI = ManagedUI.DefaultWpf; // all stock UI dialogs
 
