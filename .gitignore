@@ -363,3 +363,5 @@ MigrationBackup/
 FodyWeavers.xsd
 /EVerse.Navisworks.Plugin.bundle/Contents/dlls
 /e-verse.Navisworks.SelectByRevitId.bundle
+/e-verse.Navisworks.SelectByRevitId.Installer/e-verse.Navisworks.SelectByRevitId.msi
+/e-verse.Navisworks.SelectByRevitId.Installer/e-verse.Navisworks.SelectByRevitId.exe
