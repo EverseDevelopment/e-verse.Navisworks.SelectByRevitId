@@ -7,7 +7,7 @@
 ; (To generate a new GUID, click Tools | Generate GUID inside the IDE.)
 AppId={{C119AAE0-E17C-414E-8311-62DF3645C836}
 AppName=SelectByRevitId  
-AppVersion=1.0.6
+AppVersion=1.0.7
 AppPublisher=e-verse
 AppPublisherURL=-
 AppSupportURL=-
