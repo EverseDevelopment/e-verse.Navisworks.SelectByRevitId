@@ -6,7 +6,7 @@
 </auto-generated>
 -->
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-  <Product Id="be438d17-fc91-40d4-822a-9e959666a1fe" Name="e-verse.Navisworks.SelectByRevitId" Language="1033" Codepage="Windows-1252" Version="1.0.0.0" UpgradeCode="be438d17-fc91-40d4-822a-9e958666a1fd" Manufacturer="silic">
+  <Product Id="2a033792-41f2-4a07-8a1b-f3e0e56f777d" Name="e-verse.Navisworks.SelectByRevitId" Language="1033" Codepage="Windows-1252" Version="1.0.0.0" UpgradeCode="2a033792-41f2-4a07-8a1b-f3e0d56f777c" Manufacturer="silic">
     <Package InstallerVersion="200" Compressed="yes" SummaryCodepage="Windows-1252" Languages="1033" />
     <Media Id="1" Cabinet="_...rse.Navisworks.SelectByRevitId.cab" EmbedCab="yes" />
 
@@ -14,7 +14,7 @@
       <Directory Id="TARGETDIR1" Name="ABSOLUTEPATH">
         <Directory Id="INSTALLDIR" Name="e-verse.Navisworks.SelectByRevitId.bundle">
 
-          <Component Id="Component.PackageContents.xml_3068001685" Guid="be438d17-fc91-40d4-822a-9e95b9f9a3f4">
+          <Component Id="Component.PackageContents.xml_3068001685" Guid="2a033792-41f2-4a07-8a1b-f3e008027973" SharedDllRefCount="yes">
             <File Id="PackageContents.xml_3068001685" Source="..\e-verse.Navisworks.SelectByRevitId.bundle\PackageContents.xml" />
           </Component>
 
@@ -22,24 +22,34 @@
             <Directory Id="INSTALLDIR.Contents.dlls" Name="dlls">
               <Directory Id="INSTALLDIR.Contents.dlls.2018" Name="2018">
 
-                <Component Id="Component.e2dverse.Navisworks.SelectByRevitId.dll_3046487566" Guid="be438d17-fc91-40d4-822a-9e95ce8fcd88">
+                <Component Id="Component.e2dverse.Navisworks.SelectByRevitId.addin_164265621" Guid="2a033792-41f2-4a07-8a1b-f3e0a9f22fee" SharedDllRefCount="yes">
+                  <File Id="e2dverse.Navisworks.SelectByRevitId.addin_164265621" Source="..\e-verse.Navisworks.SelectByRevitId.bundle\Contents\dlls\2018\e-verse.Navisworks.SelectByRevitId.addin" />
+                </Component>
+
+                <Component Id="Component.e2dverse.Navisworks.SelectByRevitId.dll_3046487566" Guid="2a033792-41f2-4a07-8a1b-f3e01d98a307" SharedDllRefCount="yes">
                   <File Id="e2dverse.Navisworks.SelectByRevitId.dll_3046487566" Source="..\e-verse.Navisworks.SelectByRevitId.bundle\Contents\dlls\2018\e-verse.Navisworks.SelectByRevitId.dll" />
                 </Component>
 
                 <Directory Id="INSTALLDIR.Contents.dlls.2018.en2dUS" Name="en-US">
 
-                  <Component Id="Component.INSTALLDIR.Contents.dlls.2018.en2dUS.EmptyDirectory" Guid="be438d17-fc91-40d4-822a-9e9504c00b07" KeyPath="yes">
-                    <CreateFolder />
-                    <RemoveFolder Id="INSTALLDIR.Contents.dlls.2018.en2dUS" On="uninstall" />
+                  <Component Id="Component.PluginRibbon.xaml_3192333406" Guid="2a033792-41f2-4a07-8a1b-f3e0e7073079" SharedDllRefCount="yes">
+                    <File Id="PluginRibbon.xaml_3192333406" Source="..\e-verse.Navisworks.SelectByRevitId.bundle\Contents\dlls\2018\en-US\PluginRibbon.xaml" />
                   </Component>
 
                 </Directory>
 
                 <Directory Id="INSTALLDIR.Contents.dlls.2018.Images" Name="Images">
 
-                  <Component Id="Component.INSTALLDIR.Contents.dlls.2018.Images.EmptyDirectory" Guid="be438d17-fc91-40d4-822a-9e95ee8295fd" KeyPath="yes">
-                    <CreateFolder />
-                    <RemoveFolder Id="INSTALLDIR.Contents.dlls.2018.Images" On="uninstall" />
+                  <Component Id="Component.Heart.jpg_3705265073" Guid="2a033792-41f2-4a07-8a1b-f3e08e0e5a35" SharedDllRefCount="yes">
+                    <File Id="Heart.jpg_3705265073" Source="..\e-verse.Navisworks.SelectByRevitId.bundle\Contents\dlls\2018\Images\Heart.jpg" />
+                  </Component>
+
+                  <Component Id="Component.RID_32.jpg_2476046926" Guid="2a033792-41f2-4a07-8a1b-f3e0c0d1804d" SharedDllRefCount="yes">
+                    <File Id="RID_32.jpg_2476046926" Source="..\e-verse.Navisworks.SelectByRevitId.bundle\Contents\dlls\2018\Images\RID_32.jpg" />
+                  </Component>
+
+                  <Component Id="Component.RID_Head.png_3293162255" Guid="2a033792-41f2-4a07-8a1b-f3e0f22b84af" SharedDllRefCount="yes">
+                    <File Id="RID_Head.png_3293162255" Source="..\e-verse.Navisworks.SelectByRevitId.bundle\Contents\dlls\2018\Images\RID_Head.png" />
                   </Component>
 
                 </Directory>
@@ -47,24 +57,34 @@
 
               <Directory Id="INSTALLDIR.Contents.dlls.2019" Name="2019">
 
-                <Component Id="Component.e2dverse.Navisworks.SelectByRevitId.dll_1900323605" Guid="be438d17-fc91-40d4-822a-9e9578fcd3e8">
+                <Component Id="Component.e2dverse.Navisworks.SelectByRevitId.addin_593273863" Guid="2a033792-41f2-4a07-8a1b-f3e05d67b046" SharedDllRefCount="yes">
+                  <File Id="e2dverse.Navisworks.SelectByRevitId.addin_593273863" Source="..\e-verse.Navisworks.SelectByRevitId.bundle\Contents\dlls\2019\e-verse.Navisworks.SelectByRevitId.addin" />
+                </Component>
+
+                <Component Id="Component.e2dverse.Navisworks.SelectByRevitId.dll_1900323605" Guid="2a033792-41f2-4a07-8a1b-f3e0c705a967" SharedDllRefCount="yes">
                   <File Id="e2dverse.Navisworks.SelectByRevitId.dll_1900323605" Source="..\e-verse.Navisworks.SelectByRevitId.bundle\Contents\dlls\2019\e-verse.Navisworks.SelectByRevitId.dll" />
                 </Component>
 
                 <Directory Id="INSTALLDIR.Contents.dlls.2019.en2dUS" Name="en-US">
 
-                  <Component Id="Component.INSTALLDIR.Contents.dlls.2019.en2dUS.EmptyDirectory" Guid="be438d17-fc91-40d4-822a-9e953a515e10" KeyPath="yes">
-                    <CreateFolder />
-                    <RemoveFolder Id="INSTALLDIR.Contents.dlls.2019.en2dUS" On="uninstall" />
+                  <Component Id="Component.PluginRibbon.xaml_3010506263" Guid="2a033792-41f2-4a07-8a1b-f3e084602608" SharedDllRefCount="yes">
+                    <File Id="PluginRibbon.xaml_3010506263" Source="..\e-verse.Navisworks.SelectByRevitId.bundle\Contents\dlls\2019\en-US\PluginRibbon.xaml" />
                   </Component>
 
                 </Directory>
 
                 <Directory Id="INSTALLDIR.Contents.dlls.2019.Images" Name="Images">
 
-                  <Component Id="Component.INSTALLDIR.Contents.dlls.2019.Images.EmptyDirectory" Guid="be438d17-fc91-40d4-822a-9e952f311440" KeyPath="yes">
-                    <CreateFolder />
-                    <RemoveFolder Id="INSTALLDIR.Contents.dlls.2019.Images" On="uninstall" />
+                  <Component Id="Component.Heart.jpg_1848655603" Guid="2a033792-41f2-4a07-8a1b-f3e0bdc9e7b6" SharedDllRefCount="yes">
+                    <File Id="Heart.jpg_1848655603" Source="..\e-verse.Navisworks.SelectByRevitId.bundle\Contents\dlls\2019\Images\Heart.jpg" />
+                  </Component>
+
+                  <Component Id="Component.RID_32.jpg_1357030419" Guid="2a033792-41f2-4a07-8a1b-f3e0a093247a" SharedDllRefCount="yes">
+                    <File Id="RID_32.jpg_1357030419" Source="..\e-verse.Navisworks.SelectByRevitId.bundle\Contents\dlls\2019\Images\RID_32.jpg" />
+                  </Component>
+
+                  <Component Id="Component.RID_Head.png_2601895858" Guid="2a033792-41f2-4a07-8a1b-f3e02baf897d" SharedDllRefCount="yes">
+                    <File Id="RID_Head.png_2601895858" Source="..\e-verse.Navisworks.SelectByRevitId.bundle\Contents\dlls\2019\Images\RID_Head.png" />
                   </Component>
 
                 </Directory>
@@ -72,24 +92,34 @@
 
               <Directory Id="INSTALLDIR.Contents.dlls.2020" Name="2020">
 
-                <Component Id="Component.e2dverse.Navisworks.SelectByRevitId.dll_890888900" Guid="be438d17-fc91-40d4-822a-9e95fc870774">
+                <Component Id="Component.e2dverse.Navisworks.SelectByRevitId.addin_981719245" Guid="2a033792-41f2-4a07-8a1b-f3e09612227a" SharedDllRefCount="yes">
+                  <File Id="e2dverse.Navisworks.SelectByRevitId.addin_981719245" Source="..\e-verse.Navisworks.SelectByRevitId.bundle\Contents\dlls\2020\e-verse.Navisworks.SelectByRevitId.addin" />
+                </Component>
+
+                <Component Id="Component.e2dverse.Navisworks.SelectByRevitId.dll_890888900" Guid="2a033792-41f2-4a07-8a1b-f3e04b90ddf3" SharedDllRefCount="yes">
                   <File Id="e2dverse.Navisworks.SelectByRevitId.dll_890888900" Source="..\e-verse.Navisworks.SelectByRevitId.bundle\Contents\dlls\2020\e-verse.Navisworks.SelectByRevitId.dll" />
                 </Component>
 
                 <Directory Id="INSTALLDIR.Contents.dlls.2020.en2dUS" Name="en-US">
 
-                  <Component Id="Component.INSTALLDIR.Contents.dlls.2020.en2dUS.EmptyDirectory" Guid="be438d17-fc91-40d4-822a-9e95917aa527" KeyPath="yes">
-                    <CreateFolder />
-                    <RemoveFolder Id="INSTALLDIR.Contents.dlls.2020.en2dUS" On="uninstall" />
+                  <Component Id="Component.PluginRibbon.xaml_919906444" Guid="2a033792-41f2-4a07-8a1b-f3e05b92fff5" SharedDllRefCount="yes">
+                    <File Id="PluginRibbon.xaml_919906444" Source="..\e-verse.Navisworks.SelectByRevitId.bundle\Contents\dlls\2020\en-US\PluginRibbon.xaml" />
                   </Component>
 
                 </Directory>
 
                 <Directory Id="INSTALLDIR.Contents.dlls.2020.Images" Name="Images">
 
-                  <Component Id="Component.INSTALLDIR.Contents.dlls.2020.Images.EmptyDirectory" Guid="be438d17-fc91-40d4-822a-9e9513e8183b" KeyPath="yes">
-                    <CreateFolder />
-                    <RemoveFolder Id="INSTALLDIR.Contents.dlls.2020.Images" On="uninstall" />
+                  <Component Id="Component.Heart.jpg_3477724757" Guid="2a033792-41f2-4a07-8a1b-f3e0c05672b4" SharedDllRefCount="yes">
+                    <File Id="Heart.jpg_3477724757" Source="..\e-verse.Navisworks.SelectByRevitId.bundle\Contents\dlls\2020\Images\Heart.jpg" />
+                  </Component>
+
+                  <Component Id="Component.RID_32.jpg_3880672806" Guid="2a033792-41f2-4a07-8a1b-f3e0767aa84f" SharedDllRefCount="yes">
+                    <File Id="RID_32.jpg_3880672806" Source="..\e-verse.Navisworks.SelectByRevitId.bundle\Contents\dlls\2020\Images\RID_32.jpg" />
+                  </Component>
+
+                  <Component Id="Component.RID_Head.png_165533629" Guid="2a033792-41f2-4a07-8a1b-f3e020cd9805" SharedDllRefCount="yes">
+                    <File Id="RID_Head.png_165533629" Source="..\e-verse.Navisworks.SelectByRevitId.bundle\Contents\dlls\2020\Images\RID_Head.png" />
                   </Component>
 
                 </Directory>
@@ -97,24 +127,34 @@
 
               <Directory Id="INSTALLDIR.Contents.dlls.2021" Name="2021">
 
-                <Component Id="Component.e2dverse.Navisworks.SelectByRevitId.dll_1879022035" Guid="be438d17-fc91-40d4-822a-9e9586fd9f00">
+                <Component Id="Component.e2dverse.Navisworks.SelectByRevitId.addin_30099448" Guid="2a033792-41f2-4a07-8a1b-f3e01cd97932" SharedDllRefCount="yes">
+                  <File Id="e2dverse.Navisworks.SelectByRevitId.addin_30099448" Source="..\e-verse.Navisworks.SelectByRevitId.bundle\Contents\dlls\2021\e-verse.Navisworks.SelectByRevitId.addin" />
+                </Component>
+
+                <Component Id="Component.e2dverse.Navisworks.SelectByRevitId.dll_1879022035" Guid="2a033792-41f2-4a07-8a1b-f3e0d506757f" SharedDllRefCount="yes">
                   <File Id="e2dverse.Navisworks.SelectByRevitId.dll_1879022035" Source="..\e-verse.Navisworks.SelectByRevitId.bundle\Contents\dlls\2021\e-verse.Navisworks.SelectByRevitId.dll" />
                 </Component>
 
                 <Directory Id="INSTALLDIR.Contents.dlls.2021.en2dUS" Name="en-US">
 
-                  <Component Id="Component.INSTALLDIR.Contents.dlls.2021.en2dUS.EmptyDirectory" Guid="be438d17-fc91-40d4-822a-9e951bd8c150" KeyPath="yes">
-                    <CreateFolder />
-                    <RemoveFolder Id="INSTALLDIR.Contents.dlls.2021.en2dUS" On="uninstall" />
+                  <Component Id="Component.PluginRibbon.xaml_4151844778" Guid="2a033792-41f2-4a07-8a1b-f3e046638069" SharedDllRefCount="yes">
+                    <File Id="PluginRibbon.xaml_4151844778" Source="..\e-verse.Navisworks.SelectByRevitId.bundle\Contents\dlls\2021\en-US\PluginRibbon.xaml" />
                   </Component>
 
                 </Directory>
 
                 <Directory Id="INSTALLDIR.Contents.dlls.2021.Images" Name="Images">
 
-                  <Component Id="Component.INSTALLDIR.Contents.dlls.2021.Images.EmptyDirectory" Guid="be438d17-fc91-40d4-822a-9e95694e57de" KeyPath="yes">
-                    <CreateFolder />
-                    <RemoveFolder Id="INSTALLDIR.Contents.dlls.2021.Images" On="uninstall" />
+                  <Component Id="Component.Heart.jpg_1867249217" Guid="2a033792-41f2-4a07-8a1b-f3e036d9aaaf" SharedDllRefCount="yes">
+                    <File Id="Heart.jpg_1867249217" Source="..\e-verse.Navisworks.SelectByRevitId.bundle\Contents\dlls\2021\Images\Heart.jpg" />
+                  </Component>
+
+                  <Component Id="Component.RID_32.jpg_2388109622" Guid="2a033792-41f2-4a07-8a1b-f3e0acb04ad9" SharedDllRefCount="yes">
+                    <File Id="RID_32.jpg_2388109622" Source="..\e-verse.Navisworks.SelectByRevitId.bundle\Contents\dlls\2021\Images\RID_32.jpg" />
+                  </Component>
+
+                  <Component Id="Component.RID_Head.png_2025250066" Guid="2a033792-41f2-4a07-8a1b-f3e0b2a0a1e9" SharedDllRefCount="yes">
+                    <File Id="RID_Head.png_2025250066" Source="..\e-verse.Navisworks.SelectByRevitId.bundle\Contents\dlls\2021\Images\RID_Head.png" />
                   </Component>
 
                 </Directory>
@@ -122,24 +162,34 @@
 
               <Directory Id="INSTALLDIR.Contents.dlls.2022" Name="2022">
 
-                <Component Id="Component.e2dverse.Navisworks.SelectByRevitId.dll_1925296488" Guid="be438d17-fc91-40d4-822a-9e95295aa7b4">
+                <Component Id="Component.e2dverse.Navisworks.SelectByRevitId.addin_3335886566" Guid="2a033792-41f2-4a07-8a1b-f3e009491a5c" SharedDllRefCount="yes">
+                  <File Id="e2dverse.Navisworks.SelectByRevitId.addin_3335886566" Source="..\e-verse.Navisworks.SelectByRevitId.bundle\Contents\dlls\2022\e-verse.Navisworks.SelectByRevitId.addin" />
+                </Component>
+
+                <Component Id="Component.e2dverse.Navisworks.SelectByRevitId.dll_1925296488" Guid="2a033792-41f2-4a07-8a1b-f3e078637d33" SharedDllRefCount="yes">
                   <File Id="e2dverse.Navisworks.SelectByRevitId.dll_1925296488" Source="..\e-verse.Navisworks.SelectByRevitId.bundle\Contents\dlls\2022\e-verse.Navisworks.SelectByRevitId.dll" />
                 </Component>
 
                 <Directory Id="INSTALLDIR.Contents.dlls.2022.en2dUS" Name="en-US">
 
-                  <Component Id="Component.INSTALLDIR.Contents.dlls.2022.en2dUS.EmptyDirectory" Guid="be438d17-fc91-40d4-822a-9e95757614f1" KeyPath="yes">
-                    <CreateFolder />
-                    <RemoveFolder Id="INSTALLDIR.Contents.dlls.2022.en2dUS" On="uninstall" />
+                  <Component Id="Component.PluginRibbon.xaml_3278404605" Guid="2a033792-41f2-4a07-8a1b-f3e0b21f7e51" SharedDllRefCount="yes">
+                    <File Id="PluginRibbon.xaml_3278404605" Source="..\e-verse.Navisworks.SelectByRevitId.bundle\Contents\dlls\2022\en-US\PluginRibbon.xaml" />
                   </Component>
 
                 </Directory>
 
                 <Directory Id="INSTALLDIR.Contents.dlls.2022.Images" Name="Images">
 
-                  <Component Id="Component.INSTALLDIR.Contents.dlls.2022.Images.EmptyDirectory" Guid="be438d17-fc91-40d4-822a-9e95bd53cc7e" KeyPath="yes">
-                    <CreateFolder />
-                    <RemoveFolder Id="INSTALLDIR.Contents.dlls.2022.Images" On="uninstall" />
+                  <Component Id="Component.Heart.jpg_1465425189" Guid="2a033792-41f2-4a07-8a1b-f3e040363222" SharedDllRefCount="yes">
+                    <File Id="Heart.jpg_1465425189" Source="..\e-verse.Navisworks.SelectByRevitId.bundle\Contents\dlls\2022\Images\Heart.jpg" />
+                  </Component>
+
+                  <Component Id="Component.RID_32.jpg_3687038325" Guid="2a033792-41f2-4a07-8a1b-f3e0c2452530" SharedDllRefCount="yes">
+                    <File Id="RID_32.jpg_3687038325" Source="..\e-verse.Navisworks.SelectByRevitId.bundle\Contents\dlls\2022\Images\RID_32.jpg" />
+                  </Component>
+
+                  <Component Id="Component.RID_Head.png_923603045" Guid="2a033792-41f2-4a07-8a1b-f3e02167345e" SharedDllRefCount="yes">
+                    <File Id="RID_Head.png_923603045" Source="..\e-verse.Navisworks.SelectByRevitId.bundle\Contents\dlls\2022\Images\RID_Head.png" />
                   </Component>
 
                 </Directory>
@@ -147,56 +197,42 @@
 
               <Directory Id="INSTALLDIR.Contents.dlls.2023" Name="2023">
 
-                <Component Id="Component.e2dverse.Navisworks.SelectByRevitId.dll_4204644365" Guid="be438d17-fc91-40d4-822a-9e95c575c53e">
+                <Component Id="Component.e2dverse.Navisworks.SelectByRevitId.addin_3151980047" Guid="2a033792-41f2-4a07-8a1b-f3e05e501325" SharedDllRefCount="yes">
+                  <File Id="e2dverse.Navisworks.SelectByRevitId.addin_3151980047" Source="..\e-verse.Navisworks.SelectByRevitId.bundle\Contents\dlls\2023\e-verse.Navisworks.SelectByRevitId.addin" />
+                </Component>
+
+                <Component Id="Component.e2dverse.Navisworks.SelectByRevitId.dll_4204644365" Guid="2a033792-41f2-4a07-8a1b-f3e0147e9bbd" SharedDllRefCount="yes">
                   <File Id="e2dverse.Navisworks.SelectByRevitId.dll_4204644365" Source="..\e-verse.Navisworks.SelectByRevitId.bundle\Contents\dlls\2023\e-verse.Navisworks.SelectByRevitId.dll" />
                 </Component>
 
                 <Directory Id="INSTALLDIR.Contents.dlls.2023.en2dUS" Name="en-US">
 
-                  <Component Id="Component.INSTALLDIR.Contents.dlls.2023.en2dUS.EmptyDirectory" Guid="be438d17-fc91-40d4-822a-9e956496226a" KeyPath="yes">
-                    <CreateFolder />
-                    <RemoveFolder Id="INSTALLDIR.Contents.dlls.2023.en2dUS" On="uninstall" />
+                  <Component Id="Component.PluginRibbon.xaml_1898664767" Guid="2a033792-41f2-4a07-8a1b-f3e02790e12d" SharedDllRefCount="yes">
+                    <File Id="PluginRibbon.xaml_1898664767" Source="..\e-verse.Navisworks.SelectByRevitId.bundle\Contents\dlls\2023\en-US\PluginRibbon.xaml" />
                   </Component>
 
                 </Directory>
 
                 <Directory Id="INSTALLDIR.Contents.dlls.2023.Images" Name="Images">
 
-                  <Component Id="Component.INSTALLDIR.Contents.dlls.2023.Images.EmptyDirectory" Guid="be438d17-fc91-40d4-822a-9e95c269dd39" KeyPath="yes">
-                    <CreateFolder />
-                    <RemoveFolder Id="INSTALLDIR.Contents.dlls.2023.Images" On="uninstall" />
+                  <Component Id="Component.Heart.jpg_2912542241" Guid="2a033792-41f2-4a07-8a1b-f3e05b3fd97a" SharedDllRefCount="yes">
+                    <File Id="Heart.jpg_2912542241" Source="..\e-verse.Navisworks.SelectByRevitId.bundle\Contents\dlls\2023\Images\Heart.jpg" />
+                  </Component>
+
+                  <Component Id="Component.RID_32.jpg_2240046142" Guid="2a033792-41f2-4a07-8a1b-f3e0ff053599" SharedDllRefCount="yes">
+                    <File Id="RID_32.jpg_2240046142" Source="..\e-verse.Navisworks.SelectByRevitId.bundle\Contents\dlls\2023\Images\RID_32.jpg" />
+                  </Component>
+
+                  <Component Id="Component.RID_Head.png_1590161772" Guid="2a033792-41f2-4a07-8a1b-f3e026969d5b" SharedDllRefCount="yes">
+                    <File Id="RID_Head.png_1590161772" Source="..\e-verse.Navisworks.SelectByRevitId.bundle\Contents\dlls\2023\Images\RID_Head.png" />
                   </Component>
 
                 </Directory>
               </Directory>
-
-              <Component Id="INSTALLDIR.Contents.dlls" Guid="be438d17-fc91-40d4-822a-9e951efd2dcc" KeyPath="yes">
-                <CreateFolder />
-                <RemoveFolder Id="INSTALLDIR.Contents.dlls" On="uninstall" />
-              </Component>
-
             </Directory>
-
-            <Component Id="INSTALLDIR.Contents" Guid="be438d17-fc91-40d4-822a-9e957a9a6cd6" KeyPath="yes">
-              <CreateFolder />
-              <RemoveFolder Id="INSTALLDIR.Contents" On="uninstall" />
-            </Component>
-
           </Directory>
         </Directory>
-
-        <Component Id="TARGETDIR1" Guid="be438d17-fc91-40d4-822a-9e95f9451170" KeyPath="yes">
-          <CreateFolder />
-          <RemoveFolder Id="TARGETDIR1" On="uninstall" />
-        </Component>
-
       </Directory>
-
-      <Component Id="TARGETDIR" Guid="be438d17-fc91-40d4-822a-9e95f9361170" KeyPath="yes">
-        <CreateFolder />
-        <RemoveFolder Id="TARGETDIR" On="uninstall" />
-      </Component>
-
     </Directory>
 
     <UI />
@@ -227,28 +263,42 @@
 
     <Feature Id="Complete" Title="Complete" Absent="allow" Level="1">
       <ComponentRef Id="Component.PackageContents.xml_3068001685" />
+      <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.addin_164265621" />
       <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.dll_3046487566" />
-      <ComponentRef Id="Component.INSTALLDIR.Contents.dlls.2018.en2dUS.EmptyDirectory" />
-      <ComponentRef Id="Component.INSTALLDIR.Contents.dlls.2018.Images.EmptyDirectory" />
+      <ComponentRef Id="Component.PluginRibbon.xaml_3192333406" />
+      <ComponentRef Id="Component.Heart.jpg_3705265073" />
+      <ComponentRef Id="Component.RID_32.jpg_2476046926" />
+      <ComponentRef Id="Component.RID_Head.png_3293162255" />
+      <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.addin_593273863" />
       <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.dll_1900323605" />
-      <ComponentRef Id="Component.INSTALLDIR.Contents.dlls.2019.en2dUS.EmptyDirectory" />
-      <ComponentRef Id="Component.INSTALLDIR.Contents.dlls.2019.Images.EmptyDirectory" />
+      <ComponentRef Id="Component.PluginRibbon.xaml_3010506263" />
+      <ComponentRef Id="Component.Heart.jpg_1848655603" />
+      <ComponentRef Id="Component.RID_32.jpg_1357030419" />
+      <ComponentRef Id="Component.RID_Head.png_2601895858" />
+      <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.addin_981719245" />
       <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.dll_890888900" />
-      <ComponentRef Id="Component.INSTALLDIR.Contents.dlls.2020.en2dUS.EmptyDirectory" />
-      <ComponentRef Id="Component.INSTALLDIR.Contents.dlls.2020.Images.EmptyDirectory" />
+      <ComponentRef Id="Component.PluginRibbon.xaml_919906444" />
+      <ComponentRef Id="Component.Heart.jpg_3477724757" />
+      <ComponentRef Id="Component.RID_32.jpg_3880672806" />
+      <ComponentRef Id="Component.RID_Head.png_165533629" />
+      <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.addin_30099448" />
       <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.dll_1879022035" />
-      <ComponentRef Id="Component.INSTALLDIR.Contents.dlls.2021.en2dUS.EmptyDirectory" />
-      <ComponentRef Id="Component.INSTALLDIR.Contents.dlls.2021.Images.EmptyDirectory" />
+      <ComponentRef Id="Component.PluginRibbon.xaml_4151844778" />
+      <ComponentRef Id="Component.Heart.jpg_1867249217" />
+      <ComponentRef Id="Component.RID_32.jpg_2388109622" />
+      <ComponentRef Id="Component.RID_Head.png_2025250066" />
+      <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.addin_3335886566" />
       <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.dll_1925296488" />
-      <ComponentRef Id="Component.INSTALLDIR.Contents.dlls.2022.en2dUS.EmptyDirectory" />
-      <ComponentRef Id="Component.INSTALLDIR.Contents.dlls.2022.Images.EmptyDirectory" />
+      <ComponentRef Id="Component.PluginRibbon.xaml_3278404605" />
+      <ComponentRef Id="Component.Heart.jpg_1465425189" />
+      <ComponentRef Id="Component.RID_32.jpg_3687038325" />
+      <ComponentRef Id="Component.RID_Head.png_923603045" />
+      <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.addin_3151980047" />
       <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.dll_4204644365" />
-      <ComponentRef Id="Component.INSTALLDIR.Contents.dlls.2023.en2dUS.EmptyDirectory" />
-      <ComponentRef Id="Component.INSTALLDIR.Contents.dlls.2023.Images.EmptyDirectory" />
-      <ComponentRef Id="INSTALLDIR.Contents.dlls" />
-      <ComponentRef Id="INSTALLDIR.Contents" />
-      <ComponentRef Id="TARGETDIR1" />
-      <ComponentRef Id="TARGETDIR" />
+      <ComponentRef Id="Component.PluginRibbon.xaml_1898664767" />
+      <ComponentRef Id="Component.Heart.jpg_2912542241" />
+      <ComponentRef Id="Component.RID_32.jpg_2240046142" />
+      <ComponentRef Id="Component.RID_Head.png_1590161772" />
     </Feature>
 
     <InstallExecuteSequence>

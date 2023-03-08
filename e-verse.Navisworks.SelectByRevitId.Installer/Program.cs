@@ -19,7 +19,10 @@ namespace EVerse.Navisworks.SelectByRevitId.Installer
 
             // Get the folder path by combining the solution directory path with the folder name
             var sourceFolder = Path.Combine(solutionDirectory, "e-verse.Navisworks.SelectByRevitId.bundle");
-            var files = Files.FromBuildDir(sourceFolder);
+
+            var files = Files.FromBuildDir(@sourceFolder, ".dll|.xml|.json|.jpg|.png|.xaml|.addin");
+            files.Attributes.Add("Component:SharedDllRefCount", "yes");
+
             var destinationDirectory = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Autodesk", "ApplicationPlugins");
 
             // Create the project
