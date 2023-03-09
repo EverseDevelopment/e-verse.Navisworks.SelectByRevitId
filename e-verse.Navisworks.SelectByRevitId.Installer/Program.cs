@@ -1,6 +1,8 @@
-﻿using System;
+﻿using EVerse.Navisworks.SelectByRevitId.Plugin;
+using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Windows.Controls;
 using WixSharp;
 using WixSharp.Nsis;
 
@@ -26,8 +28,13 @@ namespace EVerse.Navisworks.SelectByRevitId.Installer
             var destinationDirectory = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Autodesk", "ApplicationPlugins");
 
             // Create the project
-            var project = new ManagedProject("e-verse.Navisworks.SelectByRevitId", new Dir(@destinationDirectory, new Dir(@"e-verse.Navisworks.SelectByRevitId.bundle", files)));
+            var project = new ManagedProject("e-verse.Navisworks.SelectByRevitId", new Dir(@destinationDirectory, new Dir(@"e-verse.Navisworks.SelectByRevitId.bundle", files)))
+            {
+                GUID = new Guid("5E02B8C2-2D91-472F-98B8-559227E4FB2D"),
+                Version = new Version(SelectByIdWindow.PRODUCT_VERSION),
+            };
 
+            project.ControlPanelInfo.Manufacturer = "e-verse";
 
             // project.ManagedUI = ManagedUI.DefaultWpf; // all stock UI dialogs
 

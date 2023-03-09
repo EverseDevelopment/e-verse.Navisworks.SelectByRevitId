@@ -18,6 +18,7 @@ namespace EVerse.Navisworks.SelectByRevitId.Plugin
         private const string HEART_IMAGE_PATH = "Images\\Heart.jpg";
         private const string NO_REVIT_MODEL_MESSAGE = "No revit model available";
         private const string INSERT_ELEMENT_ID_MESSAGE = "Insert element revit ID";
+        public const string PRODUCT_VERSION = "1.0.7";
 
         public SelectByIdWindow()
         {
@@ -26,7 +27,7 @@ namespace EVerse.Navisworks.SelectByRevitId.Plugin
         }
         private void InitializeValues()
         {
-            versionLabel.Content = "v.1.0.7";
+            versionLabel.Content = string.Concat("v.", PRODUCT_VERSION);
             LoadImage(ComponentImage, ADDIN_IMAGE_PATH);
             if (!Tools.IsRevitModelLoaded())
                 OffOn(false, NO_REVIT_MODEL_MESSAGE, Colors.Red);

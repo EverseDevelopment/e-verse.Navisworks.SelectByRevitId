@@ -128,7 +128,32 @@
   <ItemGroup>
     <None Include="SelectByRevitId.nsi" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\e-verse.Navisworks.SelectByRevitId.2018\e-verse.Navisworks.SelectByRevitId.2018.csproj">
+      <Project>{60fd800d-a7bb-4494-9064-1478fca6b26d}</Project>
+      <Name>e-verse.Navisworks.SelectByRevitId.2018</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\e-verse.Navisworks.SelectByRevitId.2019\e-verse.Navisworks.SelectByRevitId.2019.csproj">
+      <Project>{e88e72a8-cc63-401e-ae12-63fa14621e7e}</Project>
+      <Name>e-verse.Navisworks.SelectByRevitId.2019</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\e-verse.Navisworks.SelectByRevitId.2020\e-verse.Navisworks.SelectByRevitId.2020.csproj">
+      <Project>{f8db5022-d40f-496f-814a-c843bdb56206}</Project>
+      <Name>e-verse.Navisworks.SelectByRevitId.2020</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\e-verse.Navisworks.SelectByRevitId.2021\e-verse.Navisworks.SelectByRevitId.2021.csproj">
+      <Project>{9a8a805c-8e9b-49c3-8b24-2235e7036bf9}</Project>
+      <Name>e-verse.Navisworks.SelectByRevitId.2021</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\e-verse.Navisworks.SelectByRevitId.2022\e-verse.Navisworks.SelectByRevitId.2022.csproj">
+      <Project>{9d70d94e-c119-4bc0-8250-acbaad186282}</Project>
+      <Name>e-verse.Navisworks.SelectByRevitId.2022</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\e-verse.Navisworks.SelectByRevitId.2023\e-verse.Navisworks.SelectByRevitId.2023.csproj">
+      <Project>{213bc98c-f558-4cc7-89df-efe6b8b14c66}</Project>
+      <Name>e-verse.Navisworks.SelectByRevitId.2023</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Page Include="Dialogs\ExitDialog.xaml">
       <Generator>MSBuild:Compile</Generator>
