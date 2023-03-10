@@ -60,13 +60,7 @@ jobs:
     # Build the solution on the Release mode
     - name: Build and Publish App
       run: msbuild e-verse.Navisworks.SelectByRevitId.sln /t:Clean,Build /p:platform="Any CPU" /p:Configuration=Release /p:DeployOnBuild=true /p:PublishProfile=FolderProfile
-      
-    # Create the installer using WixSharp
-    - name: Creating Installer
-      run: |
-        cd e-verse.Navisworks.SelectByRevitId.Installer
-        .\packages\WixSharp.1.11.8\tools\bin\net48\WixSharp.Console.exe Build.cs
-        
+              
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
