@@ -55,7 +55,7 @@ jobs:
       
     # Change the version inside of the 'e-verse.Navisworks.SelectByRevitId.Installer.g.wxs' file
     - name: Setting new version to the 'e-verse.Navisworks.SelectByRevitId.Installer.g.wxs' file
-      run: (Get-Content e-verse.Navisworks.SelectByRevitId.Installer/e-verse.Navisworks.SelectByRevitId.Installer.g.wxs) -replace 'Version="1.0.0"', 'Version="${{ steps.gitversion.outputs.majorMinorPatch }}"' | Out-File -encoding ASCII e-verse.Navisworks.SelectByRevitId.Installer/e-verse.Navisworks.SelectByRevitId.Installer.g.wxs
+      run: (Get-Content e-verse.Navisworks.SelectByRevitId.Installer/wix/e-verse.Navisworks.SelectByRevitId.Installer.g.wxs) -replace 'Version="1.0.0"', 'Version="${{ steps.gitversion.outputs.majorMinorPatch }}"' | Out-File -encoding ASCII e-verse.Navisworks.SelectByRevitId.Installer/wix/e-verse.Navisworks.SelectByRevitId.Installer.g.wxs
 
     # Build the solution on the Release mode
     - name: Build and Publish App
