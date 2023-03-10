@@ -1,8 +1,5 @@
 ﻿using EVerse.Navisworks.SelectByRevitId.Plugin;
 using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Windows.Controls;
 using WixSharp;
 using WixSharp.Nsis;
 
@@ -12,28 +9,55 @@ namespace EVerse.Navisworks.SelectByRevitId.Installer
     {
         private static void Main()
         {
-            // Get the directory path of the solution
-            // Get the directory path of the current executable
-            var exeDirectory = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
+            var project = new ManagedProject("e-verse.Navisworks.SelectByRevitId",
+                                          new Dir(@"%AppData%\Autodesk\ApplicationPlugins", new Dir(@"e-verse.Navisworks.SelectByRevitId.bundle", new File(@"..\e-verse.Navisworks.SelectByRevitId.Common\PackageContents.xml"),
+                                          new Dir(@"Contents", new Dir(@"dlls",
+                                          new Dir(@"2018",
+                                            new File(@"..\e-verse.Navisworks.SelectByRevitId.2018\bin\Release\e-verse.Navisworks.SelectByRevitId.dll"),
+                                            new File(@"..\e-verse.Navisworks.SelectByRevitId.Common\e-verse.Navisworks.SelectByRevitId.addin"),
+                                            new Dir(@"en-US",
+                                                new File(@"..\e-verse.Navisworks.SelectByRevitId.Common\en-US\PluginRibbon.xaml")),
+                                                new Dir(@"Images",
+                                                    new Files(@"..\e-verse.Navisworks.SelectByRevitId.Common\Images\*.*"))),
+                                          new Dir(@"2019",
+                                            new File(@"..\e-verse.Navisworks.SelectByRevitId.2019\bin\Release\e-verse.Navisworks.SelectByRevitId.dll"),
+                                            new File(@"..\e-verse.Navisworks.SelectByRevitId.Common\e-verse.Navisworks.SelectByRevitId.addin"),
+                                            new Dir(@"en-US",
+                                                new File(@"..\e-verse.Navisworks.SelectByRevitId.Common\en-US\PluginRibbon.xaml")),
+                                                new Dir(@"Images",
+                                                new Files(@"..\e-verse.Navisworks.SelectByRevitId.Common\Images\*.*"))),
+                                          new Dir(@"2020",
+                                            new File(@"..\e-verse.Navisworks.SelectByRevitId.2020\bin\Release\e-verse.Navisworks.SelectByRevitId.dll"),
+                                            new File(@"..\e-verse.Navisworks.SelectByRevitId.Common\e-verse.Navisworks.SelectByRevitId.addin"),
+                                            new Dir(@"en-US",
+                                                new File(@"..\e-verse.Navisworks.SelectByRevitId.Common\en-US\PluginRibbon.xaml")),
+                                                new Dir(@"Images",
+                                                new Files(@"..\e-verse.Navisworks.SelectByRevitId.Common\Images\*.*"))),
+                                          new Dir(@"2021",
+                                            new File(@"..\e-verse.Navisworks.SelectByRevitId.2021\bin\Release\e-verse.Navisworks.SelectByRevitId.dll"),
+                                            new File(@"..\e-verse.Navisworks.SelectByRevitId.Common\e-verse.Navisworks.SelectByRevitId.addin"),
+                                            new Dir(@"en-US",
+                                                new File(@"..\e-verse.Navisworks.SelectByRevitId.Common\en-US\PluginRibbon.xaml")),
+                                                new Dir(@"Images",
+                                                    new Files(@"..\e-verse.Navisworks.SelectByRevitId.Common\Images\*.*"))),
+                                          new Dir(@"2022",
+                                            new File(@"..\e-verse.Navisworks.SelectByRevitId.2022\bin\Release\e-verse.Navisworks.SelectByRevitId.dll"),
+                                            new File(@"..\e-verse.Navisworks.SelectByRevitId.Common\e-verse.Navisworks.SelectByRevitId.addin"),
+                                                new Dir(@"en-US",
+                                                    new File(@"..\e-verse.Navisworks.SelectByRevitId.Common\en-US\PluginRibbon.xaml")),
+                                                    new Dir(@"Images",
+                                                    new Files(@"..\e-verse.Navisworks.SelectByRevitId.Common\Images\*.*"))),
+                                          new Dir(@"2023",
+                                            new File(@"..\e-verse.Navisworks.SelectByRevitId.2023\bin\Release\e-verse.Navisworks.SelectByRevitId.dll"),
+                                            new File(@"..\e-verse.Navisworks.SelectByRevitId.Common\e-verse.Navisworks.SelectByRevitId.addin"),
+                                            new Dir(@"en-US",
+                                                new File(@"..\e-verse.Navisworks.SelectByRevitId.Common\en-US\PluginRibbon.xaml")),
+                                                new Dir(@"Images",
+                                                    new Files(@"..\e-verse.Navisworks.SelectByRevitId.Common\Images\*.*")))
+                                          )))));
 
-            // Get the solution directory path by finding the first .sln file in the parent directories
-            var solutionDirectory = Directory.GetParent(exeDirectory).Parent.Parent.FullName;
-
-            // Get the folder path by combining the solution directory path with the folder name
-            var sourceFolder = Path.Combine(solutionDirectory, "e-verse.Navisworks.SelectByRevitId.bundle");
-
-            var files = Files.FromBuildDir(@sourceFolder, ".dll|.xml|.json|.jpg|.png|.xaml|.addin");
-            files.Attributes.Add("Component:SharedDllRefCount", "yes");
-
-            var destinationDirectory = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Autodesk", "ApplicationPlugins");
-
-            // Create the project
-            var project = new ManagedProject("e-verse.Navisworks.SelectByRevitId", new Dir(@destinationDirectory, new Dir(@"e-verse.Navisworks.SelectByRevitId.bundle", files)))
-            {
-                GUID = new Guid("5E02B8C2-2D91-472F-98B8-559227E4FB2D"),
-                Version = new Version(SelectByIdWindow.PRODUCT_VERSION),
-            };
-
+            project.GUID = new Guid("5E02B8C2-2D91-472F-98B8-559227E4FB2D");
+            project.Version = new Version(SelectByIdWindow.PRODUCT_VERSION);
             project.ControlPanelInfo.Manufacturer = "e-verse";
 
             // project.ManagedUI = ManagedUI.DefaultWpf; // all stock UI dialogs
