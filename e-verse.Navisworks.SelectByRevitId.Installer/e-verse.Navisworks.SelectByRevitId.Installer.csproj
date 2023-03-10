@@ -123,9 +123,6 @@
     <Resource Include="Resources\logo.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\SelectByRevitId.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="SelectByRevitId.nsi" />
   </ItemGroup>
   <ItemGroup>
@@ -191,6 +188,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\SelectByRevitId.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
