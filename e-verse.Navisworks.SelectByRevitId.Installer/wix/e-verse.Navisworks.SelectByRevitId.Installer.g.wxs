@@ -6,7 +6,7 @@
 </auto-generated>
 -->
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-  <Product Id="5e02b8c2-2d91-472f-98b8-559237e47b2d" Name="e-verse.Navisworks.SelectByRevitId" Language="1033" Codepage="Windows-1252" Version="1.0.7" UpgradeCode="5e02b8c2-2d91-472f-98b8-559227e4fb2d" Manufacturer="e-verse">
+  <Product Id="5e02b8c2-2d91-472f-98b8-559237e48b2d" Name="e-verse.Navisworks.SelectByRevitId" Language="1033" Codepage="Windows-1252" Version="1.0.8" UpgradeCode="5e02b8c2-2d91-472f-98b8-559227e4fb2d" Manufacturer="e-verse">
     <Package InstallerVersion="200" Compressed="yes" SummaryCodepage="Windows-1252" Languages="1033" />
     <Media Id="1" Cabinet="_...rse.Navisworks.SelectByRevitId.cab" EmbedCab="yes" />
 
