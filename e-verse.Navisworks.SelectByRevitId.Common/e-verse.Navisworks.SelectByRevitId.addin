@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <NavisworksAddIns>
 	<AddIn Type="Application">
-		<Name>e-verse.Navisworks.CreateSelectionSet</Name>
-		<Assembly>e-verse.Navisworks.CreateSelectionSet\e-verse.Navisworks.CreateSelectionSet.dll</Assembly>
-		<FullClassName>e-verse.Navisworks.CreateSelectionSet.Plugin.CreateSelectionSetPlugin</FullClassName>
-		<Text>e-verse.Navisworks.CreateSelectionSet</Text>
-		<Description>e-verse.Navisworks.CreateSelectionSet</Description>
+		<Name>e-verse.Navisworks.SelectByRevitId</Name>
+		<Assembly>e-verse.Navisworks.SelectByRevitId\e-verse.Navisworks.SelectByRevitId.dll</Assembly>
+		<FullClassName>e-verse.Navisworks.CreateSelectionSet.Plugin.SelectByIdPlugin</FullClassName>
+		<Text>e-verse.Navisworks.SelectByRevitId</Text>
+		<Description>e-verse.Navisworks.SelectByRevitId</Description>
 		<VisibilityMode>AlwaysVisible</VisibilityMode>
 		<AddInId>
 			F2AB0B9E-0879-4085-8E8B-9A4083FC620A
