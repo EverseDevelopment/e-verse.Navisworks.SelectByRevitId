@@ -29,7 +29,7 @@
         Background="{DynamicResource BackgroundColor}"
             BorderBrush="Transparent"
             BorderThickness="1,1,1,1"
-            CornerRadius="8,8,8,8"
+            CornerRadius="15,15,15,15"
             Margin="10,10,10,10"
             MouseDown="Border_MouseDown">
         <Border.Effect>
@@ -85,7 +85,7 @@
                     </TransformGroup>
                 </Line.RenderTransform>
             </Line>
-            <Label Style="{DynamicResource TitleLabels}" Content="Enter Revit ID" HorizontalAlignment="Left" Margin="127,107,0,0" Width="94" Height="23" VerticalAlignment="Top" />
+            <Label Style="{DynamicResource TitleLabels}" Content="Enter Revit ID" HorizontalAlignment="Left" Margin="36,119,0,0" Width="94" Height="23" VerticalAlignment="Top" />
 
             <TextBox Style="{DynamicResource MainTextBox}" x:Name="textBox" Text="No revit model available" IsEnabled="False" Height="34" Width="297" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" MinWidth="300" MinHeight="25" VerticalAlignment="Top" Margin="0,150,0,0" PreviewMouseUp="onMouseEnter" HorizontalAlignment="Center" />
             <Button Style="{DynamicResource ApplyButtonStyle}" x:Name="applyButton" Content="Select" IsEnabled="False" HorizontalAlignment="Left" Margin="113,208,0,0" Width="122" Height="22" Click="okButton_Click" VerticalAlignment="Top"/>
