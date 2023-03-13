@@ -55,18 +55,12 @@ jobs:
       
     # Change the version inside of the 'e-verse.Navisworks.SelectByRevitId.Installer.g.wxs' file
     - name: Setting new version to the 'e-verse.Navisworks.SelectByRevitId.Installer.g.wxs' file
-      run: (Get-Content e-verse.Navisworks.SelectByRevitId.Installer/e-verse.Navisworks.SelectByRevitId.Installer.g.wxs) -replace 'Version="1.0.0"', 'Version="${{ steps.gitversion.outputs.majorMinorPatch }}"' | Out-File -encoding ASCII e-verse.Navisworks.SelectByRevitId.Installer/e-verse.Navisworks.SelectByRevitId.Installer.g.wxs
+      run: (Get-Content e-verse.Navisworks.SelectByRevitId.Installer/wix/e-verse.Navisworks.SelectByRevitId.Installer.g.wxs) -replace 'Version="1.0.0"', 'Version="${{ steps.gitversion.outputs.majorMinorPatch }}"' | Out-File -encoding ASCII e-verse.Navisworks.SelectByRevitId.Installer/wix/e-verse.Navisworks.SelectByRevitId.Installer.g.wxs
 
     # Build the solution on the Release mode
     - name: Build and Publish App
       run: msbuild e-verse.Navisworks.SelectByRevitId.sln /t:Clean,Build /p:platform="Any CPU" /p:Configuration=Release /p:DeployOnBuild=true /p:PublishProfile=FolderProfile
-      
-    # Create the installer using WixSharp
-    - name: Creating Installer
-      run: |
-        cd e-verse.Navisworks.SelectByRevitId.Installer
-        .\packages\WixSharp.1.11.8\tools\bin\net48\WixSharp.Console.exe Build.cs
-        
+              
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
@@ -74,7 +68,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
       with:
         tag_name: ${{ steps.gitversion.outputs.majorMinorPatch }}
-        release_name: Viewpoint By Level v${{ steps.gitversion.outputs.majorMinorPatch }}
+        release_name: Select By Revit Id v${{ steps.gitversion.outputs.majorMinorPatch }}
         draft: false
         prerelease: false
     
