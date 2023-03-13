@@ -23,7 +23,7 @@
   <ItemGroup>
     <Content Include="Images\Heart.jpg" />
     <Content Include="Images\RID_32.jpg" />
-    <Content Include="Images\RID_Head.png" />
+    <Content Include="Images\SelectByRevitId.png" />
     <Content Include="PackageContents.xml" />
   </ItemGroup>
   <ItemGroup>

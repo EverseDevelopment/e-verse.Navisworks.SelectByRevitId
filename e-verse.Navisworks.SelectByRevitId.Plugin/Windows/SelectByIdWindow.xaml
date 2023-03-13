@@ -49,12 +49,12 @@
                 <Image x:Name="ComponentImage"
                 Visibility="Visible"
                 HorizontalAlignment="Left"
-                Width="54"
+                Width="79"
                 SnapsToDevicePixels="True"
-                       Source="C:\Users\silic\Documents\GitHub\e-verse.Navisworks.SelectByRevitId\e-verse.Navisworks.SelectByRevitId.Common\Images\RID_Head.png"
+                       Source="C:\Users\silic\Documents\GitHub\e-verse.Navisworks.SelectByRevitId\e-verse.Navisworks.SelectByRevitId.Common\Images\SelectByRevitId.png"
                 RenderOptions.BitmapScalingMode="HighQuality"
                 RenderOptions.EdgeMode="Aliased"
-                Margin="10,11,0,0" Height="46" VerticalAlignment="Top" />
+                Margin="10,15,0,0" Height="31" VerticalAlignment="Top" />
                 <Label
                 x:Name="versionLabel"
                 Style="{DynamicResource SecondaryLabel}"
