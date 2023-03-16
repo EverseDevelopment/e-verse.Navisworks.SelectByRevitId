@@ -11,15 +11,17 @@
     Height="424" >
     <Viewbox>
         <Border
-            Width="510"
-            Height="424"
-            Margin="5,0,0,5"
+            Width="497" 
+            Height="409" 
+            Margin="5,5,5,5"
             Background="{DynamicResource BackgroundColor}"
             BorderBrush="Transparent"
             BorderThickness="1" 
-            CornerRadius="15,15,15,15" HorizontalAlignment="Left" VerticalAlignment="Bottom">
+            CornerRadius="15,15,15,15"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch">
 
-            <Grid x:Name="Root" Background="Transparent" Margin="-1,0,-1,0">
+            <Grid x:Name="Root" Background="Transparent">
 
                 <Button 
                     Style="{DynamicResource CloseButtonStyle}" 
@@ -66,8 +68,7 @@
                       FontFamily="SegoeUI"
                       x:Name="LicenseAcceptedChecked"
                       Content="I accept all"
-                      Margin="84,208,85,0"
-                      VerticalAlignment="Top"
+                      Margin="84,194,85,189"
                       VerticalContentAlignment="Center" 
                       Checked="LicenseAcceptedChecked_Checked"/>
 
@@ -116,23 +117,23 @@
                     x:Name="GoPrev"
                     MinWidth="73"
                     Content="Back"
-                    Margin="48,302,291,0" Height="36" VerticalAlignment="Top"/>
+                    Margin="48,285,291,84" Height="NaN"/>
 
                 <Button Style="{DynamicResource MainButtonStyle}"
                     x:Name="GoNext"
                     Content="Next"
                     MinWidth="73"
-                    Margin="292,302,48,84" 
+                    Margin="296,285,48,84" 
                     Height="NaN"/>
 
                 <Button 
                    Style="{DynamicResource TabCloseButtonStyle}"
                    Name="Cancel"
                    VerticalAlignment="Top" 
-                   Margin="466,13,18,0"/>
+                   Margin="452,13,17,0" Width="NaN"/>
                 <Button
                     Style="{DynamicResource CloseButtonStyle}"
-                    Margin="336,382,20,20"
+                    Margin="325,367,20,20"
                     Background="Transparent"
                     Click="Contact_Link"
                     FontWeight="Light"

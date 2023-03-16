@@ -12,8 +12,8 @@
 
     <Viewbox>
         <Border
-            Width="510"
-            Height="424" 
+            Width="497" 
+            Height="409" 
             Margin="5,5,5,5"
             Background="{DynamicResource BackgroundColor}"
             BorderBrush="Transparent"
@@ -21,15 +21,8 @@
             CornerRadius="15,15,15,15"
             HorizontalAlignment="Stretch"
             VerticalAlignment="Stretch">
-            <!--<Border.Effect>
-            <DropShadowEffect BlurRadius="20" 
-                              Color="Gray" 
-                              Opacity="0.3" 
-                              ShadowDepth="0" 
-                              Direction="0"></DropShadowEffect>
-        </Border.Effect>-->
 
-            <Grid x:Name="Root" Background="Transparent" Margin="-1,0,-1,0">
+            <Grid x:Name="Root" Background="Transparent">
 
                 <Button 
                     Style="{DynamicResource CloseButtonStyle}" 
@@ -73,13 +66,12 @@
 
                 <Button
                     Style="{DynamicResource CloseButtonStyle}"
-                    Margin="332,376,13,0"
+                    Margin="325,367,20,20"
                     Background="Transparent"
                     Click="Contact_Link"
                     FontWeight="Light"
                     FontSize="12"     
-                    Foreground="{DynamicResource MainGray}"
-                    VerticalAlignment="Top" Height="20">
+                    Foreground="{DynamicResource MainGray}" Height="NaN">
                     <Button.Template>
                         <ControlTemplate TargetType="Button">
                             <Border x:Name="border"  Background="Transparent" Margin="0,0,3,0">
@@ -160,7 +152,7 @@
 
                 <Button
                     Style="{DynamicResource CloseButtonStyle}"
-                    Margin="183,241,189,0"
+                    Margin="183,229,189,0"
                     Background="Transparent"
                     Click="Contact_Link"
                     FontWeight="Light"
@@ -213,9 +205,7 @@
                     x:Name="GoExit"
                     Content="Finish"
                     MinWidth="73" 
-                    Margin="181,302,181,0" 
-                    VerticalAlignment="Top">
-                </Button>
+                    Margin="181,285,181,84"/>
 
                 <Button 
                    Style="{DynamicResource TabCloseButtonStyle}"
