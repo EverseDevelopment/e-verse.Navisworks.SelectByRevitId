@@ -11,8 +11,8 @@
     Height="424" >
     <Viewbox>
         <Border
-            Width="497" 
-            Height="409" 
+    Width="510"
+    Height="424"
             Margin="5,5,5,5"
             Background="{DynamicResource BackgroundColor}"
             BorderBrush="Transparent"
@@ -61,14 +61,8 @@
                         </ControlTemplate>
                     </Button.Template>
                 </Button>
-
                 <TextBlock
-                    FontWeight="Light"
-                    Background="Transparent"
-                    FontSize="16" HorizontalAlignment="Center" Width="461" Height="30" VerticalAlignment="Top" TextAlignment="Center" Margin="0,188,0,0"
-                    ><Run Text="You're in the right place! Install our special "/><Run Language="es-es" Text="Navisworks"/><Run Text=" addon."/></TextBlock>
-                <TextBlock
-                    Margin="186,108,186,260"
+                    Margin="186,104,186,264"
                     Background="Transparent"
                     FontSize="26"
                     FontWeight="Bold"
@@ -78,23 +72,18 @@
                     Content="Install"
                     x:Name="GoNext"
                     Height="NaN"
-                    Margin="156,285,157,84"/>
+                    Width="NaN"
+                    Margin="164,302,164,84"/>
 
                 <Button 
                    Style="{DynamicResource TabCloseButtonStyle}"
                    Name="Cancel"
                    VerticalAlignment="Top" 
-                   Margin="452,13,17,0"/>
-                <TextBlock
-                FontWeight="Light"
-                Margin="113,219,113,165"
-                Background="Transparent"
-                FontSize="16"
-                Text="It's free, simple and made with love." TextAlignment="Center"/>
+                   Margin="465,13,17,0"/>
 
                 <Button
                     Style="{DynamicResource CloseButtonStyle}"
-                    Margin="325,367,20,20"
+                    Margin="335,382,20,20"
                     Background="Transparent"
                     Click="Contact_Link"
                     FontWeight="Light"
@@ -147,6 +136,18 @@
                         </ControlTemplate>
                     </Button.Template>
                 </Button>
+                <TextBlock
+                    FontWeight="Light"
+                    Margin="0,189,0,0"
+                    Background="Transparent"
+                    FontSize="16" HorizontalAlignment="Center" Width="461" Height="30" VerticalAlignment="Top" TextAlignment="Center"
+                    ><Run Text="You're in the right place! Install our special "/><Run Language="es-es" Text="Navisworks"/><Run Text=" addon."/></TextBlock>
+                <TextBlock
+                    FontWeight="Light"
+                    Margin="113,219,113,173"
+                    Background="Transparent"
+                    FontSize="16"
+                    Text="It's free, simple and made with love." TextAlignment="Center"/>
 
             </Grid>
         </Border>

@@ -12,8 +12,8 @@
 
     <Viewbox>
         <Border
-            Width="497" 
-            Height="409" 
+            Width="510" 
+            Height="424" 
             Margin="5,5,5,5"
             Background="{DynamicResource BackgroundColor}"
             BorderBrush="Transparent"
@@ -66,7 +66,7 @@
 
                 <Button
                     Style="{DynamicResource CloseButtonStyle}"
-                    Margin="325,367,20,20"
+                    Margin="335,382,20,20"
                     Background="Transparent"
                     Click="Contact_Link"
                     FontWeight="Light"
@@ -205,13 +205,14 @@
                     x:Name="GoExit"
                     Content="Finish"
                     MinWidth="73" 
-                    Margin="181,285,181,84"/>
+                        Height="NaN"
+                    Margin="164,300,164,84"/>
 
                 <Button 
                    Style="{DynamicResource TabCloseButtonStyle}"
                    Name="Cancel"
                    VerticalAlignment="Top" 
-                   Margin="452,13,17,0"/>
+                   Margin="465,13,17,0"/>
 
             </Grid>
         </Border>
