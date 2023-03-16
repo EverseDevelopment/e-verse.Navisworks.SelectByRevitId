@@ -415,16 +415,15 @@
                     BorderThickness="0.8 0.8 0.8 0.8"
                     CornerRadius="{StaticResource borderRadiusLarge}"/>
 
-            <!-- styling border-brush and background-color for MouseOver state -->
-            <!--<Border x:Name="hoverBorder" Opacity="0"
-                    BorderThickness="{TemplateBinding BorderThickness}">
-                <Border.BorderBrush>
-                    <SolidColorBrush Color="Gray"/>
-                </Border.BorderBrush>
-                <Border.Background>
-                    <SolidColorBrush Color="Gray"/>
-                </Border.Background>
-            </Border>-->
+            <TextBlock x:Name="textBlockPlaceholder"
+                       Margin="8,8,8,-9"
+                       Text="Placeholder here"
+                       Foreground="{TemplateBinding Foreground}"
+                       FontSize="{TemplateBinding FontSize}"
+                       FontFamily="{TemplateBinding FontFamily}"
+                       Visibility="Collapsed" TextAlignment="Center"/>
+
+
 
             <!-- styling border-brush and background-color for Focused state -->
             <Border x:Name="focusBorder" 
@@ -432,15 +431,7 @@
                     BorderBrush="Gray"
                     BorderThickness="0.8 0.8 0.8 0.8"
                     CornerRadius="{StaticResource borderRadiusLarge}"/>
-            <!--<Border x:Name="focusBorder" Opacity="0"
-                    BorderThickness="1">
-                <Border.BorderBrush>
-                    <SolidColorBrush Color="White"/>
-                </Border.BorderBrush>
-                <Border.Background>
-                    <SolidColorBrush Color="White"/>
-                </Border.Background>
-            </Border>-->
+
 
             <!-- TextBox uses a ScrollViewer named PART_ContentHost as its content-presenter -->
             <ScrollViewer x:Name="PART_ContentHost"
@@ -456,13 +447,24 @@
         </Grid>
 
         <ControlTemplate.Triggers>
+            <Trigger Property="Text" Value="">
+                <Setter TargetName="textBlockPlaceholder" Property="Visibility" Value="Visible"></Setter>
+            </Trigger>
             <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="Foreground">
+                    <Setter.Value>
+                        <SolidColorBrush Color="#F94F46"/>
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+            <Trigger Property="IsEnabled" Value="True">
                 <Setter Property="Foreground">
                     <Setter.Value>
                         <SolidColorBrush Color="Gray"/>
                     </Setter.Value>
                 </Setter>
             </Trigger>
+
         </ControlTemplate.Triggers>
     </ControlTemplate>
 

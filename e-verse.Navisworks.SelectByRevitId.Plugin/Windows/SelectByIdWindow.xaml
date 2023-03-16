@@ -3,7 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:EVerse.Navisworks.SelectByRevitId.Plugin"
              WindowStyle="None"
              WindowStartupLocation="CenterScreen"
              AllowsTransparency="True"
@@ -87,10 +86,10 @@
             </Line>
             <Label Style="{DynamicResource TitleLabels}" Content="Enter Revit ID" HorizontalAlignment="Left" Margin="36,119,0,0" Width="94" Height="23" VerticalAlignment="Top" />
 
-            <TextBox Style="{DynamicResource MainTextBox}" x:Name="textBox" Text="No revit model available" IsEnabled="False" Height="34" Width="297" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" MinWidth="300" MinHeight="25" VerticalAlignment="Top" Margin="0,150,0,0" PreviewMouseUp="onMouseEnter" HorizontalAlignment="Center" />
-            <Button Style="{DynamicResource ApplyButtonStyle}" x:Name="applyButton" Content="Select" IsEnabled="False" HorizontalAlignment="Left" Margin="113,208,0,0" Width="122" Height="22" Click="okButton_Click" VerticalAlignment="Top"/>
+            <TextBox Loaded="FindTextBlockPlaceholderComponent" Style="{DynamicResource MainTextBox}" x:Name="textBox" Text="" IsEnabled="False" Height="34" Width="297" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" MinWidth="300" MinHeight="25" VerticalAlignment="Top" Margin="0,150,0,0" HorizontalAlignment="Center" />
+            <Button Style="{DynamicResource ApplyButtonStyle}" x:Name="applyButton" Content="Select" IsEnabled="False" HorizontalAlignment="Left" Margin="113,208,0,0" Width="122" Height="22" Click="OkButton_Click" VerticalAlignment="Top"/>
             <Button
-                 Loaded="FinDisclaimerButtonChildImage"
+                 Loaded="FindDisclaimerButtonChildImage"
                 Click="Title_Link"
                 Style="{DynamicResource CloseButtonStyle}"
                 BorderBrush="Transparent"
