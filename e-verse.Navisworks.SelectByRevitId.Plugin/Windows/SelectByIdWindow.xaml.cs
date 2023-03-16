@@ -19,22 +19,19 @@ namespace EVerse.Navisworks.SelectByRevitId.Plugin
         private const string NO_REVIT_MODEL_MESSAGE = "No revit model available";
         private const string INSERT_ELEMENT_ID_MESSAGE = "Insert element revit ID";
         public const string PRODUCT_VERSION = "1.0.9";
-
+        private TextBlock Placeholder;
         public SelectByIdWindow()
         {
             InitializeComponent();
+
             InitializeValues();
         }
         private void InitializeValues()
         {
             versionLabel.Content = string.Concat("v.", PRODUCT_VERSION);
             LoadImage(ComponentImage, ADDIN_IMAGE_PATH);
-            if (!Tools.IsRevitModelLoaded())
-                OffOn(false, NO_REVIT_MODEL_MESSAGE, Colors.Red);
-            else OffOn(true, INSERT_ELEMENT_ID_MESSAGE, Colors.Gray);
-
         }
-        private void FinDisclaimerButtonChildImage(object sender, RoutedEventArgs e)
+        private void FindDisclaimerButtonChildImage(object sender, RoutedEventArgs e)
         {
             Button disclaimerButton = sender as Button;
             if (disclaimerButton != null)
@@ -46,6 +43,26 @@ namespace EVerse.Navisworks.SelectByRevitId.Plugin
                 }
             }
         }
+        private void FindTextBlockPlaceholderComponent(object sender, RoutedEventArgs e)
+        {
+            TextBox textBox = sender as TextBox;
+            if (textBox != null)
+            {
+                TextBlock placeHolder = textBox.Template.FindName("textBlockPlaceholder", textBox) as TextBlock;
+                if (placeHolder != null)
+                {
+                    this.Placeholder = placeHolder;
+                }
+            }
+            FreezeUI();
+        }
+        private bool FreezeUI()
+        {
+            if (!Tools.IsRevitModelLoaded())
+                return OffOn(false, NO_REVIT_MODEL_MESSAGE);
+            return OffOn(true, INSERT_ELEMENT_ID_MESSAGE);
+
+        }
         private void LoadImage(Image image, string imagePath)
         {
             string commonProjectDirectory = System.IO.Path.GetDirectoryName(typeof(PluginRibbon).Assembly.Location);
@@ -54,15 +71,15 @@ namespace EVerse.Navisworks.SelectByRevitId.Plugin
             image.Source = new BitmapImage(uri);
         }
 
-        private void OffOn(bool toggle, string message, System.Windows.Media.Color color)
+        private bool OffOn(bool toggle, string message)
         {
             applyButton.IsEnabled = toggle;
             textBox.IsHitTestVisible = toggle;
             textBox.IsEnabled = toggle;
-            textBox.Text = message;
-            textBox.Foreground = new SolidColorBrush(color);
+            this.Placeholder.Text = message;
+            return toggle;
         }
-        private void okButton_Click(object sender, EventArgs e)
+        private void OkButton_Click(object sender, EventArgs e)
         {
             var s = Tools.splitString(textBox.Text);
             Tools.getElements(s);
@@ -78,10 +95,10 @@ namespace EVerse.Navisworks.SelectByRevitId.Plugin
             this.DragMove();
         }
 
-        private void onMouseEnter(object sender, MouseButtonEventArgs e)
-        {
-            textBox.Text = string.Empty;
-        }
+        //private void onMouseEnter(object sender, MouseButtonEventArgs e)
+        //{
+        //    textBox.Text = string.Empty;
+        //}
 
         private void Title_Link(object sender, RoutedEventArgs e)
         {
