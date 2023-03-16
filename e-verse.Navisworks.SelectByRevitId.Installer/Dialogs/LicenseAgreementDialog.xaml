@@ -11,8 +11,8 @@
     Height="424" >
     <Viewbox>
         <Border
-            Width="497" 
-            Height="409" 
+            Height="424"
+            Width="510"
             Margin="5,5,5,5"
             Background="{DynamicResource BackgroundColor}"
             BorderBrush="Transparent"
@@ -68,13 +68,13 @@
                       FontFamily="SegoeUI"
                       x:Name="LicenseAcceptedChecked"
                       Content="I accept all"
-                      Margin="84,194,85,189"
+                      Margin="84,196,85,199"
                       VerticalContentAlignment="Center" 
                       Checked="LicenseAcceptedChecked_Checked"/>
 
                 <Button
                     Style="{DynamicResource CloseButtonStyle}"
-                    Margin="211,0,75,189"
+                    Margin="211,0,75,199"
                     Background="Transparent"
                     Click="Terms_Link"
                     FontWeight="Light"
@@ -117,23 +117,17 @@
                     x:Name="GoPrev"
                     MinWidth="73"
                     Content="Back"
-                    Margin="48,285,291,84" Height="NaN"/>
+                    Margin="48,300,291,84" Height="NaN"/>
 
                 <Button Style="{DynamicResource MainButtonStyle}"
                     x:Name="GoNext"
                     Content="Next"
                     MinWidth="73"
-                    Margin="296,285,48,84" 
+                    Margin="296,300,48,84" 
                     Height="NaN"/>
-
-                <Button 
-                   Style="{DynamicResource TabCloseButtonStyle}"
-                   Name="Cancel"
-                   VerticalAlignment="Top" 
-                   Margin="452,13,17,0" Width="NaN"/>
                 <Button
                     Style="{DynamicResource CloseButtonStyle}"
-                    Margin="325,367,20,20"
+                    Margin="335,382,20,20"
                     Background="Transparent"
                     Click="Contact_Link"
                     FontWeight="Light"
@@ -186,6 +180,11 @@
                         </ControlTemplate>
                     </Button.Template>
                 </Button>
+                <Button 
+                    Style="{DynamicResource TabCloseButtonStyle}"
+                    x:Name="Cancel"
+                    VerticalAlignment="Top" 
+                    Margin="465,13,17,0"/>
 
 
             </Grid>
