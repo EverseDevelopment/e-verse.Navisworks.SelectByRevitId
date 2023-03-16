@@ -11,22 +11,18 @@
     mc:Ignorable="d">
     <Viewbox>
         <Border
-            Width="510"
-            Height="424" 
+            Width="497" 
+            Height="409" 
             Margin="5,5,5,5"
-            Background="#e8e3df"
+            Background="{DynamicResource BackgroundColor}"
             BorderBrush="Transparent"
             BorderThickness="1" 
             CornerRadius="15,15,15,15"
             HorizontalAlignment="Stretch"
             VerticalAlignment="Stretch">
 
-            <Grid x:Name="Root" Background="Transparent" Margin="-1,0,-1,0">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="212*"/>
-                    <RowDefinition Height="0*"/>
-                    <RowDefinition Height="347*"/>
-                </Grid.RowDefinitions>
+            <Grid x:Name="Root" Background="Transparent">
+
 
                 <Button 
                     Style="{DynamicResource CloseButtonStyle}" 
@@ -69,44 +65,33 @@
                 </Button>
 
                 <TextBlock
-                    Margin="152,108,152,6"
+                    Margin="152,108,152,257"
                     Background="Transparent"
                     FontSize="26"
                     FontWeight="Bold"
                     Text="Welcome Back!" RenderTransformOrigin="0.494,0.501"/>
                 <TextBlock
-                    Margin="130,50,114,189"
+                    Margin="130,192,114,189"
                     Background="Transparent"
                     FontSize="16"
-                    FontWeight="ExtraLight"
-                    Grid.Row="2"><Run Text="Hope you had fun playing with "/><Run Language="es-es" Text="Pris!"/></TextBlock>
+                    FontWeight="ExtraLight"><Run Text="Hope you had fun playing with "/><Run Language="es-es" Text="Pris!"/></TextBlock>
 
                 <Button
                 Style="{DynamicResource MainButtonStyle}"
                 x:Name="Repair"
-                Grid.Row="1"
                 HorizontalAlignment="Left" 
-                Margin="48,142,0,84" 
-                Content="Repair" Grid.RowSpan="2" Width="180" Height="NaN"/>
-
-
-                <Button
-                Style="{DynamicResource MainButtonStyle}"
-                x:Name="Remove"
-                Grid.Row="2"
-                VerticalAlignment="Top" 
-                Margin="282,142,48,0"
-                Content="Remove"/>
+                Margin="48,285,0,84" 
+                Content="Repair" Width="180" Height="NaN"/>
 
                 <Button 
                    Style="{DynamicResource TabCloseButtonStyle}"
                    Name="Cancel"
                    VerticalAlignment="Top" 
-                   Margin="466,13,18,0"/>
+                   Margin="452,13,17,0"/>
 
                 <Button
                     Style="{DynamicResource CloseButtonStyle}"
-                    Margin="336,222,20,20"
+                    Margin="325,367,20,20"
                     Background="Transparent"
                     Click="Contact_Link"
                     FontWeight="Light"
@@ -159,6 +144,11 @@
                         </ControlTemplate>
                     </Button.Template>
                 </Button>
+                <Button
+                    Style="{DynamicResource MainButtonStyle}"
+                    x:Name="Remove"
+                    Margin="267,285,48,84" 
+                    Content="Remove" Height="NaN"/>
 
             </Grid>
         </Border>

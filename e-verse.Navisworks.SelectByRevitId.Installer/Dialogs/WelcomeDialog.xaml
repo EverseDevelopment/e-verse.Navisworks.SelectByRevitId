@@ -11,7 +11,8 @@
     Height="424" >
     <Viewbox>
         <Border
-        Width="497" Height="409" 
+            Width="497" 
+            Height="409" 
             Margin="5,5,5,5"
             Background="{DynamicResource BackgroundColor}"
             BorderBrush="Transparent"
@@ -20,7 +21,7 @@
             HorizontalAlignment="Stretch"
             VerticalAlignment="Stretch">
 
-            <Grid x:Name="Root" Background="Transparent" Margin="-1,0,-1,0">
+            <Grid x:Name="Root" Background="Transparent">
                 <Button 
                     Style="{DynamicResource CloseButtonStyle}" 
                     Name="TitleButton" 
