@@ -11,8 +11,8 @@
     mc:Ignorable="d">
     <Viewbox>
         <Border
-            Width="497" 
-            Height="409" 
+            Width="510" 
+            Height="424" 
             Margin="5,5,5,5"
             Background="{DynamicResource BackgroundColor}"
             BorderBrush="Transparent"
@@ -78,10 +78,9 @@
 
                 <Button
                 Style="{DynamicResource MainButtonStyle}"
-                x:Name="Repair"
-                HorizontalAlignment="Left" 
-                Margin="48,285,0,84" 
-                Content="Repair" Width="180" Height="NaN"/>
+                x:Name="Repair" 
+                Margin="48,300,280,84" 
+                Content="Repair" Height="NaN"/>
 
                 <Button 
                    Style="{DynamicResource TabCloseButtonStyle}"
@@ -91,7 +90,7 @@
 
                 <Button
                     Style="{DynamicResource CloseButtonStyle}"
-                    Margin="325,367,20,20"
+                    Margin="335,382,20,20"
                     Background="Transparent"
                     Click="Contact_Link"
                     FontWeight="Light"
@@ -147,7 +146,7 @@
                 <Button
                     Style="{DynamicResource MainButtonStyle}"
                     x:Name="Remove"
-                    Margin="267,285,48,84" 
+                Margin="280,300,48,84"
                     Content="Remove" Height="NaN"/>
 
             </Grid>

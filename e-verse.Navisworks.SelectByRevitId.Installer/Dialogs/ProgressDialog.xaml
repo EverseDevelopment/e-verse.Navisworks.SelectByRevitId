@@ -12,8 +12,8 @@
     mc:Ignorable="d">
     <Viewbox>
         <Border
-            Width="497" 
-            Height="409" 
+            Width="510" 
+            Height="424" 
             Margin="5,5,5,5"
             Background="{DynamicResource BackgroundColor}"
             BorderBrush="Transparent"
@@ -79,7 +79,7 @@
 
                 <ProgressBar
                 Style="{DynamicResource ProgressBarStyle}" 
-                Margin="122,237,115,162"
+                Margin="122,237,115,175"
                 VerticalContentAlignment="Center"
                 Maximum="100"
                 Value="{Binding ProgressValue}" RenderTransformOrigin="0.5,0.5" >
@@ -97,17 +97,17 @@
                     x:Name="GoNext"
                     Content="Next"
                     MinWidth="73"
-                    IsEnabled="False" Margin="288,285,48,84" Height="NaN"/>
+                    IsEnabled="False" Margin="280,300,48,84" Height="NaN"/>
 
                 <Button Style="{DynamicResource MainButtonStyle}"   
                     x:Name="Cancel"
                     Content="Cancel"
                     MinWidth="73" 
-                    Margin="48,285,277,84" Height="NaN"/>
+                    Margin="48,300,280,84" Height="NaN"/>
 
                 <Button
                     Style="{DynamicResource CloseButtonStyle}"
-                    Margin="325,367,20,20"
+                    Margin="335,382,20,20"
                     Background="Transparent"
                     Click="Title_Link"
                     FontWeight="Light"
