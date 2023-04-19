@@ -6,7 +6,7 @@
 </auto-generated>
 -->
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-  <Product Id="5e02b8c2-2d91-472f-98b8-559237e4ab2d" Name="e-verse.Navisworks.SelectByRevitId" Language="1033" Codepage="Windows-1252" Version="1.0.10" UpgradeCode="5e02b8c2-2d91-472f-98b8-559227e4fb2d" Manufacturer="e-verse">
+  <Product Id="5e02b8c2-2d91-472f-98b8-559237e4bb2d" Name="e-verse.Navisworks.SelectByRevitId" Language="1033" Codepage="Windows-1252" Version="1.0.11" UpgradeCode="5e02b8c2-2d91-472f-98b8-559227e4fb2d" Manufacturer="e-verse">
     <Package InstallerVersion="200" Compressed="yes" SummaryCodepage="Windows-1252" Languages="1033" />
     <Media Id="1" Cabinet="_...rse.Navisworks.SelectByRevitId.cab" EmbedCab="yes" />
 
@@ -61,8 +61,8 @@
 
                     <Directory Id="INSTALLDIR.Contents.dlls.2018.Images" Name="Images">
 
-                      <Component Id="Component.Heart.jpg_3100705638" Guid="5e02b8c2-2d91-472f-98b8-559236b7dd1f">
-                        <File Id="Heart.jpg_3100705638" Source="..\e-verse.Navisworks.SelectByRevitId.Common\Images\Heart.jpg" />
+                      <Component Id="Component.Heart.jpg_1481275188" Guid="5e02b8c2-2d91-472f-98b8-5592ca49a61f">
+                        <File Id="Heart.jpg_1481275188" Source="..\e-verse.Navisworks.SelectByRevitId.Common\Images\Heart.jpg" />
                         <RemoveFolder Id="INSTALLDIR.Contents.dlls.2018.Images" On="uninstall" />
 
                         <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
@@ -70,16 +70,16 @@
                         </RegistryKey>
                       </Component>
 
-                      <Component Id="Component.RID_32.jpg_1810031807" Guid="5e02b8c2-2d91-472f-98b8-5592c77fd2ff">
-                        <File Id="RID_32.jpg_1810031807" Source="..\e-verse.Navisworks.SelectByRevitId.Common\Images\RID_32.jpg" />
+                      <Component Id="Component.RID_32.jpg_1915358589" Guid="5e02b8c2-2d91-472f-98b8-55920de5b604">
+                        <File Id="RID_32.jpg_1915358589" Source="..\e-verse.Navisworks.SelectByRevitId.Common\Images\RID_32.jpg" />
 
                         <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
                           <RegistryValue Value="0" Type="string" KeyPath="yes" />
                         </RegistryKey>
                       </Component>
 
-                      <Component Id="Component.SelectByRevitId.png_3727819196" Guid="5e02b8c2-2d91-472f-98b8-5592dce0ccf8">
-                        <File Id="SelectByRevitId.png_3727819196" Source="..\e-verse.Navisworks.SelectByRevitId.Common\Images\SelectByRevitId.png" />
+                      <Component Id="Component.SelectByRevitId.png_1055312937" Guid="5e02b8c2-2d91-472f-98b8-5592e85d2157">
+                        <File Id="SelectByRevitId.png_1055312937" Source="..\e-verse.Navisworks.SelectByRevitId.Common\Images\SelectByRevitId.png" />
 
                         <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
                           <RegistryValue Value="0" Type="string" KeyPath="yes" />
@@ -123,8 +123,8 @@
 
                     <Directory Id="INSTALLDIR.Contents.dlls.2019.Images" Name="Images">
 
-                      <Component Id="Component.Heart.jpg_2944075371" Guid="5e02b8c2-2d91-472f-98b8-559235f05625">
-                        <File Id="Heart.jpg_2944075371" Source="..\e-verse.Navisworks.SelectByRevitId.Common\Images\Heart.jpg" />
+                      <Component Id="Component.Heart.jpg_1070234412" Guid="5e02b8c2-2d91-472f-98b8-5592ddfcff4a">
+                        <File Id="Heart.jpg_1070234412" Source="..\e-verse.Navisworks.SelectByRevitId.Common\Images\Heart.jpg" />
                         <RemoveFolder Id="INSTALLDIR.Contents.dlls.2019.Images" On="uninstall" />
 
                         <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
@@ -132,16 +132,16 @@
                         </RegistryKey>
                       </Component>
 
-                      <Component Id="Component.RID_32.jpg_1652090666" Guid="5e02b8c2-2d91-472f-98b8-5592b19f9cbc">
-                        <File Id="RID_32.jpg_1652090666" Source="..\e-verse.Navisworks.SelectByRevitId.Common\Images\RID_32.jpg" />
+                      <Component Id="Component.RID_32.jpg_414320506" Guid="5e02b8c2-2d91-472f-98b8-5592da72e6ec">
+                        <File Id="RID_32.jpg_414320506" Source="..\e-verse.Navisworks.SelectByRevitId.Common\Images\RID_32.jpg" />
 
                         <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
                           <RegistryValue Value="0" Type="string" KeyPath="yes" />
                         </RegistryKey>
                       </Component>
 
-                      <Component Id="Component.SelectByRevitId.png_4184347831" Guid="5e02b8c2-2d91-472f-98b8-55921cb11d7c">
-                        <File Id="SelectByRevitId.png_4184347831" Source="..\e-verse.Navisworks.SelectByRevitId.Common\Images\SelectByRevitId.png" />
+                      <Component Id="Component.SelectByRevitId.png_271952268" Guid="5e02b8c2-2d91-472f-98b8-5592503b1f99">
+                        <File Id="SelectByRevitId.png_271952268" Source="..\e-verse.Navisworks.SelectByRevitId.Common\Images\SelectByRevitId.png" />
 
                         <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
                           <RegistryValue Value="0" Type="string" KeyPath="yes" />
@@ -185,8 +185,8 @@
 
                     <Directory Id="INSTALLDIR.Contents.dlls.2020.Images" Name="Images">
 
-                      <Component Id="Component.Heart.jpg_3007226208" Guid="5e02b8c2-2d91-472f-98b8-5592c0243cb2">
-                        <File Id="Heart.jpg_3007226208" Source="..\e-verse.Navisworks.SelectByRevitId.Common\Images\Heart.jpg" />
+                      <Component Id="Component.Heart.jpg_93409570" Guid="5e02b8c2-2d91-472f-98b8-5592bfd66c70">
+                        <File Id="Heart.jpg_93409570" Source="..\e-verse.Navisworks.SelectByRevitId.Common\Images\Heart.jpg" />
                         <RemoveFolder Id="INSTALLDIR.Contents.dlls.2020.Images" On="uninstall" />
 
                         <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
@@ -194,16 +194,16 @@
                         </RegistryKey>
                       </Component>
 
-                      <Component Id="Component.RID_32.jpg_1730054755" Guid="5e02b8c2-2d91-472f-98b8-55923d3b980f">
-                        <File Id="RID_32.jpg_1730054755" Source="..\e-verse.Navisworks.SelectByRevitId.Common\Images\RID_32.jpg" />
+                      <Component Id="Component.RID_32.jpg_2938298532" Guid="5e02b8c2-2d91-472f-98b8-5592c2c0b384">
+                        <File Id="RID_32.jpg_2938298532" Source="..\e-verse.Navisworks.SelectByRevitId.Common\Images\RID_32.jpg" />
 
                         <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
                           <RegistryValue Value="0" Type="string" KeyPath="yes" />
                         </RegistryKey>
                       </Component>
 
-                      <Component Id="Component.SelectByRevitId.png_1841441508" Guid="5e02b8c2-2d91-472f-98b8-5592b988eb31">
-                        <File Id="SelectByRevitId.png_1841441508" Source="..\e-verse.Navisworks.SelectByRevitId.Common\Images\SelectByRevitId.png" />
+                      <Component Id="Component.SelectByRevitId.png_2844819992" Guid="5e02b8c2-2d91-472f-98b8-55925c6caf47">
+                        <File Id="SelectByRevitId.png_2844819992" Source="..\e-verse.Navisworks.SelectByRevitId.Common\Images\SelectByRevitId.png" />
 
                         <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
                           <RegistryValue Value="0" Type="string" KeyPath="yes" />
@@ -247,8 +247,8 @@
 
                     <Directory Id="INSTALLDIR.Contents.dlls.2021.Images" Name="Images">
 
-                      <Component Id="Component.Heart.jpg_1881433983" Guid="5e02b8c2-2d91-472f-98b8-5592c5c9627f">
-                        <File Id="Heart.jpg_1881433983" Source="..\e-verse.Navisworks.SelectByRevitId.Common\Images\Heart.jpg" />
+                      <Component Id="Component.Heart.jpg_3421539898" Guid="5e02b8c2-2d91-472f-98b8-5592f349fb71">
+                        <File Id="Heart.jpg_3421539898" Source="..\e-verse.Navisworks.SelectByRevitId.Common\Images\Heart.jpg" />
                         <RemoveFolder Id="INSTALLDIR.Contents.dlls.2021.Images" On="uninstall" />
 
                         <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
@@ -256,16 +256,16 @@
                         </RegistryKey>
                       </Component>
 
-                      <Component Id="Component.RID_32.jpg_588402558" Guid="5e02b8c2-2d91-472f-98b8-5592ccfdae2b">
-                        <File Id="RID_32.jpg_588402558" Source="..\e-verse.Navisworks.SelectByRevitId.Common\Images\RID_32.jpg" />
+                      <Component Id="Component.RID_32.jpg_94247557" Guid="5e02b8c2-2d91-472f-98b8-5592545f2cea">
+                        <File Id="RID_32.jpg_94247557" Source="..\e-verse.Navisworks.SelectByRevitId.Common\Images\RID_32.jpg" />
 
                         <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
                           <RegistryValue Value="0" Type="string" KeyPath="yes" />
                         </RegistryKey>
                       </Component>
 
-                      <Component Id="Component.SelectByRevitId.png_2335385000" Guid="5e02b8c2-2d91-472f-98b8-5592f8c6b4ba">
-                        <File Id="SelectByRevitId.png_2335385000" Source="..\e-verse.Navisworks.SelectByRevitId.Common\Images\SelectByRevitId.png" />
+                      <Component Id="Component.SelectByRevitId.png_1385812622" Guid="5e02b8c2-2d91-472f-98b8-55923c84b920">
+                        <File Id="SelectByRevitId.png_1385812622" Source="..\e-verse.Navisworks.SelectByRevitId.Common\Images\SelectByRevitId.png" />
 
                         <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
                           <RegistryValue Value="0" Type="string" KeyPath="yes" />
@@ -309,8 +309,8 @@
 
                     <Directory Id="INSTALLDIR.Contents.dlls.2022.Images" Name="Images">
 
-                      <Component Id="Component.Heart.jpg_470381156" Guid="5e02b8c2-2d91-472f-98b8-5592a11cbb36">
-                        <File Id="Heart.jpg_470381156" Source="..\e-verse.Navisworks.SelectByRevitId.Common\Images\Heart.jpg" />
+                      <Component Id="Component.Heart.jpg_3304079657" Guid="5e02b8c2-2d91-472f-98b8-5592d45e0c4e">
+                        <File Id="Heart.jpg_3304079657" Source="..\e-verse.Navisworks.SelectByRevitId.Common\Images\Heart.jpg" />
                         <RemoveFolder Id="INSTALLDIR.Contents.dlls.2022.Images" On="uninstall" />
 
                         <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
@@ -318,16 +318,16 @@
                         </RegistryKey>
                       </Component>
 
-                      <Component Id="Component.RID_32.jpg_3324730365" Guid="5e02b8c2-2d91-472f-98b8-5592851fd761">
-                        <File Id="RID_32.jpg_3324730365" Source="..\e-verse.Navisworks.SelectByRevitId.Common\Images\RID_32.jpg" />
+                      <Component Id="Component.RID_32.jpg_1923207327" Guid="5e02b8c2-2d91-472f-98b8-559211b2bc3b">
+                        <File Id="RID_32.jpg_1923207327" Source="..\e-verse.Navisworks.SelectByRevitId.Common\Images\RID_32.jpg" />
 
                         <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
                           <RegistryValue Value="0" Type="string" KeyPath="yes" />
                         </RegistryKey>
                       </Component>
 
-                      <Component Id="Component.SelectByRevitId.png_3415513413" Guid="5e02b8c2-2d91-472f-98b8-5592f9458d4c">
-                        <File Id="SelectByRevitId.png_3415513413" Source="..\e-verse.Navisworks.SelectByRevitId.Common\Images\SelectByRevitId.png" />
+                      <Component Id="Component.SelectByRevitId.png_1498741662" Guid="5e02b8c2-2d91-472f-98b8-55924d6c87c7">
+                        <File Id="SelectByRevitId.png_1498741662" Source="..\e-verse.Navisworks.SelectByRevitId.Common\Images\SelectByRevitId.png" />
 
                         <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
                           <RegistryValue Value="0" Type="string" KeyPath="yes" />
@@ -371,8 +371,8 @@
 
                     <Directory Id="INSTALLDIR.Contents.dlls.2023.Images" Name="Images">
 
-                      <Component Id="Component.Heart.jpg_724136483" Guid="5e02b8c2-2d91-472f-98b8-5592310ee52e">
-                        <File Id="Heart.jpg_724136483" Source="..\e-verse.Navisworks.SelectByRevitId.Common\Images\Heart.jpg" />
+                      <Component Id="Component.Heart.jpg_997687113" Guid="5e02b8c2-2d91-472f-98b8-5592c8b9809d">
+                        <File Id="Heart.jpg_997687113" Source="..\e-verse.Navisworks.SelectByRevitId.Common\Images\Heart.jpg" />
                         <RemoveFolder Id="INSTALLDIR.Contents.dlls.2023.Images" On="uninstall" />
 
                         <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
@@ -380,16 +380,16 @@
                         </RegistryKey>
                       </Component>
 
-                      <Component Id="Component.RID_32.jpg_3759889058" Guid="5e02b8c2-2d91-472f-98b8-559250f7340d">
-                        <File Id="RID_32.jpg_3759889058" Source="..\e-verse.Navisworks.SelectByRevitId.Common\Images\RID_32.jpg" />
+                      <Component Id="Component.RID_32.jpg_2823886215" Guid="5e02b8c2-2d91-472f-98b8-55922f617c35">
+                        <File Id="RID_32.jpg_2823886215" Source="..\e-verse.Navisworks.SelectByRevitId.Common\Images\RID_32.jpg" />
 
                         <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
                           <RegistryValue Value="0" Type="string" KeyPath="yes" />
                         </RegistryKey>
                       </Component>
 
-                      <Component Id="Component.SelectByRevitId.png_4236291537" Guid="5e02b8c2-2d91-472f-98b8-5592293881e8">
-                        <File Id="SelectByRevitId.png_4236291537" Source="..\e-verse.Navisworks.SelectByRevitId.Common\Images\SelectByRevitId.png" />
+                      <Component Id="Component.SelectByRevitId.png_386572169" Guid="5e02b8c2-2d91-472f-98b8-5592c6e9d721">
+                        <File Id="SelectByRevitId.png_386572169" Source="..\e-verse.Navisworks.SelectByRevitId.Common\Images\SelectByRevitId.png" />
 
                         <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
                           <RegistryValue Value="0" Type="string" KeyPath="yes" />
@@ -471,39 +471,39 @@
       <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.dll_1398886181" />
       <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.addin_2399856500" />
       <ComponentRef Id="Component.PluginRibbon.xaml_471056500" />
-      <ComponentRef Id="Component.Heart.jpg_3100705638" />
-      <ComponentRef Id="Component.RID_32.jpg_1810031807" />
-      <ComponentRef Id="Component.SelectByRevitId.png_3727819196" />
+      <ComponentRef Id="Component.Heart.jpg_1481275188" />
+      <ComponentRef Id="Component.RID_32.jpg_1915358589" />
+      <ComponentRef Id="Component.SelectByRevitId.png_1055312937" />
       <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.dll_2332390294" />
       <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.addin_1751168204" />
       <ComponentRef Id="Component.PluginRibbon.xaml_2882117005" />
-      <ComponentRef Id="Component.Heart.jpg_2944075371" />
-      <ComponentRef Id="Component.RID_32.jpg_1652090666" />
-      <ComponentRef Id="Component.SelectByRevitId.png_4184347831" />
+      <ComponentRef Id="Component.Heart.jpg_1070234412" />
+      <ComponentRef Id="Component.RID_32.jpg_414320506" />
+      <ComponentRef Id="Component.SelectByRevitId.png_271952268" />
       <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.dll_3296492610" />
       <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.addin_343185237" />
       <ComponentRef Id="Component.PluginRibbon.xaml_2358655851" />
-      <ComponentRef Id="Component.Heart.jpg_3007226208" />
-      <ComponentRef Id="Component.RID_32.jpg_1730054755" />
-      <ComponentRef Id="Component.SelectByRevitId.png_1841441508" />
+      <ComponentRef Id="Component.Heart.jpg_93409570" />
+      <ComponentRef Id="Component.RID_32.jpg_2938298532" />
+      <ComponentRef Id="Component.SelectByRevitId.png_2844819992" />
       <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.dll_2088300034" />
       <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.addin_4192599401" />
       <ComponentRef Id="Component.PluginRibbon.xaml_670966172" />
-      <ComponentRef Id="Component.Heart.jpg_1881433983" />
-      <ComponentRef Id="Component.RID_32.jpg_588402558" />
-      <ComponentRef Id="Component.SelectByRevitId.png_2335385000" />
+      <ComponentRef Id="Component.Heart.jpg_3421539898" />
+      <ComponentRef Id="Component.RID_32.jpg_94247557" />
+      <ComponentRef Id="Component.SelectByRevitId.png_1385812622" />
       <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.dll_322707994" />
       <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.addin_1775745561" />
       <ComponentRef Id="Component.PluginRibbon.xaml_538398885" />
-      <ComponentRef Id="Component.Heart.jpg_470381156" />
-      <ComponentRef Id="Component.RID_32.jpg_3324730365" />
-      <ComponentRef Id="Component.SelectByRevitId.png_3415513413" />
+      <ComponentRef Id="Component.Heart.jpg_3304079657" />
+      <ComponentRef Id="Component.RID_32.jpg_1923207327" />
+      <ComponentRef Id="Component.SelectByRevitId.png_1498741662" />
       <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.dll_1349021799" />
       <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.addin_1883411259" />
       <ComponentRef Id="Component.PluginRibbon.xaml_1903313765" />
-      <ComponentRef Id="Component.Heart.jpg_724136483" />
-      <ComponentRef Id="Component.RID_32.jpg_3759889058" />
-      <ComponentRef Id="Component.SelectByRevitId.png_4236291537" />
+      <ComponentRef Id="Component.Heart.jpg_997687113" />
+      <ComponentRef Id="Component.RID_32.jpg_2823886215" />
+      <ComponentRef Id="Component.SelectByRevitId.png_386572169" />
       <ComponentRef Id="AppDataFolder.Autodesk" />
       <ComponentRef Id="AppDataFolder.Autodesk.ApplicationPlugins" />
       <ComponentRef Id="INSTALLDIR.Contents" />
