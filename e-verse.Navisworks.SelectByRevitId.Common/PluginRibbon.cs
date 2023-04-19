@@ -9,12 +9,13 @@ using System.Windows;
 
 namespace EVerse.Navisworks.Plugin.Common
 {
-    [Plugin("SelectByRevitIdRibbon", IdentityInformation.DeveloperID, DisplayName = "Select by revit ID")]
+    [Plugin("SelectByRevitIdRibbon", IdentityInformation.DeveloperID, DisplayName = "Select by ID")]
     [RibbonLayout("PluginRibbon.xaml")]
     [RibbonTab("SelectByRevitId")]
-    [Command("SelectByRevitId", LargeIcon = "RID_32.jpg", ToolTip = "Select by revit ID", DisplayName = "Select by revit ID")]
+    [Command("SelectByRevitId", LargeIcon = "RID_32.jpg", ToolTip = "Select by Revit ID\n\nPris is a Select by Revit ID add-in for Autodesk® Navisworks®. It allows users to easily select specific element in a Navisworks model based on its unique Revit ID.", DisplayName = "Select by ID")]
     class PluginRibbon : CommonCommandHandlerPlugin
     {
+        public const string PRIS = "pris";
         public override int ExecuteCommand(string name, params string[] parameters)
         {
             string directoryName = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
@@ -42,6 +43,12 @@ namespace EVerse.Navisworks.Plugin.Common
                     break;
             }
             return 0;
+        }
+
+        public override bool TryShowCommandHelp(string name)
+        {
+            bool result = base.TryShowCommandHelp($"https://e-verse.com/{PRIS}");
+            return result;
         }
     }
 }
