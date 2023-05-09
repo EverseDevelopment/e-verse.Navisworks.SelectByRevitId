@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "e-verse.Navisworks.SelectBy
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "e-verse.Navisworks.SelectByRevitId.Plugin", "e-verse.Navisworks.SelectByRevitId.Plugin\e-verse.Navisworks.SelectByRevitId.Plugin.shproj", "{90624231-A5F0-47FD-B4D4-D1A9381A4039}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "e-verse.Navisworks.SelectByRevitId.2024", "e-verse.Navisworks.SelectByRevitId.2024\e-verse.Navisworks.SelectByRevitId.2024.csproj", "{9D01EAE5-4574-4D7A-A99A-EB8B2C21ABFD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +79,10 @@ Global
 		{591B5590-E83F-4D48-861D-FBD534F4CA53}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{591B5590-E83F-4D48-861D-FBD534F4CA53}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{591B5590-E83F-4D48-861D-FBD534F4CA53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D01EAE5-4574-4D7A-A99A-EB8B2C21ABFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D01EAE5-4574-4D7A-A99A-EB8B2C21ABFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D01EAE5-4574-4D7A-A99A-EB8B2C21ABFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D01EAE5-4574-4D7A-A99A-EB8B2C21ABFD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -92,6 +98,8 @@ Global
 		e-verse.Navisworks.SelectByRevitId.Plugin\e-verse.Navisworks.SelectByRevitId.Plugin.projitems*{90624231-a5f0-47fd-b4d4-d1a9381a4039}*SharedItemsImports = 13
 		e-verse.Navisworks.SelectByRevitId.Common\e-verse.Navisworks.SelectByRevitId.Common.projitems*{9a8a805c-8e9b-49c3-8b24-2235e7036bf9}*SharedItemsImports = 4
 		e-verse.Navisworks.SelectByRevitId.Plugin\e-verse.Navisworks.SelectByRevitId.Plugin.projitems*{9a8a805c-8e9b-49c3-8b24-2235e7036bf9}*SharedItemsImports = 4
+		e-verse.Navisworks.SelectByRevitId.Common\e-verse.Navisworks.SelectByRevitId.Common.projitems*{9d01eae5-4574-4d7a-a99a-eb8b2c21abfd}*SharedItemsImports = 4
+		e-verse.Navisworks.SelectByRevitId.Plugin\e-verse.Navisworks.SelectByRevitId.Plugin.projitems*{9d01eae5-4574-4d7a-a99a-eb8b2c21abfd}*SharedItemsImports = 4
 		e-verse.Navisworks.SelectByRevitId.Common\e-verse.Navisworks.SelectByRevitId.Common.projitems*{9d70d94e-c119-4bc0-8250-acbaad186282}*SharedItemsImports = 4
 		e-verse.Navisworks.SelectByRevitId.Plugin\e-verse.Navisworks.SelectByRevitId.Plugin.projitems*{9d70d94e-c119-4bc0-8250-acbaad186282}*SharedItemsImports = 4
 		e-verse.Navisworks.SelectByRevitId.Common\e-verse.Navisworks.SelectByRevitId.Common.projitems*{e88e72a8-cc63-401e-ae12-63fa14621e7e}*SharedItemsImports = 4
