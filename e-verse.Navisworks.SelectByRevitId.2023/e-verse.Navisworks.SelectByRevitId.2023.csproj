@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>EVerse.Navisworks.SelectByRevitId</RootNamespace>
-    <AssemblyName>e-verse.Navisworks.SelectByRevitId</AssemblyName>
+    <AssemblyName>Pris.SelectByRevitId</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -139,6 +139,8 @@ copy "$(SolutionDir)\e-verse.Navisworks.SelectByRevitId.Common\PackageContents.x
 if EXIST "%25APPDATA%25\Autodesk\ApplicationPlugins\$(SolutionName).bundle" rmdir /s /q "%25AppData%25\Autodesk\ApplicationPlugins\$(SolutionName).bundle"
 if $(ConfigurationName) == Debug mkdir "%25APPDATA%25\Autodesk\ApplicationPlugins\$(SolutionName).bundle"
 
-if $(ConfigurationName) == Debug xcopy /e /s /h "$(SolutionDir)\$(SolutionName).bundle" "%25APPDATA%25\Autodesk\ApplicationPlugins\$(SolutionName).bundle"</PostBuildEvent>
+if $(ConfigurationName) == Debug xcopy /e /s /h "$(SolutionDir)\$(SolutionName).bundle" "%25APPDATA%25\Autodesk\ApplicationPlugins\$(SolutionName).bundle"
+
+echo "$(SolutionDir)\$(SolutionName).bundle" "%25APPDATA%25\Autodesk\ApplicationPlugins\$(SolutionName).bundle"</PostBuildEvent>
   </PropertyGroup>
 </Project>
