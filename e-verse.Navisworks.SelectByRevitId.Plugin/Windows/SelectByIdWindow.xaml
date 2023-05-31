@@ -84,7 +84,7 @@
                     </TransformGroup>
                 </Line.RenderTransform>
             </Line>
-            <Label Style="{DynamicResource TitleLabels}" Content="Enter Revit ID" HorizontalAlignment="Left" Margin="36,119,0,0" Width="94" Height="23" VerticalAlignment="Top" />
+            <Label Style="{DynamicResource TitleLabels}" Content="Enter the Revit Model element ID" HorizontalAlignment="Left" Margin="36,119,0,0" Width="251" Height="23" VerticalAlignment="Top" />
 
             <TextBox Loaded="FindTextBlockPlaceholderComponent" Style="{DynamicResource MainTextBox}" x:Name="textBox" Text="" IsEnabled="False" Height="34" Width="297" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" MinWidth="300" MinHeight="25" VerticalAlignment="Top" Margin="0,150,0,0" HorizontalAlignment="Center" />
             <Button Style="{DynamicResource ApplyButtonStyle}" x:Name="applyButton" Content="Select" IsEnabled="False" HorizontalAlignment="Left" Margin="113,208,0,0" Width="122" Height="22" Click="OkButton_Click" VerticalAlignment="Top"/>
