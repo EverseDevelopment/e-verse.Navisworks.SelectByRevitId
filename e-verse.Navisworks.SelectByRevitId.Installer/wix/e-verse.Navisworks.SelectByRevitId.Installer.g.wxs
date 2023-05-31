@@ -29,8 +29,8 @@
                 <Directory Id="INSTALLDIR.Contents.dlls" Name="dlls">
                   <Directory Id="INSTALLDIR.Contents.dlls.2018" Name="2018">
 
-                    <Component Id="Component.e2dverse.Navisworks.SelectByRevitId.dll_1398886181" Guid="5e02b8c2-2d91-472f-98b8-55921f107bb8">
-                      <File Id="e2dverse.Navisworks.SelectByRevitId.dll_1398886181" Source="..\e-verse.Navisworks.SelectByRevitId.2018\bin\Release\e-verse.Navisworks.SelectByRevitId.dll" />
+                    <Component Id="Component.Pris.SelectByRevitId.dll_105379892" Guid="5e02b8c2-2d91-472f-98b8-5592be040cfc">
+                      <File Id="Pris.SelectByRevitId.dll_105379892" Source="..\e-verse.Navisworks.SelectByRevitId.2018\bin\Release\Pris.SelectByRevitId.dll" />
                       <RemoveFolder Id="INSTALLDIR.Contents.dlls.2018" On="uninstall" />
 
                       <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
@@ -91,8 +91,8 @@
 
                   <Directory Id="INSTALLDIR.Contents.dlls.2019" Name="2019">
 
-                    <Component Id="Component.e2dverse.Navisworks.SelectByRevitId.dll_2332390294" Guid="5e02b8c2-2d91-472f-98b8-55923f35c25d">
-                      <File Id="e2dverse.Navisworks.SelectByRevitId.dll_2332390294" Source="..\e-verse.Navisworks.SelectByRevitId.2019\bin\Release\e-verse.Navisworks.SelectByRevitId.dll" />
+                    <Component Id="Component.Pris.SelectByRevitId.dll_1944898808" Guid="5e02b8c2-2d91-472f-98b8-5592ea36044c">
+                      <File Id="Pris.SelectByRevitId.dll_1944898808" Source="..\e-verse.Navisworks.SelectByRevitId.2019\bin\Release\Pris.SelectByRevitId.dll" />
                       <RemoveFolder Id="INSTALLDIR.Contents.dlls.2019" On="uninstall" />
 
                       <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
@@ -153,8 +153,8 @@
 
                   <Directory Id="INSTALLDIR.Contents.dlls.2020" Name="2020">
 
-                    <Component Id="Component.e2dverse.Navisworks.SelectByRevitId.dll_3296492610" Guid="5e02b8c2-2d91-472f-98b8-5592eb0e9ac3">
-                      <File Id="e2dverse.Navisworks.SelectByRevitId.dll_3296492610" Source="..\e-verse.Navisworks.SelectByRevitId.2020\bin\Release\e-verse.Navisworks.SelectByRevitId.dll" />
+                    <Component Id="Component.Pris.SelectByRevitId.dll_1572003047" Guid="5e02b8c2-2d91-472f-98b8-5592401a5f52">
+                      <File Id="Pris.SelectByRevitId.dll_1572003047" Source="..\e-verse.Navisworks.SelectByRevitId.2020\bin\Release\Pris.SelectByRevitId.dll" />
                       <RemoveFolder Id="INSTALLDIR.Contents.dlls.2020" On="uninstall" />
 
                       <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
@@ -215,8 +215,8 @@
 
                   <Directory Id="INSTALLDIR.Contents.dlls.2021" Name="2021">
 
-                    <Component Id="Component.e2dverse.Navisworks.SelectByRevitId.dll_2088300034" Guid="5e02b8c2-2d91-472f-98b8-5592f3f87c54">
-                      <File Id="e2dverse.Navisworks.SelectByRevitId.dll_2088300034" Source="..\e-verse.Navisworks.SelectByRevitId.2021\bin\Release\e-verse.Navisworks.SelectByRevitId.dll" />
+                    <Component Id="Component.Pris.SelectByRevitId.dll_3696767421" Guid="5e02b8c2-2d91-472f-98b8-55921fd2031b">
+                      <File Id="Pris.SelectByRevitId.dll_3696767421" Source="..\e-verse.Navisworks.SelectByRevitId.2021\bin\Release\Pris.SelectByRevitId.dll" />
                       <RemoveFolder Id="INSTALLDIR.Contents.dlls.2021" On="uninstall" />
 
                       <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
@@ -277,8 +277,8 @@
 
                   <Directory Id="INSTALLDIR.Contents.dlls.2022" Name="2022">
 
-                    <Component Id="Component.e2dverse.Navisworks.SelectByRevitId.dll_322707994" Guid="5e02b8c2-2d91-472f-98b8-5592b3a5c2be">
-                      <File Id="e2dverse.Navisworks.SelectByRevitId.dll_322707994" Source="..\e-verse.Navisworks.SelectByRevitId.2022\bin\Release\e-verse.Navisworks.SelectByRevitId.dll" />
+                    <Component Id="Component.Pris.SelectByRevitId.dll_3298288340" Guid="5e02b8c2-2d91-472f-98b8-559233172bd3">
+                      <File Id="Pris.SelectByRevitId.dll_3298288340" Source="..\e-verse.Navisworks.SelectByRevitId.2022\bin\Release\Pris.SelectByRevitId.dll" />
                       <RemoveFolder Id="INSTALLDIR.Contents.dlls.2022" On="uninstall" />
 
                       <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
@@ -339,8 +339,8 @@
 
                   <Directory Id="INSTALLDIR.Contents.dlls.2023" Name="2023">
 
-                    <Component Id="Component.e2dverse.Navisworks.SelectByRevitId.dll_1349021799" Guid="5e02b8c2-2d91-472f-98b8-55924b191283">
-                      <File Id="e2dverse.Navisworks.SelectByRevitId.dll_1349021799" Source="..\e-verse.Navisworks.SelectByRevitId.2023\bin\Release\e-verse.Navisworks.SelectByRevitId.dll" />
+                    <Component Id="Component.Pris.SelectByRevitId.dll_3874617934" Guid="5e02b8c2-2d91-472f-98b8-559281079d60">
+                      <File Id="Pris.SelectByRevitId.dll_3874617934" Source="..\e-verse.Navisworks.SelectByRevitId.2023\bin\Release\Pris.SelectByRevitId.dll" />
                       <RemoveFolder Id="INSTALLDIR.Contents.dlls.2023" On="uninstall" />
 
                       <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
@@ -390,6 +390,68 @@
 
                       <Component Id="Component.SelectByRevitId.png_386572169" Guid="5e02b8c2-2d91-472f-98b8-5592c6e9d721">
                         <File Id="SelectByRevitId.png_386572169" Source="..\e-verse.Navisworks.SelectByRevitId.Common\Images\SelectByRevitId.png" />
+
+                        <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
+                          <RegistryValue Value="0" Type="string" KeyPath="yes" />
+                        </RegistryKey>
+                      </Component>
+
+                    </Directory>
+                  </Directory>
+
+                  <Directory Id="INSTALLDIR.Contents.dlls.2024" Name="2024">
+
+                    <Component Id="Component.Pris.SelectByRevitId.dll_728995805" Guid="5e02b8c2-2d91-472f-98b8-5592cdf50941">
+                      <File Id="Pris.SelectByRevitId.dll_728995805" Source="..\e-verse.Navisworks.SelectByRevitId.2024\bin\Release\Pris.SelectByRevitId.dll" />
+                      <RemoveFolder Id="INSTALLDIR.Contents.dlls.2024" On="uninstall" />
+
+                      <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
+                        <RegistryValue Value="0" Type="string" KeyPath="yes" />
+                      </RegistryKey>
+                    </Component>
+
+                    <Component Id="Component.e2dverse.Navisworks.SelectByRevitId.addin_1783147283" Guid="5e02b8c2-2d91-472f-98b8-55924a4a17d2">
+                      <File Id="e2dverse.Navisworks.SelectByRevitId.addin_1783147283" Source="..\e-verse.Navisworks.SelectByRevitId.Common\e-verse.Navisworks.SelectByRevitId.addin" />
+
+                      <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
+                        <RegistryValue Value="0" Type="string" KeyPath="yes" />
+                      </RegistryKey>
+                    </Component>
+
+                    <Directory Id="INSTALLDIR.Contents.dlls.2024.en2dUS" Name="en-US">
+
+                      <Component Id="Component.PluginRibbon.xaml_1165813065" Guid="5e02b8c2-2d91-472f-98b8-55927186b316">
+                        <File Id="PluginRibbon.xaml_1165813065" Source="..\e-verse.Navisworks.SelectByRevitId.Common\en-US\PluginRibbon.xaml" />
+                        <RemoveFolder Id="INSTALLDIR.Contents.dlls.2024.en2dUS" On="uninstall" />
+
+                        <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
+                          <RegistryValue Value="0" Type="string" KeyPath="yes" />
+                        </RegistryKey>
+                      </Component>
+
+                    </Directory>
+
+                    <Directory Id="INSTALLDIR.Contents.dlls.2024.Images" Name="Images">
+
+                      <Component Id="Component.Heart.jpg_1217994522" Guid="5e02b8c2-2d91-472f-98b8-5592cbd48930">
+                        <File Id="Heart.jpg_1217994522" Source="..\e-verse.Navisworks.SelectByRevitId.Common\Images\Heart.jpg" />
+                        <RemoveFolder Id="INSTALLDIR.Contents.dlls.2024.Images" On="uninstall" />
+
+                        <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
+                          <RegistryValue Value="0" Type="string" KeyPath="yes" />
+                        </RegistryKey>
+                      </Component>
+
+                      <Component Id="Component.RID_32.jpg_890284901" Guid="5e02b8c2-2d91-472f-98b8-55929537d409">
+                        <File Id="RID_32.jpg_890284901" Source="..\e-verse.Navisworks.SelectByRevitId.Common\Images\RID_32.jpg" />
+
+                        <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
+                          <RegistryValue Value="0" Type="string" KeyPath="yes" />
+                        </RegistryKey>
+                      </Component>
+
+                      <Component Id="Component.SelectByRevitId.png_887256344" Guid="5e02b8c2-2d91-472f-98b8-559288e4732c">
+                        <File Id="SelectByRevitId.png_887256344" Source="..\e-verse.Navisworks.SelectByRevitId.Common\Images\SelectByRevitId.png" />
 
                         <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
                           <RegistryValue Value="0" Type="string" KeyPath="yes" />
@@ -468,42 +530,48 @@
 
     <Feature Id="Complete" Title="Complete" Absent="allow" Level="1">
       <ComponentRef Id="Component.PackageContents.xml_3857129583" />
-      <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.dll_1398886181" />
+      <ComponentRef Id="Component.Pris.SelectByRevitId.dll_105379892" />
       <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.addin_2399856500" />
       <ComponentRef Id="Component.PluginRibbon.xaml_471056500" />
       <ComponentRef Id="Component.Heart.jpg_1481275188" />
       <ComponentRef Id="Component.RID_32.jpg_1915358589" />
       <ComponentRef Id="Component.SelectByRevitId.png_1055312937" />
-      <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.dll_2332390294" />
+      <ComponentRef Id="Component.Pris.SelectByRevitId.dll_1944898808" />
       <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.addin_1751168204" />
       <ComponentRef Id="Component.PluginRibbon.xaml_2882117005" />
       <ComponentRef Id="Component.Heart.jpg_1070234412" />
       <ComponentRef Id="Component.RID_32.jpg_414320506" />
       <ComponentRef Id="Component.SelectByRevitId.png_271952268" />
-      <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.dll_3296492610" />
+      <ComponentRef Id="Component.Pris.SelectByRevitId.dll_1572003047" />
       <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.addin_343185237" />
       <ComponentRef Id="Component.PluginRibbon.xaml_2358655851" />
       <ComponentRef Id="Component.Heart.jpg_93409570" />
       <ComponentRef Id="Component.RID_32.jpg_2938298532" />
       <ComponentRef Id="Component.SelectByRevitId.png_2844819992" />
-      <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.dll_2088300034" />
+      <ComponentRef Id="Component.Pris.SelectByRevitId.dll_3696767421" />
       <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.addin_4192599401" />
       <ComponentRef Id="Component.PluginRibbon.xaml_670966172" />
       <ComponentRef Id="Component.Heart.jpg_3421539898" />
       <ComponentRef Id="Component.RID_32.jpg_94247557" />
       <ComponentRef Id="Component.SelectByRevitId.png_1385812622" />
-      <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.dll_322707994" />
+      <ComponentRef Id="Component.Pris.SelectByRevitId.dll_3298288340" />
       <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.addin_1775745561" />
       <ComponentRef Id="Component.PluginRibbon.xaml_538398885" />
       <ComponentRef Id="Component.Heart.jpg_3304079657" />
       <ComponentRef Id="Component.RID_32.jpg_1923207327" />
       <ComponentRef Id="Component.SelectByRevitId.png_1498741662" />
-      <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.dll_1349021799" />
+      <ComponentRef Id="Component.Pris.SelectByRevitId.dll_3874617934" />
       <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.addin_1883411259" />
       <ComponentRef Id="Component.PluginRibbon.xaml_1903313765" />
       <ComponentRef Id="Component.Heart.jpg_997687113" />
       <ComponentRef Id="Component.RID_32.jpg_2823886215" />
       <ComponentRef Id="Component.SelectByRevitId.png_386572169" />
+      <ComponentRef Id="Component.Pris.SelectByRevitId.dll_728995805" />
+      <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.addin_1783147283" />
+      <ComponentRef Id="Component.PluginRibbon.xaml_1165813065" />
+      <ComponentRef Id="Component.Heart.jpg_1217994522" />
+      <ComponentRef Id="Component.RID_32.jpg_890284901" />
+      <ComponentRef Id="Component.SelectByRevitId.png_887256344" />
       <ComponentRef Id="AppDataFolder.Autodesk" />
       <ComponentRef Id="AppDataFolder.Autodesk.ApplicationPlugins" />
       <ComponentRef Id="INSTALLDIR.Contents" />
