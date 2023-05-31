@@ -19,7 +19,7 @@
                             Size="Large"
                             KeyTip="B1"
                             ShowText="True"
-                            Text="Revit ID"
+                            Text="Pris - Select by ID"
                             Orientation="Vertical"/>
             </RibbonPanelSource>
         </RibbonPanel>
