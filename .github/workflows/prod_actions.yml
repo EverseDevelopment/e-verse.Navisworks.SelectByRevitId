@@ -12,7 +12,7 @@ jobs:
     # The type of runner that the job will run on
     runs-on: windows-latest 
     env:
-        Solution_Name: e-verse.Navisworks.SelectByRevitId.sln
+        Solution_Name: Pris.SelectByRevitId.sln
     outputs:
       Version: ${{ steps.gitversion.outputs.nuGetVersionV2 }} 
       CommitsSinceVersionSource: ${{ steps.gitversion.outputs.CommitsSinceVersionSource }}   
@@ -51,7 +51,7 @@ jobs:
       uses: NuGet/setup-nuget@v1.0.6
      
     - name: Restore NuGet Packages
-      run: nuget restore e-verse.Navisworks.SelectByRevitId.sln
+      run: nuget restore Pris.SelectByRevitId.sln
       
     # Change the version inside of the 'e-verse.Navisworks.SelectByRevitId.Installer.g.wxs' file
     - name: Setting new version to the 'e-verse.Navisworks.SelectByRevitId.Installer.g.wxs' file
@@ -59,7 +59,7 @@ jobs:
 
     # Build the solution on the Release mode
     - name: Build and Publish App
-      run: msbuild e-verse.Navisworks.SelectByRevitId.sln /t:Clean,Build /p:platform="Any CPU" /p:Configuration=Release /p:DeployOnBuild=true /p:PublishProfile=FolderProfile
+      run: msbuild Pris.SelectByRevitId.sln /t:Clean,Build /p:platform="Any CPU" /p:Configuration=Release /p:DeployOnBuild=true /p:PublishProfile=FolderProfile
               
     - name: Create Release
       id: create_release
@@ -79,6 +79,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
-        asset_path: .\e-verse.Navisworks.SelectByRevitId.Installer\e-verse.Navisworks.SelectByRevitId.exe
-        asset_name: e-verse.Navisworks.SelectByRevitId.exe
+        asset_path: .\e-verse.Navisworks.SelectByRevitId.Installer\Pris.SelectByRevitId.exe
+        asset_name: Pris.SelectByRevitId.exe
         asset_content_type: application/zip
