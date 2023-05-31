@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Windows;
 
 namespace EVerse.Navisworks.SelectByRevitId.Plugin.Utils
 {
@@ -53,6 +54,7 @@ namespace EVerse.Navisworks.SelectByRevitId.Plugin.Utils
                 }
             }
         }
+        private const string INVALID_ID_MESSAGE = "There is at least one invalid Element ID";
 
         /// <summary>
         /// Get selection from int Revit ID
@@ -61,20 +63,25 @@ namespace EVerse.Navisworks.SelectByRevitId.Plugin.Utils
         /// <returns></returns>
         public static ModelItemCollection getElements(List<string> li)
         {
-            Search search = new Search();
-
-            search.Selection.SelectAll();
-            foreach (var st in li)
-            {
-                search.SearchConditions.Add(SearchCondition.HasPropertyByName("LcRevitId", "LcOaNat64AttributeValue").EqualValue(VariantData.FromDisplayString(st)));
-            }
             // Execute Search
-
-            ModelItemCollection items = search.FindAll(Application.ActiveDocument, false);
-
+            ModelItemCollection items = new ModelItemCollection();
+            Search search = new Search();
+            search.Selection.SelectAll();
+            List<string> list = li.Distinct().ToList();
+            for (int i = 0; i < list.Count(); i++)
+            {
+                string st = list[i];
+                search.SearchConditions.Add(SearchCondition.HasPropertyByName("LcRevitId", "LcOaNat64AttributeValue").EqualValue(VariantData.FromDisplayString(st)));
+                var item = search.FindFirst(Autodesk.Navisworks.Api.Application.ActiveDocument, false);
+                if (item != null)
+                    items.Add(item);
+                search.Clear();
+            }
+            if (items.Count != list.Count)
+                MessageBox.Show(INVALID_ID_MESSAGE);
             // highlight the items
 
-            Application.ActiveDocument.CurrentSelection.
+            Autodesk.Navisworks.Api.Application.ActiveDocument.CurrentSelection.
 
                 CopyFrom(items);
 
