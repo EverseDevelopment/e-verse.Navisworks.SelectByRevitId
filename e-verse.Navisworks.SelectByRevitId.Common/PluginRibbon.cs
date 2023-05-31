@@ -9,10 +9,10 @@ using System.Windows;
 
 namespace EVerse.Navisworks.Plugin.Common
 {
-    [Plugin("SelectByRevitIdRibbon", IdentityInformation.DeveloperID, DisplayName = "Select by ID")]
+    [Plugin("SelectByRevitIdRibbon", IdentityInformation.DeveloperID, DisplayName = "Pris - Select by ID")]
     [RibbonLayout("PluginRibbon.xaml")]
-    [RibbonTab("SelectByRevitId")]
-    [Command("SelectByRevitId", LargeIcon = "RID_32.jpg", ToolTip = "Select by Revit ID\n\nPris is a Select by Revit ID add-in for Autodesk® Navisworks®. It allows users to easily select specific element in a Navisworks model based on its unique Revit ID.", DisplayName = "Select by ID")]
+    [RibbonTab("SelectByRevitId", DisplayName = "Pris - Select by ID")]
+    [Command("SelectByRevitId", LargeIcon = "RID_32.jpg", ToolTip = "Select by Revit ID\n\nPris is a Select by Revit ID add-in for Autodesk® Navisworks®. It allows users to easily select specific element in a Navisworks model based on its unique Revit ID.", DisplayName = "Pris - Select by ID")]
     class PluginRibbon : CommonCommandHandlerPlugin
     {
         public const string PRIS = "pris";
