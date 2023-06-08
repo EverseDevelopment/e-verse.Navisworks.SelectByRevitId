@@ -5,7 +5,11 @@ using EVerse.Navisworks.SelectByRevitId.Plugin.Utils;
 
 namespace EVerse.Navisworks.SelectByRevitId.Plugin
 {
+<<<<<<< HEAD
     [Plugin("SelectByRevitId", IdentityInformation.DeveloperID, ToolTip = "Select by revit element ID", DisplayName = "Pris")]
+=======
+    [Plugin("SelectByRevitId", IdentityInformation.DeveloperID, ToolTip = "Pris - Select by ID", DisplayName = "Pris - Select by ID")]
+>>>>>>> main
     public class SelectByIdPlugin : CustomPlugin
     {
         public int Execute(params string[] parameters)
