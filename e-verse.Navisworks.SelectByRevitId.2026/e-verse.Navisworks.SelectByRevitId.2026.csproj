@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9D01EAE5-4574-4D7A-A99A-EB8B2C21ABFD}</ProjectGuid>
+    <ProjectGuid>{D54934FE-E292-4BF9-871C-BDB2DF04CB86}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>EVerse.Navisworks.SelectByRevitId</RootNamespace>
@@ -34,30 +34,31 @@
     <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AdWindows, Version=5.0.3.1, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Speckle.Navisworks.API.2024.0.0\lib\net48\AdWindows.dll</HintPath>
+    <Reference Include="AdWindows, Version=5.2.0.2, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Speckle.Navisworks.API.2026.0.1\lib\net48\AdWindows.dll</HintPath>
     </Reference>
-    <Reference Include="Autodesk.Navisworks.Api, Version=21.0.0.0, Culture=neutral, PublicKeyToken=d85e58fa5af9b484, processorArchitecture=AMD64">
-      <HintPath>..\packages\Speckle.Navisworks.API.2024.0.0\lib\net48\Autodesk.Navisworks.Api.dll</HintPath>
+    <Reference Include="Autodesk.Navisworks.Api, Version=23.0.0.0, Culture=neutral, PublicKeyToken=d85e58fa5af9b484, processorArchitecture=AMD64">
+      <HintPath>..\packages\Speckle.Navisworks.API.2026.0.1\lib\net48\Autodesk.Navisworks.Api.dll</HintPath>
     </Reference>
-    <Reference Include="Autodesk.Navisworks.ComApi, Version=21.0.0.0, Culture=neutral, PublicKeyToken=d85e58fa5af9b484, processorArchitecture=AMD64">
-      <HintPath>..\packages\Speckle.Navisworks.API.2024.0.0\lib\net48\Autodesk.Navisworks.ComApi.dll</HintPath>
+    <Reference Include="Autodesk.Navisworks.ComApi, Version=23.0.0.0, Culture=neutral, PublicKeyToken=d85e58fa5af9b484, processorArchitecture=AMD64">
+      <HintPath>..\packages\Speckle.Navisworks.API.2026.0.1\lib\net48\Autodesk.Navisworks.ComApi.dll</HintPath>
     </Reference>
-    <Reference Include="Autodesk.Navisworks.Controls, Version=21.0.0.0, Culture=neutral, PublicKeyToken=d85e58fa5af9b484, processorArchitecture=AMD64">
-      <HintPath>..\packages\Speckle.Navisworks.API.2024.0.0\lib\net48\Autodesk.Navisworks.Controls.dll</HintPath>
+    <Reference Include="Autodesk.Navisworks.Controls, Version=23.0.0.0, Culture=neutral, PublicKeyToken=d85e58fa5af9b484, processorArchitecture=AMD64">
+      <HintPath>..\packages\Speckle.Navisworks.API.2026.0.1\lib\net48\Autodesk.Navisworks.Controls.dll</HintPath>
     </Reference>
     <Reference Include="Autodesk.Navisworks.Interop.ComApi, Version=21.0.0.0, Culture=neutral, PublicKeyToken=d85e58fa5af9b484, processorArchitecture=AMD64">
-      <HintPath>..\packages\Speckle.Navisworks.API.2024.0.0\lib\net48\Autodesk.Navisworks.Interop.ComApi.dll</HintPath>
+      <HintPath>..\packages\Speckle.Navisworks.API.2026.0.1\lib\net48\Autodesk.Navisworks.Interop.ComApi.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="navisworks.gui.common, Version=21.0.0.0, Culture=neutral, processorArchitecture=AMD64">
-      <HintPath>..\packages\Speckle.Navisworks.API.2024.0.0\lib\net48\navisworks.gui.common.dll</HintPath>
+    <Reference Include="navisworks.gui.common, Version=23.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>..\packages\Speckle.Navisworks.API.2026.0.1\lib\net48\navisworks.gui.common.dll</HintPath>
     </Reference>
-    <Reference Include="navisworks.gui.interface, Version=21.0.0.0, Culture=neutral, processorArchitecture=AMD64">
-      <HintPath>..\packages\Speckle.Navisworks.API.2024.0.0\lib\net48\navisworks.gui.interface.dll</HintPath>
+    <Reference Include="navisworks.gui.interface, Version=23.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>..\packages\Speckle.Navisworks.API.2026.0.1\lib\net48\navisworks.gui.interface.dll</HintPath>
     </Reference>
-    <Reference Include="navisworks.gui.roamer, Version=21.0.0.0, Culture=neutral, processorArchitecture=AMD64">
-      <HintPath>..\packages\Speckle.Navisworks.API.2024.0.0\lib\net48\navisworks.gui.roamer.dll</HintPath>
+    <Reference Include="navisworks.gui.roamer, Version=23.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <HintPath>..\packages\Speckle.Navisworks.API.2026.0.1\lib\net48\navisworks.gui.roamer.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -82,9 +83,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Resources\SelectByRevitId.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
@@ -94,18 +92,21 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="..\e-verse.Navisworks.SelectByRevitId.Common\e-verse.Navisworks.SelectByRevitId.Common.projitems" Label="Shared" />
   <Import Project="..\e-verse.Navisworks.SelectByRevitId.Plugin\e-verse.Navisworks.SelectByRevitId.Plugin.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>mkdir "$(SolutionDir)\$(SolutionName).bundle\Contents\dlls\2024\en-US"
-mkdir "$(SolutionDir)\$(SolutionName).bundle\Contents\dlls\2024\Images"
+    <PostBuildEvent>mkdir "$(SolutionDir)\$(SolutionName).bundle\Contents\dlls\2026\en-US"
+mkdir "$(SolutionDir)\$(SolutionName).bundle\Contents\dlls\2026\Images"
 
-copy "$(TargetDir)\*.dll" "$(SolutionDir)$(SolutionName).bundle\Contents\dlls\2024"
-copy "$(TargetDir)\*.config" "$(SolutionDir)$(SolutionName).bundle\Contents\dlls\2024"
-copy "$(SolutionDir)\e-verse.Navisworks.SelectByRevitId.Common\Images\*" "$(SolutionDir)$(SolutionName).bundle\Contents\dlls\2024\Images"
-copy "$(SolutionDir)\e-verse.Navisworks.SelectByRevitId.Common\en-US\PluginRibbon.xaml" "$(SolutionDir)$(SolutionName).bundle\Contents\dlls\2024\en-US"
-copy "$(SolutionDir)\e-verse.Navisworks.SelectByRevitId.Common\*.addin" "$(SolutionDir)$(SolutionName).bundle\Contents\dlls\2024"
+copy "$(TargetDir)\*.dll" "$(SolutionDir)$(SolutionName).bundle\Contents\dlls\2026"
+copy "$(TargetDir)\*.config" "$(SolutionDir)$(SolutionName).bundle\Contents\dlls\2026"
+copy "$(SolutionDir)\e-verse.Navisworks.SelectByRevitId.Common\Images\*" "$(SolutionDir)$(SolutionName).bundle\Contents\dlls\2026\Images"
+copy "$(SolutionDir)\e-verse.Navisworks.SelectByRevitId.Common\en-US\PluginRibbon.xaml" "$(SolutionDir)$(SolutionName).bundle\Contents\dlls\2026\en-US"
+copy "$(SolutionDir)\e-verse.Navisworks.SelectByRevitId.Common\*.addin" "$(SolutionDir)$(SolutionName).bundle\Contents\dlls\2026"
 copy "$(SolutionDir)\e-verse.Navisworks.SelectByRevitId.Common\PackageContents.xml" "$(SolutionDir)$(SolutionName).bundle"
 
 if EXIST "%25PROGRAMDATA%25\Autodesk\ApplicationPlugins\$(SolutionName).bundle" rmdir /s /q "%25PROGRAMDATA%25\Autodesk\ApplicationPlugins\$(SolutionName).bundle"

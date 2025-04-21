@@ -6,29 +6,14 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "e-verse.Navisworks.SelectByRevitId.2018", "e-verse.Navisworks.SelectByRevitId.2018\e-verse.Navisworks.SelectByRevitId.2018.csproj", "{60FD800D-A7BB-4494-9064-1478FCA6B26D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "e-verse.Navisworks.SelectByRevitId.2019", "e-verse.Navisworks.SelectByRevitId.2019\e-verse.Navisworks.SelectByRevitId.2019.csproj", "{E88E72A8-CC63-401E-AE12-63FA14621E7E}"
-	ProjectSection(ProjectDependencies) = postProject
-		{60FD800D-A7BB-4494-9064-1478FCA6B26D} = {60FD800D-A7BB-4494-9064-1478FCA6B26D}
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "e-verse.Navisworks.SelectByRevitId.2020", "e-verse.Navisworks.SelectByRevitId.2020\e-verse.Navisworks.SelectByRevitId.2020.csproj", "{F8DB5022-D40F-496F-814A-C843BDB56206}"
-	ProjectSection(ProjectDependencies) = postProject
-		{60FD800D-A7BB-4494-9064-1478FCA6B26D} = {60FD800D-A7BB-4494-9064-1478FCA6B26D}
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "e-verse.Navisworks.SelectByRevitId.2021", "e-verse.Navisworks.SelectByRevitId.2021\e-verse.Navisworks.SelectByRevitId.2021.csproj", "{9A8A805C-8E9B-49C3-8B24-2235E7036BF9}"
-	ProjectSection(ProjectDependencies) = postProject
-		{60FD800D-A7BB-4494-9064-1478FCA6B26D} = {60FD800D-A7BB-4494-9064-1478FCA6B26D}
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "e-verse.Navisworks.SelectByRevitId.2022", "e-verse.Navisworks.SelectByRevitId.2022\e-verse.Navisworks.SelectByRevitId.2022.csproj", "{9D70D94E-C119-4BC0-8250-ACBAAD186282}"
-	ProjectSection(ProjectDependencies) = postProject
-		{60FD800D-A7BB-4494-9064-1478FCA6B26D} = {60FD800D-A7BB-4494-9064-1478FCA6B26D}
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "e-verse.Navisworks.SelectByRevitId.2023", "e-verse.Navisworks.SelectByRevitId.2023\e-verse.Navisworks.SelectByRevitId.2023.csproj", "{213BC98C-F558-4CC7-89DF-EFE6B8B14C66}"
-	ProjectSection(ProjectDependencies) = postProject
-		{60FD800D-A7BB-4494-9064-1478FCA6B26D} = {60FD800D-A7BB-4494-9064-1478FCA6B26D}
-	EndProjectSection
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "e-verse.Navisworks.SelectByRevitId.Common", "e-verse.Navisworks.SelectByRevitId.Common\e-verse.Navisworks.SelectByRevitId.Common.shproj", "{FE40B4F6-4656-42AF-BCF2-B168567610CD}"
 EndProject
@@ -36,19 +21,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "e-verse.Navisworks.SelectBy
 	ProjectSection(ProjectDependencies) = postProject
 		{213BC98C-F558-4CC7-89DF-EFE6B8B14C66} = {213BC98C-F558-4CC7-89DF-EFE6B8B14C66}
 		{9D01EAE5-4574-4D7A-A99A-EB8B2C21ABFD} = {9D01EAE5-4574-4D7A-A99A-EB8B2C21ABFD}
+		{BB4ECDE2-035A-4CE5-BE79-7DD9BD942A68} = {BB4ECDE2-035A-4CE5-BE79-7DD9BD942A68}
+		{D54934FE-E292-4BF9-871C-BDB2DF04CB86} = {D54934FE-E292-4BF9-871C-BDB2DF04CB86}
 	EndProjectSection
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "e-verse.Navisworks.SelectByRevitId.Plugin", "e-verse.Navisworks.SelectByRevitId.Plugin\e-verse.Navisworks.SelectByRevitId.Plugin.shproj", "{90624231-A5F0-47FD-B4D4-D1A9381A4039}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "e-verse.Navisworks.SelectByRevitId.2024", "e-verse.Navisworks.SelectByRevitId.2024\e-verse.Navisworks.SelectByRevitId.2024.csproj", "{9D01EAE5-4574-4D7A-A99A-EB8B2C21ABFD}"
-	ProjectSection(ProjectDependencies) = postProject
-		{213BC98C-F558-4CC7-89DF-EFE6B8B14C66} = {213BC98C-F558-4CC7-89DF-EFE6B8B14C66}
-		{60FD800D-A7BB-4494-9064-1478FCA6B26D} = {60FD800D-A7BB-4494-9064-1478FCA6B26D}
-		{9A8A805C-8E9B-49C3-8B24-2235E7036BF9} = {9A8A805C-8E9B-49C3-8B24-2235E7036BF9}
-		{9D70D94E-C119-4BC0-8250-ACBAAD186282} = {9D70D94E-C119-4BC0-8250-ACBAAD186282}
-		{E88E72A8-CC63-401E-AE12-63FA14621E7E} = {E88E72A8-CC63-401E-AE12-63FA14621E7E}
-		{F8DB5022-D40F-496F-814A-C843BDB56206} = {F8DB5022-D40F-496F-814A-C843BDB56206}
-	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "e-verse.Navisworks.SelectByRevitId.2025", "e-verse.Navisworks.SelectByRevitId.2025\e-verse.Navisworks.SelectByRevitId.2025.csproj", "{BB4ECDE2-035A-4CE5-BE79-7DD9BD942A68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "e-verse.Navisworks.SelectByRevitId.2026", "e-verse.Navisworks.SelectByRevitId.2026\e-verse.Navisworks.SelectByRevitId.2026.csproj", "{D54934FE-E292-4BF9-871C-BDB2DF04CB86}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -88,6 +71,14 @@ Global
 		{9D01EAE5-4574-4D7A-A99A-EB8B2C21ABFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D01EAE5-4574-4D7A-A99A-EB8B2C21ABFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D01EAE5-4574-4D7A-A99A-EB8B2C21ABFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB4ECDE2-035A-4CE5-BE79-7DD9BD942A68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB4ECDE2-035A-4CE5-BE79-7DD9BD942A68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB4ECDE2-035A-4CE5-BE79-7DD9BD942A68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB4ECDE2-035A-4CE5-BE79-7DD9BD942A68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D54934FE-E292-4BF9-871C-BDB2DF04CB86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D54934FE-E292-4BF9-871C-BDB2DF04CB86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D54934FE-E292-4BF9-871C-BDB2DF04CB86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D54934FE-E292-4BF9-871C-BDB2DF04CB86}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -107,6 +98,10 @@ Global
 		e-verse.Navisworks.SelectByRevitId.Plugin\e-verse.Navisworks.SelectByRevitId.Plugin.projitems*{9d01eae5-4574-4d7a-a99a-eb8b2c21abfd}*SharedItemsImports = 4
 		e-verse.Navisworks.SelectByRevitId.Common\e-verse.Navisworks.SelectByRevitId.Common.projitems*{9d70d94e-c119-4bc0-8250-acbaad186282}*SharedItemsImports = 4
 		e-verse.Navisworks.SelectByRevitId.Plugin\e-verse.Navisworks.SelectByRevitId.Plugin.projitems*{9d70d94e-c119-4bc0-8250-acbaad186282}*SharedItemsImports = 4
+		e-verse.Navisworks.SelectByRevitId.Common\e-verse.Navisworks.SelectByRevitId.Common.projitems*{bb4ecde2-035a-4ce5-be79-7dd9bd942a68}*SharedItemsImports = 4
+		e-verse.Navisworks.SelectByRevitId.Plugin\e-verse.Navisworks.SelectByRevitId.Plugin.projitems*{bb4ecde2-035a-4ce5-be79-7dd9bd942a68}*SharedItemsImports = 4
+		e-verse.Navisworks.SelectByRevitId.Common\e-verse.Navisworks.SelectByRevitId.Common.projitems*{d54934fe-e292-4bf9-871c-bdb2df04cb86}*SharedItemsImports = 4
+		e-verse.Navisworks.SelectByRevitId.Plugin\e-verse.Navisworks.SelectByRevitId.Plugin.projitems*{d54934fe-e292-4bf9-871c-bdb2df04cb86}*SharedItemsImports = 4
 		e-verse.Navisworks.SelectByRevitId.Common\e-verse.Navisworks.SelectByRevitId.Common.projitems*{e88e72a8-cc63-401e-ae12-63fa14621e7e}*SharedItemsImports = 4
 		e-verse.Navisworks.SelectByRevitId.Plugin\e-verse.Navisworks.SelectByRevitId.Plugin.projitems*{e88e72a8-cc63-401e-ae12-63fa14621e7e}*SharedItemsImports = 4
 		e-verse.Navisworks.SelectByRevitId.Common\e-verse.Navisworks.SelectByRevitId.Common.projitems*{f8db5022-d40f-496f-814a-c843bdb56206}*SharedItemsImports = 4

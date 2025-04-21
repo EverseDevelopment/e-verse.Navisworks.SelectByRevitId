@@ -1,7 +1,7 @@
-﻿using Autodesk.Navisworks.Api;
-using Autodesk.Navisworks.Api.Plugins;
+﻿using Autodesk.Navisworks.Api.Plugins;
 using EVerse.Navisworks.SelectByRevitId.Common.Application;
 using EVerse.Navisworks.SelectByRevitId.Plugin.Utils;
+
 
 namespace EVerse.Navisworks.SelectByRevitId.Plugin
 {
@@ -11,8 +11,16 @@ namespace EVerse.Navisworks.SelectByRevitId.Plugin
         public int Execute(params string[] parameters)
         {
             Tools.SelectedIds = "";
-            SelectByIdWindow selectByIdWindow = new SelectByIdWindow();
-            selectByIdWindow.ShowDialog();
+
+            if (!Tools.IsRevitModelLoaded())
+            {
+                MessageWindow.Show("Warning", "You don't have a Revit model loaded, please load one");
+            }
+            else
+            {
+                SelectByIdWindow selectByIdWindow = new SelectByIdWindow();
+                selectByIdWindow.ShowDialog();
+            }
 
             return 0;
         }

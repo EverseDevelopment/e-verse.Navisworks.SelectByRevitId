@@ -43,4 +43,12 @@
 		<RuntimeRequirements OS="Win64" Platform="NAVMAN|NAVSIM" SeriesMin="Nw21" SeriesMax="Nw21" />
 		<ComponentEntry AppName="Select by Revit ID for Autodesk® Navisworks®" AppType="ManagedPlugin" Version="1.0.0.0" ModuleName="./Contents/dlls/2024/Pris.SelectByRevitId.dll" AppDescription="Select by Revit ID." />
 	</Components>
+	<Components Description="2025">
+		<RuntimeRequirements OS="Win64" Platform="NAVMAN|NAVSIM" SeriesMin="Nw22" SeriesMax="Nw22" />
+		<ComponentEntry AppName="Select by Revit ID for Autodesk® Navisworks®" AppType="ManagedPlugin" Version="1.0.0.0" ModuleName="./Contents/dlls/2025/Pris.SelectByRevitId.dll" AppDescription="Select by Revit ID." />
+	</Components>
+	<Components Description="2026">
+		<RuntimeRequirements OS="Win64" Platform="NAVMAN|NAVSIM" SeriesMin="Nw23" SeriesMax="Nw23" />
+		<ComponentEntry AppName="Select by Revit ID for Autodesk® Navisworks®" AppType="ManagedPlugin" Version="1.0.0.0" ModuleName="./Contents/dlls/2026/Pris.SelectByRevitId.dll" AppDescription="Select by Revit ID." />
+	</Components>
 </ApplicationPackage>
