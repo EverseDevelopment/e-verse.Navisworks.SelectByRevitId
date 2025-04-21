@@ -55,44 +55,14 @@
         <Grid Background="Transparent" RenderOptions.BitmapScalingMode="HighQuality" Margin="9,9,9,9">
             <Grid>
 
-                <Button 
-                    Style="{DynamicResource CloseButtonStyle}" 
-                    Name="TitleButton" 
-                    Foreground="Black" 
-                    BorderThickness="0" 
-                    Click="Pris_Link" 
+                <Button Style="{DynamicResource MainTitleButtonStyle}"
                     Background="Transparent" 
-                    Height="50" 
-                    FontSize="20" 
-                    FontWeight="Light" 
-                    Margin="6,4,215,0" VerticalAlignment="Top">
-                    <Button.Template>
-                        <ControlTemplate TargetType="Button">
-                            <Border x:Name="border" Width="290" Background="Transparent">
-                                <Grid>
-                                    <Image x:Name="ComponentImage"
-                                       Visibility="Visible" 
-                                       Source="/Pris.SelectByRevitId;component/Resources/SelectByRevitId.png"
-                                       HorizontalAlignment="Left"
-                                       Width="115" 
-                                       SnapsToDevicePixels="True" 
-                                       RenderOptions.BitmapScalingMode="HighQuality" 
-                                       RenderOptions.EdgeMode="Aliased" 
-                                       Margin="2,5,0,5"/>
-                                </Grid>
-                            </Border>
-                            <ControlTemplate.Triggers >
-                                <Trigger Property="IsDefaulted" Value="True">
-                                </Trigger>
-                                <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="Opacity"  TargetName="border" Value="0.5"/>
-                                </Trigger>
-                                <Trigger Property="IsPressed" Value="True">
-                                    <Setter Property="Opacity"  TargetName="border" Value="0.2"/>
-                                </Trigger>
-                            </ControlTemplate.Triggers>
-                        </ControlTemplate>
-                    </Button.Template>
+                    BorderBrush="Transparent" 
+                    Click="Pris_Link"
+                        Margin="10,10,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Height="40" Width="141"  >
                 </Button>
 
                 <TextBlock 
