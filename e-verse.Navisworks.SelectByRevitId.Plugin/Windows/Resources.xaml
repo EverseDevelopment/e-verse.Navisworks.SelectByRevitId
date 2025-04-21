@@ -1396,4 +1396,168 @@
         <Setter Property="Stroke" Value="{DynamicResource SecondaryGray}"/>
         <Setter Property="X2" Value="10000"/>
     </Style>
+
+    <!-- Main Title Button -->
+    <ControlTemplate x:Key="MainTitleButtonTemp" TargetType="{x:Type Button}">
+        <Grid Background="Transparent">
+            <Viewbox Stretch="UniformToFill" Margin="0">
+                <Canvas Width="800" Height="600" Background="Transparent">
+
+                    <Path x:Name="LeiaImage"
+                      Style="{DynamicResource LeiaLogoImage}"
+                      Canvas.Left="115"
+                      Canvas.Top="44"/>
+
+                    <Path x:Name="LeiaText"
+                      Style="{DynamicResource PrisLetterA}"
+                      Canvas.Left="270" 
+                      Canvas.Top="90">
+                        <Path.RenderTransform>
+                            <ScaleTransform ScaleY="-1" CenterY="0"/>
+                        </Path.RenderTransform>
+                    </Path>
+
+                    <Path Style="{DynamicResource PrisLetterB}"
+                          Canvas.Left="350" 
+                          Canvas.Top="175">
+                        <Path.RenderTransform>
+                            <ScaleTransform ScaleY="-1" CenterY="0"/>
+                        </Path.RenderTransform>
+                    </Path>
+
+                    <Path Style="{DynamicResource PrisLetterC}"
+                          Canvas.Left="165" 
+                          Canvas.Top="237">
+                        <Path.RenderTransform>
+                            <ScaleTransform ScaleY="-1" CenterY="0"/>
+                        </Path.RenderTransform>
+                    </Path>
+
+                    <Path Style="{DynamicResource PrisLetterD}"
+                          Canvas.Left="578" 
+                          Canvas.Top="96">
+                        <Path.RenderTransform>
+                            <ScaleTransform ScaleY="-1" CenterY="0"/>
+                        </Path.RenderTransform>
+                    </Path>
+
+                </Canvas>
+            </Viewbox>
+
+            <!-- Clickable transparent surface -->
+            <Rectangle x:Name="ClickSurface"
+                   Fill="Transparent"
+                   HorizontalAlignment="Stretch"
+                   VerticalAlignment="Stretch"/>
+        </Grid>
+
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="true">
+                <Setter Property="Opacity" TargetName="LeiaImage" Value="0.5"/>
+                <Setter Property="Opacity" TargetName="LeiaText" Value="0.5"/>
+            </Trigger>
+            <Trigger Property="IsPressed" Value="true">
+                <Setter Property="Opacity" TargetName="LeiaImage" Value="0.3"/>
+                <Setter Property="Opacity" TargetName="LeiaText" Value="0.3"/>
+            </Trigger>
+            <Trigger Property="IsEnabled" Value="false">
+                <Setter Property="Opacity" TargetName="LeiaImage" Value="0.25"/>
+                <Setter Property="Opacity" TargetName="LeiaText" Value="0.25"/>
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+
+
+    <Style x:Key="MainTitleButtonStyle" TargetType="{x:Type Button}">
+        <Setter Property="Foreground" Value="Aqua"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderBrush" Value="Transparent"/>
+        <Setter Property="Width" Value="25"/>
+        <Setter Property="Height" Value="25"/>
+        <Setter Property="Template" Value="{DynamicResource MainTitleButtonTemp}"/>
+        <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+        <Setter Property="Panel.ZIndex" Value="1"/>
+    </Style>
+
+    <Style x:Key="PrisLetterA" TargetType="{x:Type Path}">
+        <Setter Property="Fill" Value="{DynamicResource MainGray}" />
+        <Setter Property="Data">
+            <Setter.Value>
+                <PathGeometry Figures="m 0 0 c -8.148 0 -14.829 -2.933 -20.042 -8.799 -5.216 -5.867 -7.822 
+                              -13.443 -7.822 -22.732 0 -9.127 2.445 -16.46 7.333 -21.997 4.888
+                              -5.542 11.323 -8.311 19.309 -8.311 8.146 0 14.91 2.849 20.287 
+                              8.555 5.378 5.702 8.066 12.87 8.066 21.509 0 9.124 -2.566 16.701
+                              -7.699 22.731 C 14.298 -3.017 7.822 0 0 0 M -65.016 -136.631 V 
+                              26.397 h 37.152 V 15.643 c 8.636 10.102 20.368 15.154 35.197 
+                              15.154 11.08 0 21.181 -2.609 30.309 -7.821 19.389 -11.244 29.086 
+                              -29.251 29.086 -54.018 0 -18.416 -5.217 -33.081 -15.643 -43.995 
+                              -10.431 -10.755 -24.606 -16.132 -42.53 -16.132 -15.318 0 -27.46 
+                              4.724 -36.419 14.176 v -59.638 z" />
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="PrisLetterB" TargetType="{x:Type Path}">
+        <Setter Property="Fill" Value="{DynamicResource MainGray}" />
+        <Setter Property="Data">
+            <Setter.Value>
+                <PathGeometry Figures="M 0 0 V 113.167 H 37.151 V 97.769 c 2.77 7.332 6.027 12.3
+                              9.779 14.909 4.724 3.258 10.18 4.888 16.375 4.888 h 3.666 V 79.437
+                              c -0.977 0 -1.997 0.038 -3.054 0.122 -1.063 0.08 -1.877 0.16 
+                              -2.445 0.245 -0.572 0.079 -1.02 0.121 -1.345 0.121 -8.798 
+                              0 -15.238 -3.016 -19.309 -9.043 C 38.375 67.62 37.151 
+                              61.754 37.151 53.284 V 0 Z" />
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="PrisLetterC" TargetType="{x:Type Path}">
+        <Setter Property="Fill" Value="{DynamicResource MainGray}" />
+        <Setter Property="Data">
+            <Setter.Value>
+                <PathGeometry Figures="M 269.509 175.687 H 306.66 V 62.52 h -37.151 z m 18.82 52.794 
+                              c 5.702 0 10.388 -1.875 14.055 -5.621 3.666 -3.751 5.5 -8.554 5.5 -14.421 
+                              0 -5.542 -1.877 -10.185 -5.623 -13.932 -3.749 -3.75 -8.473 -5.621 -14.176 
+                              -5.621 -5.707 0 -10.431 1.871 -14.177 5.621 -3.749 3.747 -5.621 8.471 
+                              -5.621 14.177 0 5.701 1.872 10.425 5.621 14.176 3.746 3.746 8.555 5.621 
+                              14.421 5.621" />
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="PrisLetterD" TargetType="{x:Type Path}">
+        <Setter Property="Fill" Value="{DynamicResource MainGray}" />
+        <Setter Property="Data">
+            <Setter.Value>
+                <PathGeometry Figures="m 0 0 h -34.463 v 2.2 c 0 2.604 -1.019 4.766 -3.055 6.477 -2.039 1.711 
+                              -4.606 2.567 -7.699 2.567 -4.239 0.16 -7.009 -1.551 -8.309 -5.134 -1.632 -4.239 
+                              0.159 -7.66 5.377 -10.265 1.954 -0.978 4.314 -1.711 7.087 -2.2 15.803 -4.564 
+                              26.966 -9.777 33.485 -15.643 6.516 -5.866 9.776 -13.771 9.776 -23.709 0 -11.571 
+                              -4.196 -20.859 -12.586 -27.863 -8.395 -7.005 -19.516 -10.511 -33.363 -10.511 -13.853
+                              0 -24.851 3.384 -32.998 10.144 -8.15 6.759 -12.386 16.089 -12.71 27.986 h 35.197 
+                              c 0.814 -4.239 1.994 -7.211 3.544 -8.922 1.546 -1.71 3.868 -2.566 6.967 -2.566 
+                              2.443 0 4.479 0.772 6.109 2.322 1.628 1.547 2.446 3.46 2.446 5.744 0 2.604 -1.265 
+                              4.766 -3.789 6.477 -2.529 1.711 -7.539 3.789 -15.032 6.233 -12.385 3.911 -21.387 
+                              8.837 -27.008 14.787 -5.622 5.947 -8.434 13.401 -8.434 22.365 0 11.243 4.193 20.287 
+                              12.588 27.131 8.391 6.843 19.432 10.265 33.12 10.265 13.522 0 24.155 -3.342 31.896
+                              -10.021 C -4.116 21.181 -0.164 11.893 0 0" />
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="LeiaLogoImage" TargetType="{x:Type Path}">
+        <Setter Property="Fill" Value="{DynamicResource WindowButtonColor}" />
+        <Setter Property="Data">
+            <Setter.Value>
+                <PathGeometry Figures=" m 0 0 v 33.844 l 29.703 18.31 V 18.279 Z m -70.227 0.117 1.789 32.802 25.252 -16.162 z
+                              m -35.397 92.719 100.12 -59.028 v -34.57 l -32.427 20.752 -0.048 -0.029 -35.441 22.682 -2.372
+                              -43.488 -29.832 19.093 z m 0 41.087 29.704 17.822 v -34.124 l -29.704 -17.903 z m 72.853 2.691 
+                              26.576 14.882 V 120.369 Z M 29.703 60.941 -70.416 117.073 v 34.139 l 26.936 -14.504 42.79 -26.155
+                              v 40.873 L 29.703 133.892 Z M -2.784 38.594 -100.645 96.292 -73.638 112.57 26.313 56.531 Z m -0.638
+                              120.763 -34.564 -19.355 -35.946 19.355 -37.196 -22.317 V 96.4 l -0.267 -0.161 0.267 -0.157 V 15.235 
+                              l 37.241 -23.834 35.85 22.061 0.027 -0.017 0.027 0.043 34.512 -22.087 38.679 23.803 v 121.867 z" />
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
 </ResourceDictionary> 
