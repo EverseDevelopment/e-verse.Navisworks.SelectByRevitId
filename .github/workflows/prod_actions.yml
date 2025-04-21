@@ -23,6 +23,15 @@ jobs:
       with:
         fetch-depth: 0
         
+    - name: Setup .NET Core 3.1
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 3.1.x
+
+    - name: Setup .NET Core 8.0
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 8.0.x
    # install and calculate the new version with GitVersion  
     - name: Install GitVersion
       uses: gittools/actions/gitversion/setup@v0.9.7

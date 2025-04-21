@@ -168,7 +168,7 @@ namespace EVerse.Navisworks.SelectByRevitId.Installer
                             bool overwrittable = WaitForFilesToBeOverwritable(filePath);
                             if (!overwrittable)
                             {
-                                MessageBox.Show($"The file Leia_glTF_Exporter.dll {year} is still in use", "Warning");
+                                MessageBox.Show($"The file Select By Id {year} is still in use", "Warning");
                                 return ActionResult.Failure;
                             }
                         }
