@@ -365,3 +365,7 @@ FodyWeavers.xsd
 /e-verse.Navisworks.SelectByRevitId.bundle
 /e-verse.Navisworks.SelectByRevitId.Installer/e-verse.Navisworks.SelectByRevitId.msi
 /e-verse.Navisworks.SelectByRevitId.Installer/e-verse.Navisworks.SelectByRevitId.exe
+
+Pris.SelectByRevitId.bundle/
+
+e-verse.Navisworks.SelectByRevitId.Installer/Pris.SelectByRevitId.exe

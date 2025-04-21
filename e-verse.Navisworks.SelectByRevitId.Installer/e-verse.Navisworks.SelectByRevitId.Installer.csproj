@@ -12,8 +12,7 @@
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
+    <NuGetPackageImportStamp></NuGetPackageImportStamp>
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -90,11 +89,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="wix\e-verse.Navisworks.SelectByRevitId.Installer.g.wxs" />
     <None Include="wix\$(ProjectName).g.wxs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="wix\e-verse.Navisworks.SelectByRevitId.Installer.g.wxs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Control.Draggable">
@@ -114,6 +113,7 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -121,9 +121,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\logo.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="SelectByRevitId.nsi" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\e-verse.Navisworks.SelectByRevitId.2018\e-verse.Navisworks.SelectByRevitId.2018.csproj">
@@ -192,9 +189,9 @@
   <ItemGroup>
     <Resource Include="Resources\SelectByRevitId.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>
-    </PostBuildEvent>
+    <PostBuildEvent></PostBuildEvent>
   </PropertyGroup>
 </Project>

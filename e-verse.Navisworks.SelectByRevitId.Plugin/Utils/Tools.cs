@@ -54,7 +54,6 @@ namespace EVerse.Navisworks.SelectByRevitId.Plugin.Utils
                 }
             }
         }
-        private const string INVALID_ID_MESSAGE = "There is at least one invalid Element ID";
 
         /// <summary>
         /// Get selection from int Revit ID
@@ -77,9 +76,10 @@ namespace EVerse.Navisworks.SelectByRevitId.Plugin.Utils
                     items.Add(item);
                 search.Clear();
             }
-            if (items.Count != list.Count)
-                MessageBox.Show(INVALID_ID_MESSAGE);
-            // highlight the items
+            if (items.Count != list.Count) 
+            {
+                MessageWindow.Show("Warning", "This is not a valid Id");
+            }
 
             Autodesk.Navisworks.Api.Application.ActiveDocument.CurrentSelection.
 

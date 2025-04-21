@@ -102,6 +102,7 @@
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -122,6 +123,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Heart.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\SelectByRevitId.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <Import Project="..\e-verse.Navisworks.SelectByRevitId.Common\e-verse.Navisworks.SelectByRevitId.Common.projitems" Label="Shared" />
   <Import Project="..\e-verse.Navisworks.SelectByRevitId.Plugin\e-verse.Navisworks.SelectByRevitId.Plugin.projitems" Label="Shared" />

@@ -416,8 +416,7 @@
                     CornerRadius="{StaticResource borderRadiusLarge}"/>
 
             <TextBlock x:Name="textBlockPlaceholder"
-                       Margin="8,8,8,-9"
-                       Text="Placeholder here"
+                       Text=""
                        Foreground="{TemplateBinding Foreground}"
                        FontSize="{TemplateBinding FontSize}"
                        FontFamily="{TemplateBinding FontFamily}"
