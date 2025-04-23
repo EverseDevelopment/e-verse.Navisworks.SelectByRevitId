@@ -77,7 +77,7 @@ namespace EVerse.Navisworks.SelectByRevitId.Plugin
 
         private void Pris_Link(object sender, RoutedEventArgs e)
         {
-            System.Diagnostics.Process.Start("https://e-verse.com/");
+            System.Diagnostics.Process.Start("https://apps.autodesk.com/NAVIS/en/Detail/Index?id=7106599322742572339&appLang=en&os=Win64");
         }
 
         private void TextBox_GotFocus(object sender, RoutedEventArgs e)

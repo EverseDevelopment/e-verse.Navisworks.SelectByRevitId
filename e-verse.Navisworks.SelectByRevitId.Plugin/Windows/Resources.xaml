@@ -1396,4 +1396,100 @@
         <Setter Property="Stroke" Value="{DynamicResource SecondaryGray}"/>
         <Setter Property="X2" Value="10000"/>
     </Style>
+
+    <!-- Main Title Button -->
+    <ControlTemplate x:Key="MainTitleButtonTemp" TargetType="{x:Type Button}">
+        <Grid Background="Transparent">
+            <Viewbox Stretch="UniformToFill" Margin="0">
+                <Canvas Width="800" Height="600" Background="Transparent">
+
+                    <Path x:Name="PrisImage"
+                      Style="{DynamicResource PrisLogo}"
+                      Canvas.Left="115"
+                      Canvas.Top="54"/>
+
+                    <Path x:Name="PrisText"
+                      Style="{DynamicResource PrisLetters}"
+                      Canvas.Left="150" 
+                      Canvas.Top="0">
+                    </Path>
+                </Canvas>
+            </Viewbox>
+
+            <!-- Clickable transparent surface -->
+            <Rectangle x:Name="ClickSurface"
+                   Fill="Transparent"
+                   HorizontalAlignment="Stretch"
+                   VerticalAlignment="Stretch"/>
+        </Grid>
+
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="true">
+                <Setter Property="Opacity" TargetName="PrisImage" Value="0.5"/>
+                <Setter Property="Opacity" TargetName="PrisText" Value="0.5"/>
+            </Trigger>
+            <Trigger Property="IsPressed" Value="true">
+                <Setter Property="Opacity" TargetName="PrisImage" Value="0.3"/>
+                <Setter Property="Opacity" TargetName="PrisText" Value="0.3"/>
+            </Trigger>
+            <Trigger Property="IsEnabled" Value="false">
+                <Setter Property="Opacity" TargetName="PrisImage" Value="0.25"/>
+                <Setter Property="Opacity" TargetName="PrisText" Value="0.25"/>
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+
+
+    <Style x:Key="MainTitleButtonStyle" TargetType="{x:Type Button}">
+        <Setter Property="Foreground" Value="Aqua"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderBrush" Value="Transparent"/>
+        <Setter Property="Width" Value="25"/>
+        <Setter Property="Height" Value="25"/>
+        <Setter Property="Template" Value="{DynamicResource MainTitleButtonTemp}"/>
+        <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+        <Setter Property="Panel.ZIndex" Value="1"/>
+    </Style>
+
+    <Style x:Key="PrisLetters" TargetType="{x:Type Path}">
+        <Setter Property="Fill" Value="{DynamicResource MainGray}" />
+        <Setter Property="Data">
+            <Setter.Value>
+                <PathGeometry Figures="M200.4 178.5V65.3h37.2v15.4c2.8-7.3 6-12.3 9.8-14.9c4.7-3.3 10.2-4.9 16.4-4.9h3.7V99c-1 0-2 0-3.1-0.1 
+                              c-1.1-0.1-1.9-0.2-2.4-0.2c-0.6-0.1-1-0.1-1.3-0.1c-8.8 0-15.2 3-19.3 9c-2.4 3.3-3.7 9.1-3.7 17.6v53.3H200.4z
+                              M301.3 12.5c5.7 0 10.4 1.9 14.1 5.6c3.7 3.8 5.5 8.6 5.5 14.4c0 5.5-1.9 10.2-5.6 13.9  c-3.7 3.8-8.5 5.6-14.2 5.6c-5.7 0-10.4-1.9-14.2-5.6c-3.7-3.7-5.6-8.5-5.6-14.2c0-5.7 1.9-10.4 5.6-14.2  C290.7 14.4 295.5 12.5 301.3 12.5z
+                              M428.4 98.8H394v-2.2c0-2.6-1-4.8-3.1-6.5c-2-1.7-4.6-2.6-7.7-2.6c-4.2-0.2-7 1.6-8.3 5.1  
+                              c-1.6 4.2 0.2 7.7 5.4 10.3c2 1 4.3 1.7 7.1 2.2c15.8 4.6 27 9.8 33.5 15.6c6.5 5.9 9.8 13.8 
+                              9.8 23.7c0 11.6-4.2 20.9-12.6 27.9  
+                              c-8.4 7-19.5 10.5-33.4 10.5c-13.9 0-24.9-3.4-33-10.1c-8.2-6.8-12.4-16.1-12.7-28h35.2c0.8 4.2 2 7.2 3.5 8.9 
+                              c1.5 1.7 3.9 2.6 7 2.6c2.4 0 4.5-0.8 6.1-2.3c1.6-1.5 2.4-3.5 2.4-5.7c0-2.6-1.3-4.8-3.8-6.5c-2.5-1.7-7.5-3.8-15-6.2
+                              c-12.4-3.9-21.4-8.8-27-14.8c-5.6-5.9-8.4-13.4-8.4-22.4c0-11.2 4.2-20.3 12.6-27.1c8.4-6.8 19.4-10.3 33.1-10.3 
+                              c13.5 0 24.2 3.3 31.9 10C424.3 77.6 428.3 86.9 428.4 98.8z
+                              M156.3 61.7c-9.1-5.2-19.2-7.8-30.3-7.8c-14.8 0-26.6 5.1-35.2 15.2V58.3H53.6v163h37.2v-59.6  
+                              c9 9.5 21.1 14.2 36.4 14.2c17.9 0 32.1-5.4 42.5-16.1c10.4-10.9 15.6-25.6 15.6-44C185.4 91
+                              175.7 73 156.3 61.7z M137.7 138  c-4.1 4.3-8.9 7-14.5 8c-1.9 0.4-3.9 0.6-6.1 0.6c-8 
+                              0-14.4-2.8-19.3-8.3c-4.9-5.5-7.3-12.9-7.3-22c0-9.3 2.6-16.9 7.8-22.7  
+                              c3.9-4.4 8.7-7.2 14.4-8.3c1.9-0.4 3.9-0.6 6-0.6c7.8 0 14.3 3 19.4 9c5.1 
+                              6 7.7 13.6 7.7 22.7C145.8 125.1 143.1 132.3 137.7 138z
+                              M282.5,65.3 H319.7 V178.5 H282.5 Z" />
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+
+    <Style x:Key="PrisLogo" TargetType="{x:Type Path}">
+        <Setter Property="Fill" Value="{DynamicResource WindowButtonColor}" />
+        <Setter Property="Data">
+            <Setter.Value>
+                <PathGeometry Figures=" m 0 0 v 33.844 l 29.703 18.31 V 18.279 Z m -70.227 0.117 1.789 32.802 25.252 -16.162 z
+                              m -35.397 92.719 100.12 -59.028 v -34.57 l -32.427 20.752 -0.048 -0.029 -35.441 22.682 -2.372
+                              -43.488 -29.832 19.093 z m 0 41.087 29.704 17.822 v -34.124 l -29.704 -17.903 z m 72.853 2.691 
+                              26.576 14.882 V 120.369 Z M 29.703 60.941 -70.416 117.073 v 34.139 l 26.936 -14.504 42.79 -26.155
+                              v 40.873 L 29.703 133.892 Z M -2.784 38.594 -100.645 96.292 -73.638 112.57 26.313 56.531 Z m -0.638
+                              120.763 -34.564 -19.355 -35.946 19.355 -37.196 -22.317 V 96.4 l -0.267 -0.161 0.267 -0.157 V 15.235 
+                              l 37.241 -23.834 35.85 22.061 0.027 -0.017 0.027 0.043 34.512 -22.087 38.679 23.803 v 121.867 z" />
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
 </ResourceDictionary> 
