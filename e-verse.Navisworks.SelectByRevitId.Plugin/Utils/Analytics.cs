@@ -23,7 +23,7 @@ namespace EVerse.Navisworks.SelectByRevitId.Plugin
             string user = Environment.UserName;
             ApplicationVersion versionNavis = Application.Version;
             string software = string.Concat("Navisworks ", versionNavis.ApiMajor);
-            string version = SettingsConfig.GetValue("version");
+            string version = SettingsConfig.currentVersion;
 
             // Use string interpolation to incorporate variables into the JSON string
             string json = $@"{{

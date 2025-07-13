@@ -4,7 +4,7 @@
     {
         public static void Update(MainWindowViewModel mainWindowViewModel)
         {
-            string version = SettingsConfig.GetValue("version");
+            string version = SettingsConfig.currentVersion;
 
             mainWindowViewModel.Version = version;
         }
