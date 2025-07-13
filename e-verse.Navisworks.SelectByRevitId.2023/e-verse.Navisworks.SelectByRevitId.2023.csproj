@@ -138,20 +138,21 @@
   <Import Project="..\e-verse.Navisworks.SelectByRevitId.Plugin\e-verse.Navisworks.SelectByRevitId.Plugin.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>mkdir "$(SolutionDir)\$(SolutionName).bundle\Contents\dlls\2023\en-US"
-mkdir "$(SolutionDir)\$(SolutionName).bundle\Contents\dlls\2023\Images"
+    <PostBuildEvent>set YEAR=2023
+set BundleName="$(SolutionDir)SelectByRevitId.bundle\"
 
-copy "$(TargetDir)\*.dll" "$(SolutionDir)$(SolutionName).bundle\Contents\dlls\2023"
-copy "$(SolutionDir)\e-verse.Navisworks.SelectByRevitId.Common\Images\*" "$(SolutionDir)$(SolutionName).bundle\Contents\dlls\2023\Images"
-copy "$(SolutionDir)\e-verse.Navisworks.SelectByRevitId.Common\en-US\PluginRibbon.xaml" "$(SolutionDir)$(SolutionName).bundle\Contents\dlls\2023\en-US"
-copy "$(SolutionDir)\e-verse.Navisworks.SelectByRevitId.Common\*.addin" "$(SolutionDir)$(SolutionName).bundle\Contents\dlls\2023"
-copy "$(SolutionDir)\e-verse.Navisworks.SelectByRevitId.Common\PackageContents.xml" "$(SolutionDir)$(SolutionName).bundle"
+mkdir "%25BundleName%25Contents\dlls\%25YEAR%25\en-US"
+mkdir "%25BundleName%25Contents\dlls\%25YEAR%25\Images"
 
-if EXIST "%25APPDATA%25\Autodesk\ApplicationPlugins\$(SolutionName).bundle" rmdir /s /q "%25AppData%25\Autodesk\ApplicationPlugins\$(SolutionName).bundle"
-if $(ConfigurationName) == Debug mkdir "%25APPDATA%25\Autodesk\ApplicationPlugins\$(SolutionName).bundle"
+copy "$(TargetDir)\*.dll" "%25BundleName%25Contents\dlls\%25YEAR%25"
+copy "$(SolutionDir)\e-verse.Navisworks.SelectByRevitId.Common\Images\*" "%25BundleName%25Contents\dlls\%25YEAR%25\Images"
+copy "$(SolutionDir)\e-verse.Navisworks.SelectByRevitId.Common\en-US\PluginRibbon.xaml" "%25BundleName%25Contents\dlls\%25YEAR%25\en-US"
+copy "$(SolutionDir)\e-verse.Navisworks.SelectByRevitId.Common\*.addin" "%25BundleName%25Contents\dlls\%25YEAR%25"
+copy "$(SolutionDir)\e-verse.Navisworks.SelectByRevitId.Common\PackageContents.xml" "%25BundleName%25"
 
-if $(ConfigurationName) == Debug xcopy /e /s /h "$(SolutionDir)\$(SolutionName).bundle" "%25APPDATA%25\Autodesk\ApplicationPlugins\$(SolutionName).bundle"
+if EXIST "%25APPDATA%25\Autodesk\ApplicationPlugins\SelectByRevitId.bundle" rmdir /s /q "%25APPDATA%25\Autodesk\ApplicationPlugins\SelectByRevitId.bundle"
+if $(ConfigurationName) == Debug mkdir "%25APPDATA%25\Autodesk\ApplicationPlugins\SelectByRevitId.bundle"
 
-echo "$(SolutionDir)\$(SolutionName).bundle" "%25APPDATA%25\Autodesk\ApplicationPlugins\$(SolutionName).bundle"</PostBuildEvent>
+if $(ConfigurationName) == Debug xcopy /e /s /h "%25BundleName%25" "%25APPDATA%25\Autodesk\ApplicationPlugins\SelectByRevitId.bundle"</PostBuildEvent>
   </PropertyGroup>
 </Project>
