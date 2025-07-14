@@ -87,7 +87,7 @@ namespace EVerse.Navisworks.SelectByRevitId.Installer
                                                             new Files(@"..\e-verse.Navisworks.SelectByRevitId.Common\Images\*.*")))
                                 )))));
 
-            project.GUID = new Guid("5E02B8C2-2D91-472F-98B8-559227E4FB2D");
+            project.GUID = new Guid("5E02B8C2-2D90-472F-98B8-559227E4FB2D");
             project.Version = new Version(versionValue);
             project.ControlPanelInfo.Manufacturer = "e-verse";
             project.ControlPanelInfo.ProductIcon = "Resources\\logo.ico";
@@ -146,7 +146,7 @@ namespace EVerse.Navisworks.SelectByRevitId.Installer
 
                         for (int year = 2018; year <= 2026; year++)
                         {
-                            string filePath = $"{basePath}\\{year}\\Leia_glTF_Exporter.dll";
+                            string filePath = $"{basePath}\\{year}\\Pris.SelectByRevitId.dll";
                             bool overwrittable = WaitForFilesToBeOverwritable(filePath);
                             if (!overwrittable)
                             {
