@@ -11,7 +11,7 @@ namespace EVerse.Navisworks.SelectByRevitId.Plugin
 {
     public static class SettingsConfig
     {
-        public static readonly string currentVersion = "1.0.20";
+        public static readonly string currentVersion = "1.0.0";
         public static readonly string currentApiKey = "PlaceHolderApiKey";
 
         private static readonly string _configDir =
@@ -96,7 +96,7 @@ namespace EVerse.Navisworks.SelectByRevitId.Plugin
             var defaults = new Dictionary<string, string>
             {
                 { "runs",   "0"  },
-                { "version",   "0.0.0"  },
+                { "version",   currentVersion  },
                 { "user",   "user01"  },
                 { "release",   "0"  },
                 { "apikey",   "0"  }

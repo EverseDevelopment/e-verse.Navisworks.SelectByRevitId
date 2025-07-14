@@ -515,136 +515,6 @@
                       </Component>
 
                     </Directory>
-
-                    <Directory Id="INSTALLDIR.Contents.dlls.2024.Pris.SelectByRevitId.bundle" Name="Pris.SelectByRevitId.bundle">
-                      <Directory Id="INSTALLDIR.Contents.dlls.2024.Pris.SelectByRevitId.bundle.Contents" Name="Contents">
-                        <Directory Id="INSTALLDIR.Contents.dlls.2024.Pris.SelectByRevitId.bundle.Contents.dlls" Name="dlls">
-                          <Directory Id="INSTALLDIR.Contents.dlls.2024.Pris.SelectByRevitId.bundle.Contents.dlls.2024" Name="2024">
-
-                            <Component Id="Component.AdWindows.dll_775893172" Guid="5e02b8c2-2d90-472f-98b8-55920462dc41">
-                              <File Id="AdWindows.dll_775893172" Source="..\e-verse.Navisworks.SelectByRevitId.2024\bin\Release\Pris.SelectByRevitId.bundle\Contents\dlls\2024\AdWindows.dll" />
-                              <RemoveFolder Id="INSTALLDIR.Contents.dlls.2024.Pris.SelectByRevitId.bundle.Contents.dlls.2024" On="uninstall" />
-
-                              <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
-                                <RegistryValue Value="0" Type="string" KeyPath="yes" />
-                              </RegistryKey>
-                            </Component>
-
-                            <Component Id="Component.Autodesk.Navisworks.Api.dll_3763535162" Guid="5e02b8c2-2d90-472f-98b8-5592d4ed9b7f">
-                              <File Id="Autodesk.Navisworks.Api.dll_3763535162" Source="..\e-verse.Navisworks.SelectByRevitId.2024\bin\Release\Pris.SelectByRevitId.bundle\Contents\dlls\2024\Autodesk.Navisworks.Api.dll" />
-
-                              <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
-                                <RegistryValue Value="0" Type="string" KeyPath="yes" />
-                              </RegistryKey>
-                            </Component>
-
-                            <Component Id="Component.Autodesk.Navisworks.ComApi.dll_3643568814" Guid="5e02b8c2-2d90-472f-98b8-55927aa4a0ff">
-                              <File Id="Autodesk.Navisworks.ComApi.dll_3643568814" Source="..\e-verse.Navisworks.SelectByRevitId.2024\bin\Release\Pris.SelectByRevitId.bundle\Contents\dlls\2024\Autodesk.Navisworks.ComApi.dll" />
-
-                              <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
-                                <RegistryValue Value="0" Type="string" KeyPath="yes" />
-                              </RegistryKey>
-                            </Component>
-
-                            <Component Id="Component.Autodesk.Navisworks.Controls.dll_1524729047" Guid="5e02b8c2-2d90-472f-98b8-5592bb7eb148">
-                              <File Id="Autodesk.Navisworks.Controls.dll_1524729047" Source="..\e-verse.Navisworks.SelectByRevitId.2024\bin\Release\Pris.SelectByRevitId.bundle\Contents\dlls\2024\Autodesk.Navisworks.Controls.dll" />
-
-                              <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
-                                <RegistryValue Value="0" Type="string" KeyPath="yes" />
-                              </RegistryKey>
-                            </Component>
-
-                            <Component Id="Component.navisworks.gui.common.dll_2423118099" Guid="5e02b8c2-2d90-472f-98b8-55926a60dca1">
-                              <File Id="navisworks.gui.common.dll_2423118099" Source="..\e-verse.Navisworks.SelectByRevitId.2024\bin\Release\Pris.SelectByRevitId.bundle\Contents\dlls\2024\navisworks.gui.common.dll" />
-
-                              <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
-                                <RegistryValue Value="0" Type="string" KeyPath="yes" />
-                              </RegistryKey>
-                            </Component>
-
-                            <Component Id="Component.navisworks.gui.interface.dll_3296624880" Guid="5e02b8c2-2d90-472f-98b8-5592f75ad52a">
-                              <File Id="navisworks.gui.interface.dll_3296624880" Source="..\e-verse.Navisworks.SelectByRevitId.2024\bin\Release\Pris.SelectByRevitId.bundle\Contents\dlls\2024\navisworks.gui.interface.dll" />
-
-                              <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
-                                <RegistryValue Value="0" Type="string" KeyPath="yes" />
-                              </RegistryKey>
-                            </Component>
-
-                            <Component Id="Component.navisworks.gui.roamer.dll_92492886" Guid="5e02b8c2-2d90-472f-98b8-55927228a57a">
-                              <File Id="navisworks.gui.roamer.dll_92492886" Source="..\e-verse.Navisworks.SelectByRevitId.2024\bin\Release\Pris.SelectByRevitId.bundle\Contents\dlls\2024\navisworks.gui.roamer.dll" />
-
-                              <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
-                                <RegistryValue Value="0" Type="string" KeyPath="yes" />
-                              </RegistryKey>
-                            </Component>
-
-                            <Component Id="Component.Pris.SelectByRevitId.dll_2846806908" Guid="5e02b8c2-2d90-472f-98b8-55927bf0d745">
-                              <File Id="Pris.SelectByRevitId.dll_2846806908" Source="..\e-verse.Navisworks.SelectByRevitId.2024\bin\Release\Pris.SelectByRevitId.bundle\Contents\dlls\2024\Pris.SelectByRevitId.dll" />
-
-                              <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
-                                <RegistryValue Value="0" Type="string" KeyPath="yes" />
-                              </RegistryKey>
-                            </Component>
-
-                            <Directory Id="INSTALLDIR.Contents.dlls.2024.Pris.SelectByRevitId.bundle.Contents.dlls.2024.en2dUS" Name="en-US">
-
-                              <Component Id="Component.INSTALLDIR.Contents.dlls.2024.Pris.SelectByRevitId.bundle.Contents.dlls.2024.en2dUS.EmptyDirectory" Guid="5e02b8c2-2d90-472f-98b8-559215a10b97">
-                                <CreateFolder />
-                                <RemoveFolder Id="INSTALLDIR.Contents.dlls.2024.Pris.SelectByRevitId.bundle.Contents.dlls.2024.en2dUS" On="uninstall" />
-
-                                <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
-                                  <RegistryValue Value="0" Type="string" KeyPath="yes" />
-                                </RegistryKey>
-                              </Component>
-
-                            </Directory>
-
-                            <Directory Id="INSTALLDIR.Contents.dlls.2024.Pris.SelectByRevitId.bundle.Contents.dlls.2024.Images" Name="Images">
-
-                              <Component Id="Component.INSTALLDIR.Contents.dlls.2024.Pris.SelectByRevitId.bundle.Contents.dlls.2024.Images.EmptyDirectory" Guid="5e02b8c2-2d90-472f-98b8-5592cdc14404">
-                                <CreateFolder />
-                                <RemoveFolder Id="INSTALLDIR.Contents.dlls.2024.Pris.SelectByRevitId.bundle.Contents.dlls.2024.Images" On="uninstall" />
-
-                                <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
-                                  <RegistryValue Value="0" Type="string" KeyPath="yes" />
-                                </RegistryKey>
-                              </Component>
-
-                            </Directory>
-                          </Directory>
-
-                          <Component Id="INSTALLDIR.Contents.dlls.2024.Pris.SelectByRevitId.bundle.Contents.dlls" Guid="5e02b8c2-2d90-472f-98b8-559265bcb0f0">
-                            <CreateFolder />
-                            <RemoveFolder Id="INSTALLDIR.Contents.dlls.2024.Pris.SelectByRevitId.bundle.Contents.dlls" On="uninstall" />
-
-                            <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
-                              <RegistryValue Value="0" Type="string" KeyPath="yes" />
-                            </RegistryKey>
-                          </Component>
-
-                        </Directory>
-
-                        <Component Id="INSTALLDIR.Contents.dlls.2024.Pris.SelectByRevitId.bundle.Contents" Guid="5e02b8c2-2d90-472f-98b8-5592b99cf301">
-                          <CreateFolder />
-                          <RemoveFolder Id="INSTALLDIR.Contents.dlls.2024.Pris.SelectByRevitId.bundle.Contents" On="uninstall" />
-
-                          <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
-                            <RegistryValue Value="0" Type="string" KeyPath="yes" />
-                          </RegistryKey>
-                        </Component>
-
-                      </Directory>
-
-                      <Component Id="INSTALLDIR.Contents.dlls.2024.Pris.SelectByRevitId.bundle" Guid="5e02b8c2-2d90-472f-98b8-5592c442401b">
-                        <CreateFolder />
-                        <RemoveFolder Id="INSTALLDIR.Contents.dlls.2024.Pris.SelectByRevitId.bundle" On="uninstall" />
-
-                        <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
-                          <RegistryValue Value="0" Type="string" KeyPath="yes" />
-                        </RegistryKey>
-                      </Component>
-
-                    </Directory>
                   </Directory>
 
                   <Directory Id="INSTALLDIR.Contents.dlls.2025" Name="2025">
@@ -884,7 +754,6 @@
                   </Directory>
 
                   <Component Id="INSTALLDIR.Contents.dlls" Guid="5e02b8c2-2d90-472f-98b8-5592bf7b87fc">
-                    <CreateFolder />
                     <RemoveFolder Id="INSTALLDIR.Contents.dlls" On="uninstall" />
 
                     <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
@@ -895,7 +764,6 @@
                 </Directory>
 
                 <Component Id="INSTALLDIR.Contents" Guid="5e02b8c2-2d90-472f-98b8-55921b18c606">
-                  <CreateFolder />
                   <RemoveFolder Id="INSTALLDIR.Contents" On="uninstall" />
 
                   <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
@@ -907,7 +775,6 @@
             </Directory>
 
             <Component Id="AppDataFolder.Autodesk.ApplicationPlugins" Guid="5e02b8c2-2d90-472f-98b8-55923e249515">
-              <CreateFolder />
               <RemoveFolder Id="AppDataFolder.Autodesk.ApplicationPlugins" On="uninstall" />
 
               <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
@@ -918,7 +785,6 @@
           </Directory>
 
           <Component Id="AppDataFolder.Autodesk" Guid="5e02b8c2-2d90-472f-98b8-5592ca4289ec">
-            <CreateFolder />
             <RemoveFolder Id="AppDataFolder.Autodesk" On="uninstall" />
 
             <RegistryKey Root="HKCU" Key="Software\WixSharp\Used">
@@ -1013,16 +879,6 @@
       <ComponentRef Id="Component.Heart.jpg_1181977401" />
       <ComponentRef Id="Component.RID_32.jpg_3895278080" />
       <ComponentRef Id="Component.SelectByRevitId.png_3749570020" />
-      <ComponentRef Id="Component.AdWindows.dll_775893172" />
-      <ComponentRef Id="Component.Autodesk.Navisworks.Api.dll_3763535162" />
-      <ComponentRef Id="Component.Autodesk.Navisworks.ComApi.dll_3643568814" />
-      <ComponentRef Id="Component.Autodesk.Navisworks.Controls.dll_1524729047" />
-      <ComponentRef Id="Component.navisworks.gui.common.dll_2423118099" />
-      <ComponentRef Id="Component.navisworks.gui.interface.dll_3296624880" />
-      <ComponentRef Id="Component.navisworks.gui.roamer.dll_92492886" />
-      <ComponentRef Id="Component.Pris.SelectByRevitId.dll_2846806908" />
-      <ComponentRef Id="Component.INSTALLDIR.Contents.dlls.2024.Pris.SelectByRevitId.bundle.Contents.dlls.2024.en2dUS.EmptyDirectory" />
-      <ComponentRef Id="Component.INSTALLDIR.Contents.dlls.2024.Pris.SelectByRevitId.bundle.Contents.dlls.2024.Images.EmptyDirectory" />
       <ComponentRef Id="Component.e2dverse.Navisworks.SelectByRevitId.addin_1293147118" />
       <ComponentRef Id="Component.AdWindows.dll_189180866" />
       <ComponentRef Id="Component.Autodesk.Navisworks.Api.dll_4216715262" />
@@ -1049,13 +905,10 @@
       <ComponentRef Id="Component.Heart.jpg_289719888" />
       <ComponentRef Id="Component.RID_32.jpg_1758492591" />
       <ComponentRef Id="Component.SelectByRevitId.png_2424708750" />
-      <ComponentRef Id="INSTALLDIR.Contents.dlls.2024.Pris.SelectByRevitId.bundle.Contents.dlls" />
-      <ComponentRef Id="INSTALLDIR.Contents.dlls.2024.Pris.SelectByRevitId.bundle.Contents" />
-      <ComponentRef Id="INSTALLDIR.Contents.dlls.2024.Pris.SelectByRevitId.bundle" />
-      <ComponentRef Id="INSTALLDIR.Contents.dlls" />
-      <ComponentRef Id="INSTALLDIR.Contents" />
-      <ComponentRef Id="AppDataFolder.Autodesk.ApplicationPlugins" />
       <ComponentRef Id="AppDataFolder.Autodesk" />
+      <ComponentRef Id="AppDataFolder.Autodesk.ApplicationPlugins" />
+      <ComponentRef Id="INSTALLDIR.Contents" />
+      <ComponentRef Id="INSTALLDIR.Contents.dlls" />
     </Feature>
 
     <InstallExecuteSequence>
