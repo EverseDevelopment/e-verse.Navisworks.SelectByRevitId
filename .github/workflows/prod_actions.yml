@@ -64,7 +64,7 @@ jobs:
     
     - name: Setting new version to addin
       run: |
-        (Get-Content e-verse.Navisworks.SelectByRevitId.Plugin/Utils/SettingsConfig.cs) -replace '1.0.0', '"${{ steps.gitversion.outputs.majorMinorPatch }}"' | Out-File -encoding ASCII R e-verse.Navisworks.SelectByRevitId.Plugin/Utils/SettingsConfig.cs
+        (Get-Content e-verse.Navisworks.SelectByRevitId.Plugin/Utils/SettingsConfig.cs) -replace '1.0.0', "${{ steps.gitversion.outputs.majorMinorPatch }}" | Out-File -encoding ASCII e-verse.Navisworks.SelectByRevitId.Plugin/Utils/SettingsConfig.cs
       
     # Change the version inside of the 'e-verse.Navisworks.SelectByRevitId.Installer.g.wxs' file
     - name: Setting new version to the 'e-verse.Navisworks.SelectByRevitId.Installer.g.wxs' file
